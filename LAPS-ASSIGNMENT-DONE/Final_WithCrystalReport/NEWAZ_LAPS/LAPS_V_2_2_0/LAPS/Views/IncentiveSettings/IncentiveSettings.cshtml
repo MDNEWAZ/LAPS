@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Incentive Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/IncentiveSettings/IncentiveSettings.js")
+
+<h2 class="k-header centerAlign">Incentive Settings</h2>
+
+<div class="mainDiv">
+    <div class="leftDiv">
+        @Html.Partial("_IncentiveSettingsSummary")
+    </div>
+    <div class="rightDiv">
+        @Html.Partial("_IncentiveSettingsDetails")
+    </div>
+   
+</div>

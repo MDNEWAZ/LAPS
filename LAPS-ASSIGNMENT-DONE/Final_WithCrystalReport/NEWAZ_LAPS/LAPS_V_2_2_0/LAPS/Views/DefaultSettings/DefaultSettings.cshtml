@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Company Default Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/DefaultSettings/DefaultSettings.js")
+
+<div id="mainDiv" class="">
+    <h2 class="k-header centerAlign">Company Default Settings</h2>
+    <div class="leftDiv">
+        @Html.Partial("_DefaultSettingsSummary")
+    </div>
+    <div class="rightDiv">
+        @Html.Partial("_DefaultSettingsDetails")
+    </div>
+    <div class="clear"></div>
+</div>

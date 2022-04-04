@@ -1,0 +1,53 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/SystemSettings/LoginRulePolicy.js")
+<div id="divLoginRule">
+    <div class="divDetails">
+        <ul>
+            
+            <li>
+                <label for="NumaricFieldForMinimumLoginLength" class="lbl">Minimum Login Length:</label>
+                <input type="number" id="txtMinimumLoginLength" name="NumaricFieldForMinimumLoginLength" min="1" max="50"  required validationMessage="Please enter Numaric Field For Minimum Login Length" value="5" />
+            </li>
+            <li>
+                <label for="NumaricFieldforPasswordLength" class="lbl">Minimum Password Length:</label>
+                <input type="number" id="txtMinimumPasswordLength" name="NumaricFieldforPasswordLength" min="1" max="50" placeholder="Number Field Required" required validationMessage="Please enter Numaric Field for Password Length" value="6" />
+            </li>
+            <li>
+                <label for="PasswordType" class="lbl">Password Type:</label>
+                <input id="cmbPasswordType" name="PasswordType" placeholder="Password Type" value="" required validationMessage="Please enter Password Type"/>
+            </li>
+            <li>
+                <label for="SpecialCharacterinPassword" class="lbl">Special Character in Password:</label>
+                <input id="cmbSpecialCharacterinPassword" name="SpecialCharacterinPassword" placeholder="Special Character in Password" value="" required validationMessage="Please enter Special Character in Password"/>
+            </li>
+            <li>
+                <label for="NumaricFieldforWrongattempttoLock" class="lbl">Wrong attempt to Lock (NO):</label>
+                <input type="number" id="txtWrongattempttoLock" name="NumaricFieldforWrongattempttoLock" min="1" max="50" placeholder="Number Field Required" required validationMessage="Please enter Numaric Field for Wrong attempt to Lock" />
+            </li>
+            <li>
+                <label for="NumaricFieldforChangePasswordafter" class="lbl">Change Password after:</label>
+                <input type="number" id="txtChangePasswordafter" name="NumaricFieldforChangePasswordafter" min="1" max="50" placeholder="Number Field Required" required validationMessage="Please enter Numaric Field for Change Password after"/> (Days)
+            </li>
+            <li>
+                <label for="ChangePasswordat1stLogin" class="lbl">Change Password at 1st Login:</label>
+                <input id="cmbChangePasswordat1stLogin" name="ChangePasswordat1stLogin" placeholder="Change Password at 1st Login" value="" required validationMessage="Please enter Change Password at 1st Login"/>
+            </li>
+            <li>
+                <label for="NumaricFieldforPasswordExpiredafter" class="lbl">Password Expired after:</label>
+                <input type="number" id="txtPasswordExpiredafter" name="NumaricFieldforPasswordExpiredafter" min="1" max="50" placeholder="Number Field Required" required validationMessage="Please enter Numaric Field for Password Expired after" /> (Days)
+            </li>
+            <li>
+                <label for="ResetPassword" class="lbl">Reset Password:</label>
+                <input type="text" id="txtResetPassword" name="ResetPassword" class="k-textbox" placeholder="Reset Password" required validationMessage="Please enter Reset Password"/>
+            </li>
+            
+            <li>
+                <label for="NumaricFieldforOldPasswordRestriction" class="lbl">Old Password Restriction:</label>
+                <input type="number" id="txtOldPasswordRestriction" name="NumaricFieldforOldPasswordRestriction" min="1" max="50" placeholder="Number Field Required" required validationMessage="Please enter Numaric Field for Old Password Restriction" />
+            </li>
+            <li>
+                <label for="ODBCClientList" class="lbl">ODBC Client List:</label>
+                <input id="cmbOdbcClientList" name="ODBCClientList"/>
+            </li>
+        </ul>
+    </div>
+</div>

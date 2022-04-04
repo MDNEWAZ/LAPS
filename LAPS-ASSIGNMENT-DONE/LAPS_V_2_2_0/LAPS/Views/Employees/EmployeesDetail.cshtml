@@ -1,0 +1,62 @@
+﻿<script src="~/Scripts/eAzolution/HumanResource/NewEmployee/NewEmployeeDetails.js"></script>
+<script src="~/Scripts/eAzolution/HumanResource/NewEmployee/NewEmployeeSummary.js"></script>
+<div class="rightDiv k-block">
+    <h2 class="k-header centerAlign">Employee Details</h2>
+    <div id="EmployeeDetailsDiv" class="divDetails">
+        <ul>
+            <li>
+                <label for="EmployeeName" class="lbl widthSize20_per">Employee Name:</label>
+                <input type="hidden" id="hdnEmployeeId" value="0" />
+
+                <input type="text" id="txtEmployeeName" name="EmployeeName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Employee Name" required validationmessage="Please enter valid Employee Name" />
+            </li>
+            <li>
+                <label for="Mobile" class="lbl widthSize20_per">Mobile:</label>
+                <input type="text" id="txtMobile" name="Mobile" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Mobile" required validationmessage="Please enter valid Mobile" />
+            </li>
+            <li>
+                <label for="Email" class="lbl widthSize20_per">Email:</label>
+                <input type="text" id="txtEmail" name="Email" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Email" required validationmessage="Please enter valid Email" />
+            </li>
+
+
+            <li>
+                <label for="Designation" class="lbl widthSize20_per">Designation:</label>
+                <input type="text" id="txtDesignation" name="Designation" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Designation" required validationmessage="Please enter valid Designation" />
+            </li>
+
+
+
+            <fieldset>
+                <legend>Eduction Information</legend>
+                <div id="gridEducationEmp"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Experience Information</legend>
+                <button id="btnAddNewForExperience" class="k-button" type="submit">Add New</button>
+                <div id="gridExperienceEmp">
+                    @*<button id="btnEdit" class="k-button" type="submit">Edit</button>
+                    <button id="btnDelete" class="k-button" type="submit">Delete</button>*@
+                </div>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Employee Information</legend>
+                <div id="divgridCheckedBoxEmployeeSummary"></div>
+            </fieldset>
+
+
+            <div class="displayNone" id="experiencePopupWindow">
+                
+                @Html.Partial("~/Views/Employees/ExperiencePopUp.cshtml")
+            </div>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick=" EmployeeDetailsManager.SaveEmployeeInformation() ">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick=" EmployeeDetailsHelper.clearEmployeeForm() ">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>

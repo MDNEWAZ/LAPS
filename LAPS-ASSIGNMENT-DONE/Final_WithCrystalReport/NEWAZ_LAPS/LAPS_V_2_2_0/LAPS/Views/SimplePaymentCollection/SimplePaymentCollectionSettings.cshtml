@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Simple Payment Collection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/SimplePaymentCollection/SimplePaymentCollectionSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Common/CompanyHierarchyPath.js")
+
+
+<div class="mainDiv centerAlign" style="width:50%;margin-left: 25%">
+    <div class="k-block sitepath" id="divSitePath">
+        <label class="lbl widthSize100_per" id="lblSiteMapPathCollection"></label>
+    </div>
+       <div class="k-block">
+           <h2 class="k-header centerAlign">Payment Collection For Data Entry Operator</h2>
+
+         
+    
+           @Html.Partial("_SimplePaymentCollectionDetails")
+    
+           <div id="divPopupPreview" class="displayNone">
+               @Html.Partial("_SimplePaymentCollectionSummary")    
+
+           </div>
+       </div>
+           
+    <div class="clear"></div>
+</div>

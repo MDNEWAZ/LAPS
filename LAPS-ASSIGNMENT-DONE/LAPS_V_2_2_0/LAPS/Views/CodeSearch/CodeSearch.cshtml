@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Code Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/CodeSearch/CodeSearch.js")
+
+<div class="mainDiv">
+    <div id="divCodeSearch" class="divDetails">
+        <h2 class="centerAlign">Code Search</h2>
+        <div class="CenterOfDiv">
+            <div class="k-block">
+                <ul>
+                    <li>
+                        <label for="CustomerId" class="lbl widthSize20_per">Customer ID:</label>
+                        <input type="text" id="txtCustomerId" name="CustomerId" class="k-textbox" placeholder="Customer ID" required validationmessage="Please enter valid Customer Id" />
+
+                        <label for="SMSMobileNumber" class="lbl widthSize20_per">SMS Mobile Number:</label>
+                        <input type="text" id="txtSMSMobileNumber" name="SMSMobileNumber" class="k-textbox" placeholder="SMS Mobile Number" required validationmessage="Please enter valid SMS Mobile Number" />
+
+                    </li>
+
+                </ul>
+                <br />
+            </div>
+           
+        </div>
+        <br />
+        <div id="divCustomerWithCodeGrid"></div>
+    </div>
+</div>

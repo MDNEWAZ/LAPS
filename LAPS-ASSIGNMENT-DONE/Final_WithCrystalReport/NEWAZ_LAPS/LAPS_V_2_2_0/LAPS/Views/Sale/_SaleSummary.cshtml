@@ -1,0 +1,44 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/SaleSummary.js")
+<div class="">
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Save as Draft
+        </h2>
+        <div class="divDetails">
+
+            <ul>
+                <li class="">
+                    <div class="k-block">
+                        <span class="k-header">
+                            <label for="cmbFromDate" class="lbl widthSize10_per rightAlign">Entry Date From:</label>
+                            <input id="cmbFromDate" type="text" class="k-datepicker" />
+
+                            <label for="cmbFromDate" class="lbl widthSize10_per rightAlign">Entry Date To:</label>
+                            <input id="cmbToDate" type="text" class="k-datepicker" />
+
+                            <label for="txtInvoice" class="widthSize10_per">Invoice/Mobile No:</label>
+                            <input id="txtInvoice" type="text" class="k-textbox" placeholder="Enter a Invoice/Mobile No" />
+
+                            <button id="btnSearchSaleInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+
+                            @*                            <label class="lbl widthSize34_per"></label>
+                            <button id="btnAddNewSale" class="k-button rightAlign">Add New Sale</button>*@
+                        </span>
+                    </div>
+                </li>
+                <li class="accept"></li>
+            </ul>
+        </div>
+
+
+        <div id="gridSale"></div>
+        <br />
+        <div class="centerAlign">
+            <button id="btnCloseDraftedSummary" class="k-button rightAlign">Back</button>
+            <button id="btnFinalSubmit" class="k-button rightAlign" >Final Submit</button>
+        </div>
+         
+    </div>
+    <div class="clear"></div>
+</div>
+
+

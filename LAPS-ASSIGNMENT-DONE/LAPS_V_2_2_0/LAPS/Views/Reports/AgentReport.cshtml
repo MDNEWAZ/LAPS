@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Agent Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Reports/AgentReport.js")
+
+
+<div class="divDetails">
+    <div id="agentReport" class="divDetails">
+
+        <fieldset class="k-content">
+            <legend>Agent Report</legend>
+
+            <div class="centerAlign">
+                <ul>
+                    <li>
+                        <label for="AgencyType" class="lbl widthSize7_per">Agency Type:</label>
+                        <input id="cmbAgencyType" name="AgencyType" placeholder="Agency Type" validationmessage="Please Select an Agency Type" required="required" />
+                    </li>
+
+                    <li class="accept" style="padding-left: 107px;">
+                        <button id="btnPrint" class="k-button" type="submit" >Print</button>
+                        &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="AgentReportHelper.clearAgentType()">Clear All</button>
+                    </li>
+                    <li class="status"></li>
+                </ul>
+
+            </div>
+        </fieldset>
+    </div>
+
+

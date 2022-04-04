@@ -1,0 +1,32 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/UnrecognizedSale/UnrecognizedSaleSummary.js")
+
+<div class="k-block">
+    <h2 class="k-header centerAlign">Unrecognized Sale Summary </h2>
+    <div class="divDetails">
+          <ul>
+                <li class="">
+                    <div class="k-block">
+                        <span class="k-header">
+                          
+                            <label for="txtInvoiceNo" class="widthSize10_per">Invoice No:</label>
+                            <input id="txtInvoiceNo" type="text" class="k-textbox" placeholder="Enter a Invoice No" />
+
+                            <label class="lbl widthSize10_per">Sales Date From:</label>
+                            <input id="dtSalesDateFrom" />&nbsp;&nbsp;&nbsp;
+
+                            <label class="lbl widthSize10_per">Sales Date To:</label>
+                            <input id="dtSalesDateTo" />
+
+                            <button id="btnSearchUnrecognizedSaleInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+
+@*                            <label class="lbl widthSize34_per"></label>
+                            <button id="btnAddNewSale" class="k-button rightAlign">Add New Sale</button>*@
+                        </span>
+                    </div>
+                </li>
+                <li class="accept"></li>
+            </ul>
+
+        <div id="gridUnrecognizedSale"></div>
+    </div>
+</div>

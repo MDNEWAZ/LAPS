@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Rating Configuration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/RatingConfiguration/RatingConfiguration.js")
+
+<div id="mainDiv" class="">
+    <h2 class="k-header centerAlign">Rating Configuration</h2>
+    <div class="leftDiv">
+        @Html.Partial("_RatingConfigurationSummary")
+    </div>
+    <div class="rightDiv">
+        @Html.Partial("_RatingConfugurationDetails")
+    </div>
+    <div class="clear"></div>
+</div>

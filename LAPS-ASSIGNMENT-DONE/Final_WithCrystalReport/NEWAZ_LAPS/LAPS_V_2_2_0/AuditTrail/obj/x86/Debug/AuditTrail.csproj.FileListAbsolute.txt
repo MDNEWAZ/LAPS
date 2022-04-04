@@ -1,0 +1,8 @@
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\AuditTrail.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\AuditTrail.pdb
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\Utilities.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\Azolution.Common.DataService.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\Azolution.Common.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\bin\x86\Debug\Newtonsoft.Json.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\obj\x86\Debug\AuditTrail.dll
+E:\laps\LAPS_V_2_2_0\AuditTrail\obj\x86\Debug\AuditTrail.pdb

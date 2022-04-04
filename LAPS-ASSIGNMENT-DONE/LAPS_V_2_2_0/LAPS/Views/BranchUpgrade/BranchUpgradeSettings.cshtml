@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Branch Upgrade Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/BranchUpgrade/BranchUpgradeSettings.js")
+
+<div class="mainDiv">
+    <h1 class="k-header centerAlign">Branch Upgrade</h1>
+     @Html.Partial("../BranchUpgrade/_BranchUpgradeSummary")
+    @Html.Partial("../BranchUpgrade/_BranchUpgradeDetails")
+<div class="clear"></div>
+</div>

@@ -1,0 +1,16 @@
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Laps.Replacement.DataService.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Laps.Replacement.DataService.pdb
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Azolution.Entities.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Laps.Stock.DataService.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\LapsUtility.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Utilities.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\MySql.Data.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Newtonsoft.Json.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Azolution.Common.DataService.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Azolution.Common.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Azolution.Entities.pdb
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\Laps.Stock.DataService.pdb
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\bin\x64\Debug\LapsUtility.pdb
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\obj\x64\Debug\Laps.Replacement.DataService.csprojResolveAssemblyReference.cache
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\obj\x64\Debug\Laps.Replacement.DataService.dll
+E:\Laps\LAPS_V_2_2_0\Laps.Replacement.DataService\obj\x64\Debug\Laps.Replacement.DataService.pdb

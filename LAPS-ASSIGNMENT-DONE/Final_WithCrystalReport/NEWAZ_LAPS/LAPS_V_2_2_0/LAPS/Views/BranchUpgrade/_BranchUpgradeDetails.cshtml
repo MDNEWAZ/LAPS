@@ -1,0 +1,34 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/BranchUpgrade/BranchUpgradeDetails.js")
+
+
+<div class="rightDiv k-block">
+    <h2 class="k-header centerAlign">Branch Details</h2>
+    <div id="branchDetailsDiv" class="divDetails">
+
+        <ul>
+            <li>
+                <input type="hidden" id="hdnBranchId" value="0" />
+                <label for="BranchName" class="lbl widthSize20_per">Branch Name:</label>
+                <input type="text" id="txtBranchName" name="BranchName" class="k-textbox" readonly="readonly" />
+            </li>
+            <li>
+                <label for="BranchDescription" class="lbl widthSize20_per">Branch Description:</label>
+                <textarea type="address" id="txtBranchDescription" maxlength="2000" name="BranchDescription" style="width: 17.4em" class="k-textbox" readonly="readonly"></textarea>
+            </li>
+            <li>
+                <label for="BranchCode" class="lbl widthSize20_per">Current Branch Code:</label>
+                <input type="text" id="txtOldBranchCode" name="BranchCode" maxlength="4" pattern="[a-zA-Z0-9 ]+" class="k-textbox" readonly="readonly" />
+            </li>
+
+            <li style="border:1px solid red; border-radius:1px">
+                <label for="BranchCode" class="lbl widthSize20_per">New Branch Code:</label>
+                <input type="text" id="txtNewBranchCode" name="BranchCode" maxlength="4" pattern="[a-zA-Z0-9 ]+" class="k-textbox" readonly="readonly" />
+            </li>
+
+            <li class="accept displayNone" id="liUpgradeButton">
+                <button id="btnUpgradeBranch" class="k-button" type="submit" onclick="">Upgrade</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Re Schedule Installment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/ReSchedule/ReScheduleSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/ReSchedule/ReScheduleDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/ReSchedule/ReScheduleSummary.js")
+
+<h2>Re Schedule Installment</h2>
+<div id="mainDiv">
+
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Re Schedule Customer Installment</h2>
+        <div class="divDetails" id="divReschedule">
+            <ul>
+                <li class="centerAlign">
+                    <span>
+                        @*Company:*@
+                        <input id="cmbCompany" name="Company" type="text" class="k-combobox" placeholder="Select Company" required="required" />
+                        @*Branch:*@
+                        <input id="cmbBranch" name="Branch" type="text" class="k-combobox" placeholder="Select Branch" required="required" />
+                        @*Customer Code:*@
+                        <input id="txtCustomerCode" name="CustomerCode" type="text" class="k-textbox" placeholder="Customer Code" required="required" />
+                        <button id="btnSearchImSchedule" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+                    </span>
+                    <br />
+                    <br />
+
+                </li>
+                <li class="accept"></li>
+            </ul>
+
+        </div>
+
+        <div id="installmentGridDiv">
+            <div class="divDetails">
+                <ul>
+                    <li class="centerAlign">
+                        <span>
+                            @*New Installemt Number:*@
+                            <input id="txtNewIm" name="IM" type="text" class="k-textbox" placeholder="Enter New Installment no." />
+                            @*Select First Pay Date:*@
+                            <input id="txtFirstPayDate" name="IM" type="text" class="k-datepicker" placeholder="select first pay date" />
+                            <button id="btnReSchedule" class="k-button">Make Re Scedule</button>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <hr />
+            <div id="gridInstallment"></div>
+        </div>
+
+    </div>
+
+</div>

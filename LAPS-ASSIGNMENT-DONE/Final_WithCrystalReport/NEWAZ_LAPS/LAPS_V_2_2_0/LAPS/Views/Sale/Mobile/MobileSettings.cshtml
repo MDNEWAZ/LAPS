@@ -1,0 +1,17 @@
+﻿<script src="~/Scripts/eAzolution/Sales/Mobile/MobileSettings.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Mobile/MobileDetails.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Mobile/MobileSummary.js"></script>
+@{
+    ViewBag.Title = "Package";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="maindiv" class="">
+    <h2 class="k-header centerAlign">Mobile Info</h2>
+    <div class="leftDiv">
+        @Html.Partial("~/Views/Sale/Mobile/_MobileSummary.cshtml")
+
+    </div>
+    <div class="rightDiv">
+        @Html.Partial("~/Views/Sale/Mobile/_MobileDetails.cshtml")
+    </div>
+</div>

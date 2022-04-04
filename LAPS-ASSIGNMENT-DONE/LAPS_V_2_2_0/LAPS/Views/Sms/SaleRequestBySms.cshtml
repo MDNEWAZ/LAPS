@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Sale Request By Sms";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/SmsDetails.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/SmsSettings.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/SmsSummary.js"></script>
+<br />
+<div class="k-block">
+    <div class="k-header">Un Recognized Sales Request SMS handaling</div>
+    <label class="lbl widthSize10_per">Sms Date From:</label>
+    <input id="dtSmsDateFrom" style="width: 15%" placeholder="Select Sms Date From" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label class="lbl widthSize10_per">Sms Date To:</label>
+    <input id="dtSmsDateTo" style="width: 15%" placeholder="Select Sms Date To"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="btnSearchSalesRequestSmsInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span>Search</button>
+    <br/>
+    <div id="smsSummary"></div>
+</div>
+<div id="smsPopup" style="display: none">
+    @Html.Partial("../Sms/SmsPopUpForEdit")
+</div>

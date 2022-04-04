@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "To Days Attendance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Core/Dashboard/ToDaysAttendanceStatus.js")
+
+<div class="mainDiv">
+        <h2 class="k-header">Todays Attendance</h2>
+    <div id="divToDaysAttendance">
+        @Html.Partial("_ToDaysAttendanceDetails")
+    </div>
+    <div id="SingleUserMessageWindow" style="display: none">
+   
+    </div>
+</div>

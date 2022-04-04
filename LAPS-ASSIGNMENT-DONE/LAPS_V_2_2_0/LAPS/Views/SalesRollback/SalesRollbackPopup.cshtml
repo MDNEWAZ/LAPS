@@ -1,0 +1,59 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/SalesRollback/SalesRollbackInfo.js")
+
+
+<h2>Sale Rollback</h2>
+<div id="mainDiv">
+
+    <div class="k-block">
+        <div class="divDetails" id="divSaleRollBack">
+
+            <ul>
+                <li class="">
+                    <label class="lbl widthSize25_per rightAlign" for="InActive">Operation Type:</label>
+                    <form id="OperationType" style="display: inline">
+                        <input type="radio" id="txtInActive" name="InActive" value="1" />Make InActive
+                         <input type="radio" id="txtBranchSwitch" name="InActive" value="2" />Branch Switch
+                    </form>
+                </li>
+                <li id="changedCompanyBranchDiv" class="k-block displayNone">
+                    <ul>
+                        <li>
+                            <label class="required lbl widthSize25_per rightAlign">Please Select:</label>
+                            <input id="cmbChangedCompany" name="Company" type="text" class="k-combobox" placeholder="Select Company" />
+                            <input id="cmbChangedBranch" name="Branch" type="text" class="k-combobox" placeholder="Select Branch" />
+
+                        </li>
+                        <li>
+                            <label for="chkStaff" class="required lbl widthSize25_per rightAlign">Is Staff:</label>
+                            <input type="checkbox" id="chkStaff" name="chkStaff" class="k-checkbox" />
+                        </li>
+
+                        <li class="displayNone" id="staffcomboli">
+                            <label for="staffId" class="required lbl widthSize25_per rightAlign">Staff ID:</label>
+                            <input id="cmbStaffId" name="staffId" />
+                        </li>
+
+                        <li>
+                            <label for="cmbSaleRepresentator" class="lbl widthSize25_per rightAlign">Sale Representator:</label>
+                            <input id="cmbSaleRepresentator" name="cmbSaleRepresentator" placeholder="Sale Representator" />
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="centerAlign">
+                    <br />
+
+                    <hr />
+                    <input type="button" id="btnRollback" class="k-button" value="Submit" />
+                    <input type="button" id="btnClose" class="k-button" value="Close" />
+                </li>
+                <li class="accept"></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,83 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/SaleDetails.js")
+
+<div class="">
+    <div id="SaleDetailsDiv" class="">
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Sale Details </h2>
+            <ul>
+                <li>
+                    <label for="txtInvoiceSale" class="lbl widthSize14_per rightAlign">Invoice No:</label>
+                    <input type="text" id="txtInvoiceSale" name="SaleModel" maxlength="50" class="k-textbox" placeholder="XXXX" required validationmessage="Please enter Invoice No" />
+                    @*<button id="btnSearchInvoiceSale" class="k-button" type="submit"><span class="k-icon k-i-search"></span></button>*@
+                    &nbsp;&nbsp;
+                  
+                    <label for="txtPrice" class="lbl widthSize25_per rightAlign">Sales Price:</label>
+                    <input type="number" id="txtPrice" name="txtPrice" placeholder="Sales Price" readonly="readonly" validationmessage="Please enter Sales Price" />
+
+                </li>
+                <li class="displayNone">
+
+                    <label for="txtChallan" class="lbl widthSize14_per rightAlign">Challan No:</label>
+                    <input type="text" id="txtChallan" maxlength="50" placeholder="Challan No" name="txtCapacity" class="k-textbox" />
+
+
+                    <label for="txtDownPay" class="lbl widthSize26_per rightAlign">Down Payment:</label>
+                    <input type="number" id="txtDownPay" readonly="readonly" class="k-numerictextbox" placeholder="Down Payment" readonly="readonly" validationmessage="Please enter Sales Downpayment" />
+                    <button id="btndownPayPercent" class="k-button"></button>
+
+
+                </li>
+                <li>
+                    <label for="cmbSaleDate" class="lbl widthSize14_per rightAlign">Sale Date:</label>
+                    <input id="cmbSaleDate" value="" placeholder="Sale Date" />
+
+                    <label for="txtInstallment" class="lbl widthSize26_per rightAlign">Credit Period(Month):</label>
+                    <input id="txtInstallment" type="number" class="k-numerictextbox" placeholder="Credit Period(Month)" />
+
+
+
+                </li>
+                <li class="">
+
+                    <label for="cmbPayDate" class="lbl widthSize14_per rightAlign">First Pay Date:</label>
+                    <input id="cmbPayDate" value="" placeholder="First Pay Date" />
+
+                    <label for="txtTotalPrice" class="lbl widthSize26_per rightAlign">Total Price:</label>
+                    <input type="number" id="txtTotalPrice" name="txtTotalPrice" readonly="readonly" class="k-numerictextbox" placeholder="Total Price" validationmessage="Please enter Total Price" />
+                    <button id="btnInterrestPercent" class="k-button"></button>
+                </li>
+
+                <li class="">
+
+                    <label for="cmbSaleType" class="lbl widthSize14_per rightAlign">Sale Mode:</label>
+                    <input id="cmbSaleType" value="" placeholder="Sale Mode" />
+
+                    <label for="txtOutstanPrice" class="lbl widthSize26_per rightAlign">Outstanding Amount:</label>
+                    <input type="number" id="txtOutstanPrice" name="txtTotalPrice" readonly="readonly" class="k-numerictextbox" placeholder="Outstanding Amount" />
+
+                </li>
+                <li></li>
+                <li>
+                    <input type="hidden" id="hdnSaleId" value="0" />
+                    <input type="hidden" id="hdnPrantId" value="0" />
+                    <input type="hidden" id="hdnFlag" value="0" />
+                    <input type="hidden" id="txtNetPrice" value="0" />
+                </li>
+                <li class="status"></li>
+            </ul>
+           
+        </div>
+         <hr />
+            <label for="btnSaveAsBook" class="lbl widthSize15_per rightAlign"></label>
+        @*  <button id="btnSave" class="k-button" type="submit">Save</button>*@
+        <button id="btnSaveAsBook" class="btnRadius" type="submit">Save as Booked</button>
+
+        <label for="btnFinalSubmitPrepaid" class="lbl widthSize15_per rightAlign"></label>
+        <button id="btnFinalSubmitPrepaid" class="btnRadius" type="submit" style="display: none">Submit</button>
+
+            &nbsp;&nbsp;
+                    <button id="btnClearAll" class="btnRadius" onclick="saleDetailsHelper.ClearAllSaleDetailsForm()">Clear All</button>
+            &nbsp;&nbsp;
+    </div>
+</div>
+

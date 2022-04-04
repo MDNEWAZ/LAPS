@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Replacement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Replacement/Replacement.js")
+<div id="mainDiv" class="mainDiv">
+    <div class="divDetails">
+        <h2 class="k-header centerAlign">Warranty Replacement </h2>
+
+       @* <div class="LeftDivSummary">
+        </div>*@
+
+        <div class="CenterOfDiv" >
+           
+            @Html.Partial("~/Views/Replacement/_InformationForReplacement.cshtml")
+           
+            @Html.Partial("~/Views/Replacement/ProductInfoForReplacement.cshtml")
+           
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
+      
+
+        <div id="popupReplacementDetails" class="displayNone">
+            @Html.Partial("ReplacementDetails")
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+<br />
+<div class="displayNone">
+         @Html.Partial("_ReplacementSummary")
+</div>
+   
+
+<div class="centerAlign"> <button id="btnClearAllReplacement" class="k-button"><span class="k-icon k-i-refresh"></span>Clear All</button></div>
+ 
+<div id="ItemsOldSerialNoPopupwindow" class="divDetails">
+    <ul id="ulOldSLNo">
+    </ul>
+    <div class="centerAlign"><button type="button" class="k-button" id="btnCloseOldSL"><span class="k-i-cancel"></span>Close</button></div>
+</div>
+
+<style type="text/css">
+    .k-edit {
+        background-repeat: no-repeat;
+    }
+</style>

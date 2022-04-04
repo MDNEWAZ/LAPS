@@ -1,0 +1,40 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Replacement/ReplacementForCustomerService/ReplacementDetailsCs.js")
+
+<div class="divDetails CenterOfDiv k-block" id="replacementCsDetailsDiv">
+
+    <h2 class="k-header centerAlign">Replacement (Customer Service)</h2>
+
+    <ul>
+        <li>
+            <input type="hidden" id="hdnReplacementCsId" />
+        </li>
+
+        <li>
+            <label for="BranchId" class="lbl lblTextArea widthSize30_per rightAlign">Branch Code:</label>
+            <input id="cmbBranch" name="BranchId" placeholder="Branch Code" required validationmessage="Required" />
+        </li>
+        <li>
+            <label for="PackageName" class="lbl lblTextArea widthSize30_per rightAlign">Package:</label>
+            <input id="cmbPackage" name="PackageName" placeholder="Package" required validationmessage="Required" />
+        </li>
+
+        <li>
+            <label for="ReplacementDate" class="lbl lblTextArea widthSize30_per rightAlign">Replacement Date:</label>
+            <input id="txtReplacementDate" name="ReplacementDate" placeholder="Replacement Date" required validationmessage="Required" />
+        </li>
+        <li>
+            <div id="gridProductItemsInfo"></div>
+        </li>
+        <li class="accept ">@*centerAlign*@
+            <label for="" class="lbl lblTextArea widthSize30_per rightAlign"></label>
+            <button id="btnSaveReplacementCs" class="k-button" type="button" onclick="">Save</button>@* <span class="k-icon k-i-pencil"></span>*@
+            &nbsp;&nbsp;
+                    <button id="btnClear" class="k-button">Clear</button>
+
+        </li>
+
+        <li class="status"></li>
+
+    </ul>
+    
+</div>

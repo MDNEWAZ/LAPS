@@ -1,0 +1,60 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Patient/PatientDetails.js");
+
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]"> Patient Details</legend>
+
+        <div id="PatientDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <input id="hdnPatientId" type="hidden" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Patient Name:</label>
+                    <input id="txtPatientName" name="PatientName" validationmessage="Please input a Name" placeholder="Patient Name" required="required" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Reg No:</label>
+                    <input id="txtPatientRegNo" name="PatientRegNo" validationmessage="Please Select Your Registration Number" placeholder="Patient Reg No" required="required" />
+                </li>
+
+                <li>
+                    @*1=Male, 2=Female, 3=Other*@
+                    <label for="rdoGender" class="lbl widthSize16_per">Gender:</label>
+                    <input type="radio" name="rdoGender" id="rdoMale" value="1" /> Male
+                    <input type="radio" name="rdoGender" id="rdoFemale" value="2" />Female
+                    <input type="radio" name="rdoGender" id="rdoOther" value="3" checked="checked" />Other
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Patient Address:</label>
+                    <input id="txtPatientAddress" name="PatientAddress" validationmessage="Please input a Address" placeholder="Patient Address" required="required" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Reg No:</label>
+                    <input id="txtNationalId" name="NationalId" validationmessage="Please Select Your National Id Number" placeholder="Patient National Id" required="required" />
+                </li>
+                <li>
+                    <label for="DepartmentName" class="lbl widthSize20_per">Department Name:</label>
+                    <input id="txtDepartmentName" name="DepartmentName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-dropdown" placeholder="Department Name" required validationmessage="Please enter valid Department Name" />
+                </li>
+                <li>
+                    <label for="DoctorName" class="lbl widthSize20_per">Doctor Name:</label>
+                    <input id="txtDoctorName" name="DoctorName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-dropdown" placeholder="Doctor Name" required validationmessage="Please enter Doctor Name"/>
+                </li>
+                <li>
+                    <label for="AppointmentDate" class="lbl widthSize20_per">Appointment Date</label>
+                    <input type="date" id="txtAppointmentDate" name="AppointmentDate" validationmessage="Please Select   a date" placeholder="Appointment Date" required="required" />
+                </li>
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+    </fieldset>
+</div>
+
+

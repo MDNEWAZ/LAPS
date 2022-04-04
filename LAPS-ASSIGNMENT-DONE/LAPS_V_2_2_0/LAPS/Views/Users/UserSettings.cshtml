@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "User Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Core/Users/UserSettings.js")
+
+<div class="mainDiv">
+
+    <h2 class="k-header">User Settings</h2>
+    @Html.Partial("_UserUpload")
+    <div class="clear"></div>
+
+    @Html.Partial("_UserSummary")
+    @Html.Partial("_UserDetails")
+    <div class="clear"></div>
+</div>
+

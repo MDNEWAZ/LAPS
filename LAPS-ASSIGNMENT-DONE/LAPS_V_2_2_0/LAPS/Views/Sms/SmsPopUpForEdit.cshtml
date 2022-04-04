@@ -1,0 +1,23 @@
+﻿<div class="divDetails centerAlign">
+    <input type="hidden" id="smsId"/>
+    <ul>
+        <li>
+            <label>Branch Code:</label>
+            <input type="text" class="k-textbox" id="txtBranchCode" />
+        </li>
+        <li>
+            <label>Package:</label>
+            <input type="text" class="k-textbox" id="txtPackage" />
+        </li>
+        <li>
+            <label>Mobile #1:</label>
+            <input type="text" class="k-textbox" id="txtMobileNo" />
+        </li>
+        <li>
+            <label></label>
+            <button id="smsEditBtn" class="k-button" onclick="SmsDetailsHelper.UpdateSms()">Update</button>
+            <button id="smsEditCloseBtn" class="k-button" onclick="SmsDetailsHelper.ClosePopUp()">Close</button>
+        </li>
+    </ul>
+   
+</div>

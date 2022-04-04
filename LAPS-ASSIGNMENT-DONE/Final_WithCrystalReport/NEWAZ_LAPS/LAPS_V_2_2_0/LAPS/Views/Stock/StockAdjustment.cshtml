@@ -1,0 +1,57 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockAdjustment.js")
+
+
+<div id="productStockAdjustmentDiv">
+    <div id="" class="divDetails">
+        <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+            <legend class="k-fontSize[15]">+</legend>
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnModelIdStock" />
+                    <input type="hidden" id="hdnFlagStock" />
+                    <input type="hidden" id="hdnBranchId" />
+
+                    <label for="cmbModelStock" class="required lbl widthSize7_per rightAlign">Package:</label>
+                    <input type="text" id="cmbModelStockAdjustment" name="cmbModelStock" class="k-textbox" maxlength="50" placeholder="Product Model" />
+                    
+                    <label for="BranchName" class="required lbl widthSize15_per rightAlign" id="lblBranchName">Branch Name:</label>
+                    <input type="text" id="txtBranchName" name="BranchName" class="k-textbox" maxlength="50" placeholder="Branch Name" />
+
+                    @*<label for="txtNameStock" class="required lbl widthSize7_per rightAlign">Name:</label>
+                    <input type="text" id="txtNameStockAdj" name="txtNameStock" maxlength="50" class="k-textbox" placeholder="Product Name" />*@
+
+                   @* <label for="txtQuantityStock" class="lbl widthSize7_per rightAlign">Quantity:</label>
+                    <input type="text" id="txtQuantityStock" pattern="[a-zA-Z0-9 ]+" maxlength="50" name="txtCapacity" class="k-textbox" />
+*@
+
+
+                </li>
+
+
+                @*   @Html.Partial("StockProductItems")*@
+                <li>
+                    <fieldset>
+                        <legend>Product Stock Adjustment</legend>
+                        <div id="gridStockAdjustment"></div>
+                    </fieldset>
+
+                </li>
+
+
+                @*  <li>
+                    <label for="chkIsActiveStock" class="lbl widthSize20_per rightAlign">Is Active:</label>
+                    <input type="checkbox" id="chkIsActiveStock" name="IsActive" class="k-checkbox" />
+                </li>*@
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit" onclick="stockAdjustmentManager.SaveStockAdjustment()">Save</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="stockAdjustmentHelper.ClearStockAdjustmentForm();">Clear</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </fieldset>
+    </div>
+</div>
+
+
+

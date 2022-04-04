@@ -1,0 +1,95 @@
+﻿<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]"> Teacher Details</legend>
+
+        <div id="TeacherDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <input id="hdnTeacherId" type="hidden" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Teacher Name:</label>
+                    <input type="text" class="k-textbox" id="txtTeacherName" name="TeacherName" title="Please Select Your Name" required="required" />
+
+                </li>
+                
+                <li>
+                    <label class="lbl widthSize20_per">Teacher Father's Name:</label>
+                    <input type="text" class="k-textbox" id="txtTeacherFatherName" name="TeacherFatherName" title="Please Select Your Father Name" required="required" />
+
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Teacher Mother's Name:</label>
+                    <input type="text" class="k-textbox" id="txtTeacherFatherName" name="TeacherMothersName" title="Please Select Your Mother Name" required="required" />
+
+                </li>
+                
+                <li>
+                    <label for="cars">Choose a car:</label>
+                    <select name="cars" id="cars">
+                        <option value="Architecture">Architecture</option>
+                        <option value="Computer engineer">Computer engineer</option>
+                        <option value="Leturature">Leturature</option>
+                        <option value="Language">Language</option>
+                    </select>
+                    <br>
+                    <br>
+                </li>
+                <li>
+                <label class="lbl widthSize20_per">Subject:</label>
+                <input type="hidden" id="hdnBranchId" value="0" />
+                <input id="cmbSubjectName" name="Subject" validationmessage="Please Select Subject Name" required="required" />
+                </li>
+
+                
+
+
+
+                <li>
+                    @*1=Male, 2=Female, 3=Other*@
+                    <label for="rdoGender" class="lbl widthSize20_per">Gender:</label>
+                    <input type="radio" name="rdoGender" id="rdoMale" value="1" /> Male
+                    <input type="radio" name="rdoGender" id="rdoFemale" value="2" />Female
+                    
+                </li>
+
+             
+
+
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+                <li>
+                    <div id="StudentEducationInfoDetailsDiv" class="divDetails">
+
+                    </div>
+                </li>
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status"></li>
+
+
+
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+    </fieldset>
+
+</div>
+
+
+

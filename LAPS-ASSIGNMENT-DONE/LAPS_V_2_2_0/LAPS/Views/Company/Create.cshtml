@@ -1,0 +1,107 @@
+﻿@model eAzolution.CoreService.Company
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Company</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CompanyName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CompanyName)
+            @Html.ValidationMessageFor(model => model.CompanyName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Address)
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Phone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Phone)
+            @Html.ValidationMessageFor(model => model.Phone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Fax)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Fax)
+            @Html.ValidationMessageFor(model => model.Fax)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FullLogoPath)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FullLogoPath)
+            @Html.ValidationMessageFor(model => model.FullLogoPath)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PrimaryContact)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PrimaryContact)
+            @Html.ValidationMessageFor(model => model.PrimaryContact)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Flag)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Flag)
+            @Html.ValidationMessageFor(model => model.Flag)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FiscalYearStart)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FiscalYearStart)
+            @Html.ValidationMessageFor(model => model.FiscalYearStart)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MotherId, "ParentCompany")
+        </div>
+       @* <div class="editor-field">
+            @Html.DropDownList("MotherId", String.Empty)
+            @Html.ValidationMessageFor(model => model.MotherId)
+        </div>*@
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+        <span id="spnSignupButton" onclick="createUser();"><input type="button" id="btnSignup" /><a href="#" id="lnkSignup">Sign up</a></span>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

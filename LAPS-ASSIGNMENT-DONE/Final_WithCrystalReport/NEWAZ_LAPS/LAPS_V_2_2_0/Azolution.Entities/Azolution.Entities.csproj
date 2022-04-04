@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD1A0FFF-AF60-4056-ABA5-F5F7E712E34E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Azolution.Entities</RootNamespace>
+    <AssemblyName>Azolution.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\OrganogramTree.cs" />
+    <Compile Include="Core\AccessControl.cs" />
+    <Compile Include="Core\Company.cs" />
+    <Compile Include="Core\Employee.cs" />
+    <Compile Include="Core\Group.cs" />
+    <Compile Include="Core\GroupMember.cs" />
+    <Compile Include="Core\GroupPermission.cs" />
+    <Compile Include="Core\Menu.cs" />
+    <Compile Include="Core\Module.cs" />
+    <Compile Include="Core\NotificationInfo.cs" />
+    <Compile Include="Core\SmsNotificationInfo.cs" />
+    <Compile Include="Core\PasswordHistory.cs" />
+    <Compile Include="Core\SystemSettings.cs" />
+    <Compile Include="Core\Users.cs" />
+    <Compile Include="Core\WFAction.cs" />
+    <Compile Include="Core\WFState.cs" />
+    <Compile Include="DTO\BranchInfo.cs" />
+    <Compile Include="DTO\CollectionDto.cs" />
+    <Compile Include="DTO\CollectionInfo.cs" />
+    <Compile Include="DTO\CommissionAmount.cs" />
+    <Compile Include="DTO\CompanyBranchInfo.cs" />
+    <Compile Include="DTO\CompanyHeirarchyPath.cs" />
+    <Compile Include="DTO\Customer_Package.cs" />
+    <Compile Include="DTO\EducationDetail.cs" />
+    <Compile Include="DTO\Experience.cs" />
+    <Compile Include="DTO\GeneralSms.cs" />
+    <Compile Include="DTO\StockGraphAndChart.cs" />
+    <Compile Include="DTO\SalePackageInfo.cs" />
+    <Compile Include="DTO\SalesRepCommission.cs" />
+    <Compile Include="DTO\SaleSummary.cs" />
+    <Compile Include="DTO\SMS.cs" />
+    <Compile Include="DTO\SmsTypes.cs" />
+    <Compile Include="DTO\WaitingForDiscountSummaryDTO.cs" />
+    <Compile Include="HumanResource\Bank.cs" />
+    <Compile Include="HumanResource\BankBranch.cs" />
+    <Compile Include="HumanResource\Branch.cs" />
+    <Compile Include="HumanResource\DashBoard.cs" />
+    <Compile Include="HumanResource\Department.cs" />
+    <Compile Include="HumanResource\Designation.cs" />
+    <Compile Include="HumanResource\Doctor.cs" />
+    <Compile Include="HumanResource\DoctorEducationInfo.cs" />
+    <Compile Include="HumanResource\NewCustomer.cs" />
+    <Compile Include="HumanResource\NewProduct.cs" />
+    <Compile Include="HumanResource\Patient.cs" />
+    <Compile Include="HumanResource\PersonalDetails.cs" />
+    <Compile Include="HumanResource\ProductModel.cs" />
+    <Compile Include="HumanResource\Products.cs" />
+    <Compile Include="HumanResource\ProductType.cs" />
+    <Compile Include="HumanResource\Student.cs" />
+    <Compile Include="HumanResource\StudentEducationInfo.cs" />
+    <Compile Include="HumanResource\Teachers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\AuditTrailsReportEntity.cs" />
+    <Compile Include="Report\BranchWiseCollectionReport.cs" />
+    <Compile Include="Report\BranchWiseSaleReport.cs" />
+    <Compile Include="Report\CustomerStatusReport.cs" />
+    <Compile Include="Report\PackageWiseSalesReport.cs" />
+    <Compile Include="Report\RCollection.cs" />
+    <Compile Include="Report\RepCommsionReport.cs" />
+    <Compile Include="Report\ReportData.cs" />
+    <Compile Include="Report\ReportParam.cs" />
+    <Compile Include="Report\ReportsParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report\RepresentatorSalesReport.cs" />
+    <Compile Include="Report\SaleReport.cs" />
+    <Compile Include="Report\StockDetailsReport.cs" />
+    <Compile Include="Report\StockSummaryReport.cs" />
+    <Compile Include="Report\TransactionReport.cs" />
+    <Compile Include="Sale\AllType.cs" />
+    <Compile Include="Sale\ArmyGroups.cs" />
+    <Compile Include="Sale\ArmyInfo.cs" />
+    <Compile Include="Sale\Collection.cs" />
+    <Compile Include="Sale\Commission.cs" />
+    <Compile Include="Sale\CreditPeriod.cs" />
+    <Compile Include="Sale\Customer.cs" />
+    <Compile Include="Sale\CustomerInfo.cs" />
+    <Compile Include="Sale\CustomerWithLicenseCode.cs" />
+    <Compile Include="Sale\Discount.cs" />
+    <Compile Include="Sale\DiscountType.cs" />
+    <Compile Include="Sale\Due.cs" />
+    <Compile Include="Sale\Incentive.cs" />
+    <Compile Include="Sale\Installment.cs" />
+    <Compile Include="Sale\Interest.cs" />
+    <Compile Include="Sale\MobileFeature.cs" />
+    <Compile Include="Sale\MobileInfo.cs" />
+    <Compile Include="Sale\MobileBrand.cs" />
+    <Compile Include="Sale\MobileColor.cs" />
+    <Compile Include="Sale\StockInventory.cs" />
+    <Compile Include="Sale\License.cs" />
+    <Compile Include="Sale\LicenseInfo.cs" />
+    <Compile Include="Sale\MonthWiseStockGraph.cs" />
+    <Compile Include="Sale\OperationMode.cs" />
+    <Compile Include="Sale\PaymentReceivedInfo.cs" />
+    <Compile Include="Sale\PendingCollectionChart.cs" />
+    <Compile Include="Sale\PhoneNoSettings.cs" />
+    <Compile Include="Sale\Product.cs" />
+    <Compile Include="Sale\ProductItems.cs" />
+    <Compile Include="Sale\RatingCalculation.cs" />
+    <Compile Include="Sale\ReceivePayment.cs" />
+    <Compile Include="Sale\ReleaseLisenceGenerate.cs" />
+    <Compile Include="Sale\ReplaceItem.cs" />
+    <Compile Include="Sale\Replacement.cs" />
+    <Compile Include="Sale\ReplacementCs.cs" />
+    <Compile Include="Sale\Sale.cs" />
+    <Compile Include="Sale\SaleBySms.cs" />
+    <Compile Include="Sale\SalePriceCalculation.cs" />
+    <Compile Include="Sale\SaleRollback.cs" />
+    <Compile Include="Sale\SalesItem.cs" />
+    <Compile Include="Sale\SalesItemDetails.cs" />
+    <Compile Include="Sale\SalesItemInfoForGetData.cs" />
+    <Compile Include="Sale\SalesItemInformation.cs" />
+    <Compile Include="Sale\SalesParam.cs" />
+    <Compile Include="Sale\SalesRepresentator.cs" />
+    <Compile Include="Sale\SalesRepresentatorType.cs" />
+    <Compile Include="Sale\SalesSMS.cs" />
+    <Compile Include="Sale\SimplePaymentCollection.cs" />
+    <Compile Include="Sale\SmsReceive.cs" />
+    <Compile Include="Sale\SMSRecieved.cs" />
+    <Compile Include="Sale\SmsSend.cs" />
+    <Compile Include="Sale\SMSSent.cs" />
+    <Compile Include="Sale\Stock.cs" />
+    <Compile Include="Sale\StockAdjustment.cs" />
+    <Compile Include="Sale\StockBalance.cs" />
+    <Compile Include="Sale\UnRecognizeSale.cs" />
+    <Compile Include="Sale\WaitingForDiscount.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

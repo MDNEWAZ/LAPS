@@ -1,0 +1,90 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Reports/ReportParam.js")
+<div id="divReportParam">
+    <div class="leftDiv widthSize32_per">
+             <fieldset>
+                 <legend>Employment</legend>
+                 <ul>
+                     <li style="display: none;">
+                         <label for="CompanyNameDetails" class="lbl widthSize30_per">Company Name:</label>
+                         <input type="text" id="cmbCompanyNameDetails" disabled="disabled" name="CompanyNameDetails" validationMessage="Please Select Company" required="required" />
+                     </li>
+                     <li style="display: none;">
+                         <label for="BranchNameDetails" class="lbl widthSize30_per">Branch Name:</label>
+                         <input type="text" id="cmbBranchDetails" disabled="disabled" name="BranchNameDetails" validationMessage="Please Select Branch Name" required="required" />
+                     </li>
+                     <li>
+                         <label for="DepartmentNameDetails" class="lbl widthSize30_per">Department Name:</label>
+                         <input type="text" id="cmbDepartmentNameDetails" name="DepartmentNameDetails" validationMessage="Please Select Department Name"/>
+                     </li>
+                     <li>
+                         <label for="EmployeeNameDetails" class="lbl widthSize30_per">Employee:</label>
+                         <input type="text" id="cmbEmployee" name="EmployeeNameDetails" validationMessage="Please Select an Employee"/>
+                     </li>
+                     <li>
+                         <label for="EmployeeType" class="lbl widthSize30_per">Employee Type:</label>
+                         <input type="text" id="cmbEmployeeType" name="EmployeeType" />
+                     </li>
+                 </ul>
+             </fieldset>
+         </div>
+         <div class="leftDiv widthSize32_per">
+             <fieldset>
+                 <legend>Personal</legend>
+                 <ul>
+                     <li>
+                         <label for="rdoGender" class="lbl widthSize30_per">Gender:</label>
+                         <input type="radio" name="rdoGender" id="rdoAll" value="-1" checked="checked"/>All
+                         <input type="radio" name="rdoGender" id="rdoMale" value="1"/>Male
+                         <input type="radio" name="rdoGender" id="rdoFeMale" value="0" />Female 
+                     </li>
+                     <li>
+                         <label for="rdoMeritialStatus" class="lbl widthSize30_per">Meritial Status:</label>
+                         <input type="radio" name="rdoMeritialStatus" id="rdoMariedAll" value="-1" checked="checked"/>All
+                         <input type="radio" name="rdoMeritialStatus" id="rdoMaried" value="1"/>Maried
+                         <input type="radio" name="rdoMeritialStatus" id="rdoSingle" value="0" />Single 
+                     </li>
+             
+                     <li>
+                         <label for="Districts" class="lbl widthSize30_per">District:</label>
+                         <input type="text" id="txtDistrict" class="k-textbox" name="Districts" />
+                     </li>
+                     <li>
+                         <label for="BloodGroup" class="lbl widthSize30_per">Blood Group:</label>
+                         <input type="text" id="txtBloodGroup" class="k-textbox" name="BloodGroup" />
+                     </li>
+                     <li>
+                         <label for="Height" class="lbl widthSize30_per">Height:</label>
+                         <input type="text" id="txtHeight" class="k-textbox" name="Height" />
+                     </li>
+                 </ul>
+             </fieldset>
+         </div>
+
+         <div class="leftDiv widthSize32_per">
+             <fieldset>
+                 <legend>Service</legend>
+                 <ul>
+                      <li>
+                 <label for="RetirementFrom" class="lbl widthSize30_per">Retirement From:</label>
+                 <input type="text" id="txtRetirementFrom" name="RetirementFrom" />
+             </li>
+             <li>
+                 <label for="RetirementTo" class="lbl widthSize30_per">Retirement To:</label>
+                 <input type="text" id="txtRetirementTo" name="RetirementTo" />
+             </li>
+             
+             <li>
+                 <label for="AgeRange" class="lbl widthSize30_per">Age From:</label>
+                 <input type="text" id="txtAgeRangeFrom" class="k-textbox" name="AgeRange" placeholder="Age From required Number Field" />
+             </li>
+             <li>
+                 <label for="AgeRange" class="lbl widthSize30_per">Age To:</label>
+                 <input type="text" id="txtAgeRangeTo" class="k-textbox" name="AgeRange" placeholder="Age To required Number Field" />
+             </li>
+                 </ul>
+             </fieldset>
+         </div>
+         
+         <div class="clear"></div>
+</div>

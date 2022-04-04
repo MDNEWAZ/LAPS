@@ -1,0 +1,25 @@
+﻿#ImageTemplate {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.divTemplate {
+    width: 100%;
+    height: auto;
+    text-align: right;
+   
+    xmargin-top: -51px;
+}
+.k-block {
+    background: #ffffff;
+    color: #000000;
+}
+.k-i-pencil{
+     cursor: pointer;
+ }
+.k-dropzone {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title =  "PersonalSettings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/eAzolution/Sales/Person/PersonSettings.js"></script>
+<h2>PersonalSettings</h2>
+<button id="btnPrint" class="k-button" type="submit">Print Person Info</button>
+<div class="mainDiv">
+    <h2 class="k-header">Personal Details Settings</h2>
+    @Html.Partial("~/Views/PersonalDetails/_PersonalDetails.cshtml")
+    @Html.Partial("~/Views/PersonalDetails/_PersonalSummary.cshtml")
+    <div class="clear"></div>
+   
+</div>

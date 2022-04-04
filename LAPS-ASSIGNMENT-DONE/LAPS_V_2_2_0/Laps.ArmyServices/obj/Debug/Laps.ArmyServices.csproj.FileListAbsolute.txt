@@ -1,0 +1,13 @@
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Laps.ArmyServices.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Laps.ArmyServices.pdb
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Azolution.Entities.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Laps.ArmyDataServices.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Utilities.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Azolution.Common.DataService.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Azolution.Common.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Newtonsoft.Json.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Azolution.Entities.pdb
+E:\LAPS_V_2_2_0\Laps.ArmyServices\bin\Debug\Laps.ArmyDataServices.pdb
+E:\LAPS_V_2_2_0\Laps.ArmyServices\obj\Debug\Laps.ArmyServices.csprojResolveAssemblyReference.cache
+E:\LAPS_V_2_2_0\Laps.ArmyServices\obj\Debug\Laps.ArmyServices.dll
+E:\LAPS_V_2_2_0\Laps.ArmyServices\obj\Debug\Laps.ArmyServices.pdb

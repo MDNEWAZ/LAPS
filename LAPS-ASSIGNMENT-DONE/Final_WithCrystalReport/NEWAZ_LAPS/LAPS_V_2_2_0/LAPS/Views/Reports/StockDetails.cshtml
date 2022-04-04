@@ -1,0 +1,49 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamSettings.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/Stock/StockDetailsSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/Stock/StockDetailsDetails.js")
+
+
+@{
+    ViewBag.Title = "Stock Details Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<div class="k-block">
+    <div class="k-header">Stock Details Report</div>
+    <div class="centerAlign">
+        <div>
+
+            <div class="widthSize30_per leftDiv">
+                <label>Zone:</label>
+                <input type="text" id="cmbZone" />
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Region:</label>
+                <input type="text" id="cmbRegion" />
+            </div>
+            <div class="widthSize35_per leftDiv">
+                <label>Branch:</label>
+                <input type="text" id="cmbBranch" />
+            </div>
+        </div>
+        <div style="margin-top: 15px">
+            <div class="widthSize30_per leftDiv">
+                <label>Stock Typ:</label>
+                <input type="text" id="cmbStockType" />
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>From Date:</label>
+                <input type="text" id="txtFromDateTime" placeholder="From date" />
+
+            </div>
+            <div class="widthSize35_per leftDiv">
+                <label>To Date:</label>
+                <input type="text" id="txtToDateTime" placeholder="To date" />
+            </div>
+            <button class="k-button" id="btnStockShowReport">Show Report</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

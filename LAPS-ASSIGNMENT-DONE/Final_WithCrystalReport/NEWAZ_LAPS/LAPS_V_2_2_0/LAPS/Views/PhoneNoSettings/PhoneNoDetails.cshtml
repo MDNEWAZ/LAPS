@@ -1,0 +1,31 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/PhoneNoSettings/PhoneNoDetails.js")
+
+
+<div class="rightDiv k-block">
+
+    <h2 class="k-header centerAlign">Phone No Details</h2>
+
+    <div id="phoneDetailsDiv" class="divDetails">
+
+        <ul>
+            <li>
+                <input type="hidden" id="hdnPhoneSettingsId" value="0" />
+            </li>
+            <li>
+                <label for="PhoneNumber" class="lbl widthSize25_per">Phone Number:</label>
+                <input type="text" id="txtPhoneNumber" name="PhoneNumber" class="k-textbox" placeholder="Phone Number" required="required" />
+            </li>
+            <li>
+                <label for="IsActive" class="lbl widthSize25_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+            <li class="accept">
+                <button id="btnSavePhoneNo" class="k-button" type="submit" onclick="">Save</button>
+                &nbsp;&nbsp;
+                <button id="btnClear" class="k-button" onclick="">Clear</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>

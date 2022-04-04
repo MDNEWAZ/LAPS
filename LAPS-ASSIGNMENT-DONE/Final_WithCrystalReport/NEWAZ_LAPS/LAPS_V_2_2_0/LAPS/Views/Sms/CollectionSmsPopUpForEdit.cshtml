@@ -1,0 +1,28 @@
+﻿<div class="divDetails centerAlign">
+    <input type="hidden" id="smsId" />
+    <input type="hidden" id="txthdnStatus" />
+    <ul>
+        <li>
+            <label>SMS Recieve Date:</label>
+            <input type="text" class="k-textbox" id="txtRecievedDate" readonly="readonly" />
+        </li>
+        <li>
+            <label>Form:</label>
+            <input type="text" class="k-textbox" id="txtFromMobileNumber" readonly="readonly" />
+        </li>
+        <li>
+            <label>Status:</label>
+            <input type="text" class="k-textbox" id="txtStatus" readonly="readonly" />
+        </li>
+        <li>
+            <label>SMS Text:</label>
+            <textarea class="k-textbox" id="txtSMSText" ></textarea>
+        </li>
+        <li>
+            <label></label>
+            <button id="smsEditBtn" class="k-button" onclick="CollectionSmsDetailsHelper.UpdateSms()">Update</button>
+            <button id="smsEditCloseBtn" class="k-button" onclick="CollectionSmsDetailsHelper.ClosePopUp()">Close</button>
+        </li>
+    </ul>
+
+</div>

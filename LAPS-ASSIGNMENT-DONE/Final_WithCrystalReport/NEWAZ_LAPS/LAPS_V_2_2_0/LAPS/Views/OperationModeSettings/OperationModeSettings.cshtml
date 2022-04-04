@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Operation Mode Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/OperationModeSettings/OperationModeSettings.js")
+
+<h2 class="k-block k-header centerAlign">Operation Mode Settings</h2>
+
+
+<div id="mainDiv">
+    <div class="k-block CenterOfDiv">
+        <div class="divDetails" id="divOperationMode">
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnOperationModeId" value="0"/>
+
+                    <input type="checkbox" class="k-checkbox" id="chkAutomatic" name="Automation" />Automatic
+                </li>
+                <li>
+                    <ul class="operation displayNone" id="autoOperationMode">
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkAutoSale" />Sale
+                        </li>
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkAutoCollection"/>Collection
+                        </li>
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkAutoInventoryChecking" />Inventory Checking
+                        </li>
+                    </ul>
+                </li>
+                
+                 <li>
+                 
+                    <input type="checkbox" class="k-checkbox" id="chkManual" name="Automation" />Manual
+                </li>
+                <li>
+                    <ul class="operation displayNone" id="manualOperationMode">
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkManualSale" />Sale
+                        </li>
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkManualCollection"/>Collection
+                        </li>
+                        <li>
+                            <input type="checkbox" class="k-checkbox" id="chkManualInventoryChecking" />Inventory Checking
+                        </li>
+                    </ul>
+                </li>
+                
+                  <li class="accept">
+                    <button id="btnSaveOperationMode" class="k-button" type="button">Save</button>
+                    &nbsp;&nbsp;
+                      <button id="btnClear" class="k-button" type="button">Clear</button>
+                      
+                           &nbsp;&nbsp;
+                    <button id="btnRefresh" class="k-button" type="button">Refresh</button>
+                  </li>
+                <li class="status"></li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+</div>

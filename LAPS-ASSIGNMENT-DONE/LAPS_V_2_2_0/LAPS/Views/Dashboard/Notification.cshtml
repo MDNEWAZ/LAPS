@@ -1,0 +1,61 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Core/Dashboard/Notification.js")
+
+
+@*SMS FAILED*@
+<div id="noti_Container_SMSFail" class="noti_Container">
+    <b>Fail</b>
+    <img id="noti_Container_main_SMSFail" src="~/Images/noti2.png" style="cursor: pointer;"/>
+    <div id="noti_Container_bubble_SMSFail" class="noti_bubble"></div>
+    <ul id="notificationMenu_SMSFail" class="notifications">
+        <li class="titlebar">
+            <span class="title centerAlign">SMS Failure Notifications</span>
+            @*<span class="settings"><i class="icon-cog"></i></span>*@
+        </li>
+        <div id="notifications_SMSFail" class="notifbox">
+
+
+        </div>
+        <li class="seeall">
+            <button id="SmsFailNotiClose" type="button" class="k-button" name="Close">Close</button>
+        </li>
+    </ul>
+</div>
+
+@*SMS SENT*@
+<div id="noti_Container_SMSSent" class="noti_Container">
+    <b>Sent</b>
+    <img id="noti_Container_main_SMSSent" src="~/Images/noti2.png" style="cursor: pointer;" />
+    <div id="noti_Container_bubble_SMSSent" class="noti_bubble"></div>
+    <ul id="notificationMenu_SMSSent" class="notifications">
+        <li class="titlebar">
+            <span class="title centerAlign">SMS Sent Notifications</span>
+            @*<span class="settings"><i class="icon-cog"></i></span>*@
+        </li>
+        <div id="notifications_SMSSent" class="notifbox">
+
+        </div>
+        <li class="seeall">
+            <button id="SmsSentNotiClose" type="button" class="k-button" name="Close">Close</button>
+        </li>
+    </ul>
+</div>
+
+@*Unrecognized*@
+<div id="noti_Container_UnRecognize" class="noti_Container">
+    <b>UnRec</b>
+    <img id="noti_Container_main_UnRecognize" src="~/Images/noti2.png" style="cursor: pointer;" />
+    <div id="noti_Container_bubble_UnRecognize" class="noti_bubble"></div>
+    <ul id="notificationMenu_UnRecognize" class="notifications">
+        <li class="titlebar">
+            <span class="title centerAlign">Unrecognized Notifications</span>
+            @*<span class="settings"><i class="icon-cog"></i></span>*@
+        </li>
+        <div id="notifications_UnRecognize" class="notifbox">
+
+        </div>
+        <li class="seeall">
+            <button id="SmsUnRecognizeClose" type="button" class="k-button" name="Close">Close</button>
+        </li>
+    </ul>
+</div>

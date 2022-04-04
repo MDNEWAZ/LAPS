@@ -1,0 +1,84 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/SmsSettings/SmsSettingsDetails.js")
+
+
+<div class="rightDiv k-block">
+
+    <h2 class="k-header centerAlign">SMS Details</h2>
+
+    <div id="smsDetailsDiv" class="divDetails">
+
+        <ul>
+            <li>
+                <input type="hidden" id="hdnsmsId" value="0" />
+                @*  <input id="lblMessage"   type="text" class="k-textbox"/>*@
+                 <label id="lblMessage" class="lbl widthSize25_per">Full SMS:</label>
+                <label id="lblMessageText" class="lbl widthSize70_per" style="border: 1px solid skyblue"></label>
+                
+                <label id="lblMessage" class="lbl widthSize25_per">SMS Count:</label>
+                <label id="lblMessageCount" class="lbl widthSize70_per"></label>
+            </li>
+            <li>
+                <label for="smsType" class="lbl widthSize25_per">SMS Type:</label>
+                <input id="cmbsmsType" name="smsType" placeholder="SMS Type" required validationmessage="Please Select SMS Type" />
+            </li>
+
+            <li>
+                <label for="Salutation" class="lbl widthSize25_per">Salutation:</label>
+                <input type="text" id="txtSalutation" name="Salutation" class="k-textbox" placeholder="সম্মানিত গ্রাহক" />
+                @*required validationmessage="Please enter Representator ID" *@
+            </li>
+            <li>
+                <label for="Greetings" class="lbl widthSize25_per">Greetings:</label>
+                <input type="text" id="txtGreetings" name="Greetings" class="k-textbox" placeholder="SMART SOLAR পরিবারে স্বাগতম" />
+            </li>
+            <li>
+                <label for="CustomerInfo" class="lbl widthSize25_per">Customer Info:</label>
+                <input type="text" id="txtCustomerInfo" name="CustomerInfo" class="k-textbox" placeholder="আপনার গ্রাহক ID No" />
+            </li>
+            <li>
+                <label for="DueInfo" class="lbl widthSize25_per">Due Info:</label>
+                <input type="text" id="txtDueInfo" name="DueInfo" class="k-textbox" placeholder="মোট বকেয়া Amount" />
+            </li>
+            <li>
+                <label for="PaidInfo" class="lbl widthSize25_per">Paid Info:</label>
+                <input type="text" id="txtPaidInfo" name="PaidInfo" class="k-textbox" placeholder="গ্রহনকৃত ডাউনপেমেন্ট/কিস্তি Amount" />
+            </li>
+            <li>
+                <label for="Unit" class="lbl widthSize25_per">Unit:</label>
+                <input type="text" id="txtUnit" class="k-textbox" name="Unit" placeholder="/= টাকা" />
+            </li>
+            <li>
+                <label for="CodeInfo" class="lbl widthSize25_per">Code Info:</label>
+                <input type="text" id="txtCodeInfo" class="k-textbox" name="CodeInfo" placeholder="ডাউনপেমেন্ট /আপনার Release Code " />
+            </li>
+
+            <li>
+                <label for="Request" class="lbl widthSize25_per">Request:</label>
+                <input type="text" id="txtRequest" class="k-textbox" name="Request" placeholder="সময়মত আপনার কিস্তি পরিশোধ করে সিস্টেমটি সচল রাখুন" />
+            </li>
+            
+            <li>
+                <label for="Thanking" class="lbl widthSize25_per">Thanking:</label>
+                <input type="text" id="txtThanking" class="k-textbox" name="Thanking" placeholder="সমুদয় অর্থ পরিশোধের জন্য ধন্যবাদ।" />
+            </li>
+              <li>
+                <label for="GeneralSms" class="lbl widthSize25_per">General SMS:</label>
+                 @* <input type="text" id="txtGeneralSms" name="GeneralSms" placeholder="" />*@
+                  <textarea  id="txtGeneralSms" class="k-textbox" name="GeneralSms"></textarea>
+            </li>
+            <li>
+                <label for="IsActive" class="lbl widthSize25_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+
+
+            <li class="accept">
+                <button id="btnSaveSmsText" class="k-button" type="submit" onclick="">Save</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="">Clear</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>

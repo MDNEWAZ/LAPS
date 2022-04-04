@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Company Bank Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/HumanResource/BankBranch/BankBranchSettings.js")
+
+
+<div class="mainDiv">
+
+    <h1 class="k-header">Company Bank Settings</h1>
+
+    <div id="tabBankBranchSettings">
+        <ul>
+            <li class="k-state-active">Company Account Settings</li>
+            <li>Bank Settings</li>
+        </ul>
+        <div>
+              @Html.Partial("~/Views/Payroll/CompanyBankSettings/CompanyBankSettings.cshtml")
+        </div>
+
+        <div>
+            @Html.Partial("BankBranchSummary")
+            @Html.Partial("BankBranchDetails")
+
+            <div id="popupWindowBankDetails" class="displayNone">
+                @Html.Partial("BankDetails")
+            </div>
+            
+               <div class="clear"></div>
+        </div>
+
+    </div>
+
+
+
+ 
+</div>

@@ -1,0 +1,46 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Replacement/ReplacementProductInfo.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Product/ProductDetails.js")
+
+<div class="">
+    <div id="productDetailsDiv" class="">
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Original Package Information
+            </h2>
+            <ul>
+                <li id="liSaleInvoice" class="displayNone">
+                    <input id="hdnModelIdProInfo" type="hidden" value="0" />
+
+                    <label for="txtInvoiceProInfo" class="required lbl widthSize20_per rightAlign">Sale Invoice:</label>
+                    <input type="text" id="txtInvoiceProInfo" name="ProductCode" maxlength="50" class="k-textbox" placeholder="Sale Invoice no" />
+                    <button id="btnSearchInvoiceProInfo" class="k-button" type="submit" onclick="ReplacementproductInfoManager.FillCustomerProductForm()"><span class="k-icon k-i-search"></span></button>
+                </li>
+                <li>
+
+                    <label for="txtNameProInfo" class="required lbl widthSize20_per rightAlign">Package Name:</label>
+                    <input id="txtNameProInfo" class="k-textbox" disabled="disabled" />
+
+                    <label for="txtSaleDate" class="lbl widthSize25_per rightAlign">Install Date:</label>
+                    <input id="txtInstallDateRe" value="" name="txtSaleDate" placeholder="Install Date" />
+
+                </li>
+
+                <li class="displayNone">
+                    <label for="txtLicenseProInfo" class="lbl widthSize20_per rightAlign">License No:</label>
+                    <input id="txtLicenseProInfo" class="k-textbox" disabled="disabled" />
+
+                    <label for="txtLicenseTypeProInfo" class="lbl widthSize20_per rightAlign">License Type:</label>
+                    <input id="txtLicenseTypeProInfo" class="k-textbox" disabled="disabled" />
+
+                </li>
+                <li></li>
+
+                <li>
+                    @Html.Partial("../Replacement/_ReplacementProductItemInfo")
+                </li>
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>

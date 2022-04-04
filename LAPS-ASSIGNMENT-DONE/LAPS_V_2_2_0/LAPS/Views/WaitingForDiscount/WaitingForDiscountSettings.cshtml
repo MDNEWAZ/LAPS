@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Waiting For Discount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/WaitingForDiscount/WaitingForDiscountSettings.js")
+
+<div class="mainDiv">
+   
+     @Html.Partial("_WaitingForDiscountSummary")
+    
+<div class="clear"></div>
+</div>
+
+<div class="displayNone" id="divCustomerInfo">
+    @Html.Partial("_WaitingForDiscountDetails")
+</div>

@@ -1,0 +1,135 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/SalesRepresentator/SalesRepresentatorDetails.js")
+@*@Scripts.Render("~/Scripts/eAzolution/Sales/IncentiveSettings/IncentiveSettingsSummary.js")*@
+
+
+<div class="rightDiv k-block">
+
+    <h2 class="k-header centerAlign">Sale Representative Details</h2>
+
+    <div id="salesRepDetailsDiv" class="divDetails">
+
+        <ul>
+            <li>
+                <input type="hidden" id="hdnsalesRepId" value="0" />
+
+                <input type="hidden" id="hdnCompanyId" value="0" />
+                <label class="lbl widthSize10_per">Company:</label>
+                <label id="lblCompanyName" class="lbl widthSize30_per"></label>
+
+                <input type="hidden" id="hdnBranchId" value="0" />
+                <label class="lbl widthSize10_per">Branch:</label>
+                <label id="lblBranchName" class="lbl widthSize20_per"></label>
+
+
+                <ul id="ulIdentityPanelOrganogram">
+                    <li>
+                        <b>Organogram tree</b>
+                        <div class="divDetails">
+                            <ul>
+                                <li>
+                                    <label for="search-term" class="lbl lblTextArea widthSize20_per rightAlign">Quick Search:</label>
+                                    <input id="search-term" class="k-textbox" name="search-term" />
+                                </li>
+                            </ul>
+                            @Html.Partial("_Organogram")
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <label for="SalesRepType" class="lbl widthSize30_per">Sale Representative Type:</label>
+                <input id="cmbSalesRepType" name="SalesRepType" placeholder="Representator Type" required validationmessage="Please enter Representative Type" />
+            </li>
+            <li>
+                <label for="SalesRepCode" class="lbl widthSize30_per">Sale Representative Code:</label>
+                <input id="txtSalesRepCode" name="SalesRepCode" placeholder="Representator Code" type="text" class="k-textbox"  />
+                <label for="SalesRepCode" id="lblSalesRepCode" class="lbl widthSize25_per"></label>
+            </li>
+            <li>
+                <label for="SalesRepId" class="lbl widthSize30_per">Sale Representative ID:</label>
+                <input type="text" id="txtSalesRepId" name="SalesRepId" maxlength="100" class="k-textbox" placeholder="Sales Representator Id" disabled="disabled" /> @*required validationmessage="Please enter Representator ID" *@
+            </li>
+            <li>
+                <label for="SalesRepAddress" class="lbl widthSize30_per">Address:</label>
+                <input type="text" id="txtAddress" name="SalesRepAddress" class="k-textbox" placeholder="Address" />
+            </li>
+            <li>
+                <label for="SalesRepSMSMobileNo" class="lbl widthSize30_per">SMS Mobile Number:</label>
+                <input type="text" id="txtSalesRepSMSMobNo" name="SalesRepSMSMobileNo" class="k-textbox" placeholder="01xxxxxxxxx"  />
+            </li>
+            <li>
+                <label for="SalesRepbKashNo" class="lbl widthSize30_per">Bkash Number:</label>
+                <input type="text" id="txtSalesRepbKashNo" name="SalesRepbKashNo" class="k-textbox" placeholder="01xxxxxxxxx"  />
+            </li>
+            <li class="displayNone">
+                <label for="FixedAmount" class="lbl widthSize30_per">Amount:</label>
+                <input type="number" id="txtFixedAmount" maxlength="2000" min="0" name="FixedAmount" />
+            </li>
+
+            <li>
+                <label for="IsActive" class="lbl widthSize30_per">Is SMS Sent:</label>
+                <input type="checkbox" id="chkIsSalesRepSmsSent" name="IsSalesRepSmsSent" class="k-checkbox" />
+            </li>
+            
+            <li class="">
+                <fieldset>
+                    <legend>Incentive Details</legend>
+                    <ul>
+                        <li>
+                            <label for="IsIncentiveActive" class="lbl widthSize30_per">Is Incentive Active:</label>
+                            <input type="checkbox" id="chkIsIncentiveActive" name="IsIncentiveActive" class="k-checkbox" />
+                            &nbsp;&nbsp;
+                            <button type="button" class="k-button" id="btnViewIncentive" value="View">View Incentive Details</button>
+                        </li>
+                    </ul>
+                </fieldset>
+
+            </li>
+         
+            <li class="">
+                <fieldset>
+                    <legend>Commission Details</legend>
+                    <ul>
+                        <li>
+                            <label for="InstallmentSaleCommission" class="lbl widthSize30_per">Installment Sale Commission:</label>
+                            <input type="text" id="txtInsSaleCommission" class="k-textbox" name="InstallmentSaleCommission" readonly="readonly" />
+                        </li>
+
+                        <li>
+                            <label for="CahsSaleCommission" class="lbl widthSize30_per">Cash Sale Commission:</label>
+                            <input type="text" id="txtCahsSaleCommission" class="k-textbox" name="CahsSaleCommission" readonly="readonly" />
+                        </li>
+                        
+                        <li>
+                            <label for="IsCommissionActive" class="lbl widthSize30_per">Is Commission Active:</label>
+                            <input type="checkbox" id="chkIsCommissionActive" name="IsCommissionActive" class="k-checkbox" />
+                        </li>
+
+                    </ul>
+                </fieldset>
+               
+            </li>
+
+            <li>
+                <label for="IsActive" class="lbl widthSize30_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+
+
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="displayNone" id="divIncentiveSummary">
+        @Html.Partial("~/Views/IncentiveSettings/_IncentiveSettingsSummary.cshtml")
+</div>

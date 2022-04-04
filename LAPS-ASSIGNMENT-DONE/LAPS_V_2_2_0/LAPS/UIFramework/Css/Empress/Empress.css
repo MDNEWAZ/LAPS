@@ -1,0 +1,224 @@
+﻿.mainDivRequest
+{
+    width:100%;
+    float: left;
+    padding: 2px;
+    margin:0px;
+    font-family:'Arial';
+    font-size:inherit;
+}
+    .mainDiv ul
+    {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+    }
+    .mainDiv li
+    {
+           margin: 0px 0 0 0;
+          
+
+    }
+
+.LeftDivSummary
+{
+    float: left;
+    padding: 2px;
+    width: 40%;
+    margin-left:20px;
+    border:1px solid gray;
+}
+
+.RightDivDetails
+{
+    float: right;
+    padding: 0px;
+    width: 55%;
+    margin-right:10px;
+   
+}
+
+
+.RightDivDetailsMain 
+{
+
+    float:right;
+    border:solid black 1px;
+    padding: 0px;
+    width: 100%;
+    margin:0px ;
+    height:800px;
+}
+
+
+.SectionWiseDiv
+{
+   width:98%;
+   border:solid black 1px;
+   margin-left:auto;
+   margin-right:auto;
+  
+  
+}
+.LeftSight
+{
+    
+    float: left;
+    padding: 1px;
+    width: 48%;
+    margin-left:1px;
+   
+
+}
+.RighSight
+{
+    float: right;
+    padding: 1px;
+    width:48%;
+    margin-left:1px;
+   
+}
+
+.Detailsfieldset
+{
+   width:auto; 
+   margin-top:20px;
+    margin-left:0px;
+    margin-right:auto;
+ 
+
+}
+
+.VisiblilityLi
+{
+ visibility:hidden;
+
+}
+.labelTitle
+{
+    /*font-family:Arial;
+    font-size:11px;*/
+    width:35%;
+    text-align:left;
+}
+.RegStatusTitle
+{
+    /*font-family:Arial;
+    font-size:11px;*/
+    width:50%;
+    text-align:right;
+}
+.labelText
+{
+    border:1px solid gray;
+    width:50%;
+    text-align:left;
+    font-size:11px;
+  
+    
+}
+.InputCheckboxTitle
+{
+text-align:left;
+width:50%;
+}
+.btnRegister
+{
+  display:none;
+}
+
+.dropDownLabel
+{
+    /*font-family:Arial;
+    font-size:11px;*/
+    width:35%;
+    text-align:right;
+}
+.divDropdown
+{
+    list-style-type: none;
+    padding: 5px;
+    width: 100%;
+   
+}
+.divDropdown ul
+{
+ list-style-type: none;
+margin: 0;
+padding: 0;
+   
+}
+
+.divDropdown li
+{
+margin: 10px 0 0 0;
+   
+}
+.az-header
+{
+    text-align:center;
+}
+
+#divAgentPicture {
+    border: solid 1px dimgray;
+    height: 160px;
+    float: right;
+    margin-top: 0px;
+/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+#divAgentSignature {
+    border: solid 1px dimgray;
+    height: 160px;
+    float: right;
+    margin-top: 0px;
+/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+.imageUpload {
+    border: solid 1px dimgray;
+    height: 160px;
+    float: left;
+    margin-top: 0px;
+/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+#divProfileSignature {
+    border: solid 1px dimgray;
+    height: 160px;
+    float: left;
+    margin-top: 0px;
+/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+#imgAgentPicture {
+    width: 100%;
+     height: 100%;
+    
+}
+
+#imgAgentSignature {
+    width: 100%;
+     height: 100%;
+    
+}
+
+.imagepicture {
+    width: 100%;
+     height: 100%;
+    
+}
+
+#imgProfileSignature {
+    width: 100%;
+     height: 100%;
+    
+}
+.leaveParameter table label{
+    text-align: left;
+    display: inline
+}
+#divEmployeeInfo label {
+    font-weight: bold;
+}
+

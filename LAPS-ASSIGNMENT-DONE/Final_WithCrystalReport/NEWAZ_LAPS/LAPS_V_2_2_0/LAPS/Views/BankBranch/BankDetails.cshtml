@@ -1,0 +1,33 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/HumanResource/BankBranch/BankDetails.js")
+
+<div class="mainDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">Bank Details </legend>
+
+        <div id="bankDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <label for="BankCode" class="lbl widthSize20_per">Bank Code:</label>
+                    <input id="txtBankCode" class="k-textbox" name="BankCode" placeholder="Bank Code" required validationmessage="Please Enter Bank Code" />
+                </li>
+                <li>
+                    <input type="hidden" id="hdnBankId" value="0" />
+                    <label for="BankName" class="lbl widthSize20_per">Bank Name:</label>
+                    <input type="text" id="txtBankName" name="BankName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Bank Name" required validationmessage="Please enter valid Bank Name" />
+                </li>
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActiveBank" name="IsActive" class="k-checkbox" />
+                </li>
+
+                <li class="accept">
+                    <button id="btnSaveBank" class="k-button" type="button" onclick="">Save</button>
+                    &nbsp;&nbsp;
+                <button id="btnClose" class="k-button" onclick="">Close</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+    </fieldset>
+</div>

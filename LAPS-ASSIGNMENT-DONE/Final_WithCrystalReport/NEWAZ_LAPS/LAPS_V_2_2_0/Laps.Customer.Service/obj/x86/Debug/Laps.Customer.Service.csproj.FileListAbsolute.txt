@@ -1,0 +1,13 @@
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Laps.Customer.Service.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Laps.Customer.Service.pdb
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Azolution.Entities.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Laps.Customer.DataService.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Newtonsoft.Json.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Utilities.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Azolution.Common.DataService.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Azolution.Common.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Azolution.Entities.pdb
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\bin\x86\Debug\Laps.Customer.DataService.pdb
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\obj\x86\Debug\Laps.Customer.Service.csprojResolveAssemblyReference.cache
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\obj\x86\Debug\Laps.Customer.Service.dll
+E:\laps\LAPS_V_2_2_0\Laps.Customer.Service\obj\x86\Debug\Laps.Customer.Service.pdb

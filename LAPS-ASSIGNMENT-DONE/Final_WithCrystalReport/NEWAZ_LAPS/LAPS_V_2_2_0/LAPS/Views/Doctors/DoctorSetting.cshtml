@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "DoctorSetting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/eAzolution/Sales/Sale/Doctors/DoctorSetting.js"></script>
+<h2>DoctorSetting</h2>
+<button id="btnPrint" class="k-button" type="submit">Print Doctor Report</button>
+<div class="mainDiv">
+    <h2 class="k-header">Doctor Settings</h2>
+    @Html.Partial("DoctorDetails")
+    @Html.Partial("DoctorSummary")
+    <div class="clear"></div>
+</div>

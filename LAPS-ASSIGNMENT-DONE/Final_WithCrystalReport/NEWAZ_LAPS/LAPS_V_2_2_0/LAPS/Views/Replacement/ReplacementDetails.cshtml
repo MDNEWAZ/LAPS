@@ -1,0 +1,81 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Replacement/ReplacementDetails.js")
+
+<div class="">
+    <div class="divDetails" id="replacementDetailsDiv">
+        <fieldset>
+            <legend>Warranty Replacement Details</legend>
+
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnReplacementId" />
+                     <input type="hidden" id="hdnSaleId" />
+                    <input type="hidden" id="hdnItemId" />
+                    <input type="hidden" id="hdnCustomerId" />
+
+                    <input type="hidden" id="hdnSalesItemId" />
+                </li>
+                <li class="displayNone">
+
+                    @*  <label for="warrantyProductModel" class="required lbl widthSize20_per rightAlign">Product Model:</label>
+                    <input id="cmbWarrantyProductModel" name="warrantyProductModel" placeholder="Warranty Product Model" required validationmessage="Required" />*@
+
+                    <label for="itemSLNo" class="required lbl widthSize30_per rightAlign">Item SL No.:</label>
+                    <input id="cmbwarrantyItemSLNo" name="itemSLNo" placeholder="Warranty Item SL." />
+
+                </li>
+
+
+                <li>
+                    <label for="replacedItemSLNo" class="required lbl widthSize30_per rightAlign">New SL No.:</label>
+                    <input type="text" id="txtreplacedItemSLNo" name="replacedItemSLNo" maxlength="50" class="k-textbox" placeholder="Replaced Item SL No" required validationmessage="Required" />
+
+                </li>
+                <li>
+                    <label for="ReplacementDate" class="lbl lblTextArea widthSize30_per rightAlign">Replacement Date:</label>
+                    <input id="txtReplacementDate" name="ReplacementDate" placeholder="Replacement Date" required validationmessage="Required" />
+                </li>
+                <li>
+
+                    <label for="InstallationDate" class="lbl lblTextArea widthSize30_per rightAlign">New Installation Date:</label>
+                    <input id="txtInstallationDate" name="InstallationDate" placeholder="Installation Date" required validationmessage="Required" />
+                </li>
+                <li class="displayNone">
+
+
+                    <label for="replaceInvoiceNo" class="lbl widthSize20_per rightAlign">Replacement InvoiceNo:</label>
+                    <input type="text" id="txtReplacementInvoiceNo" name="replaceInvoiceNo" class="k-textbox" placeholder="Replacement Invoice No" />
+
+                    <label for="ReplacementChalan" class="lbl lblTextArea widthSize20_per rightAlign">Replacement Challan:</label>
+                    <input id="txtReplacementChalan" name="ReplacementChalan" class="k-textbox" placeholder="Replacement Challan" />
+
+
+                </li>
+                <li class="displayNone">
+                    <label for="warrantyEndDate" class="lbl widthSize20_per rightAlign">Warranty End Date:</label>
+                    <input id="txtwarrantyEndDate" placeholder="Warranty End Date" name="warrantyEndDate" />
+
+                    @* <label for="ItemModel" class="lbl widthSize20_per rightAlign">Replaced Item Model:</label>
+                    <input id="txtReplacedItemModel" placeholder="Replaced Item Model" class="k-textbox" name="ItemModel" />*@
+
+                    <label for="ManufacturingDate" class="lbl lblTextArea widthSize20_per rightAlign">Manufacturing Date:</label>
+                    <input id="txtManufacturingDate" name="ManufacturingDate" placeholder="Manufacturing Date" />@*required validationmessage="Required"*@
+                </li>
+
+                <br />
+
+                <li class="accept centerAlign">
+                    <button id="btnSaveReplace" class="k-button" type="button" onclick="">Save</button>@* <span class="k-icon k-i-pencil"></span>*@
+                    &nbsp;&nbsp;
+                     
+                    <button id="btnClearWarrantyInfo" class="k-button">Clear</button>
+                    &nbsp;&nbsp;
+                     <button id="btnCancel" class="k-button">Cancel</button>
+                </li>
+
+                <li class="status"></li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/SalesRollback/SalesRollbackDetails.js")
+
+<h2>Sale Rollback</h2>
+<div id="mainDiv">
+
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Sale Rollback</h2>
+        <div class="divDetails" id="divSaleRollBack">
+            <ul>
+                <li class="centerAlign">
+                    <span>
+                        @*Company:*@
+                        <input id="cmbCompany" name="Company" type="text" class="k-combobox" placeholder="Select Company" required="required" />
+                        @*Branch:*@
+                        <input id="cmbBranch" name="Branch" type="text" class="k-combobox" placeholder="Select Branch" required="required" />
+                        @*Customer Code:*@
+                        <input id="txtCustomerCode" name="CustomerCode" type="text" class="k-textbox" placeholder="Customer Code" required="required" />
+                        <button id="btnSearchSaleInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+                    </span>
+                    <br />
+                    <br />
+
+                </li>
+                <li class="accept"></li>
+            </ul>
+           
+        </div>
+
+        <div id="saleInfoGridDiv">
+          <h3>Customer Sales Information</h3>
+            <hr />
+            <div id="gridSaleInforamtion"></div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Branch Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/HumanResource/Branch/BranchSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Core/Dashboard/DashboardSettings.js")
+
+
+<div class="mainDiv">
+    <h1 class="k-header centerAlign">Branch Settings</h1>
+     @Html.Partial("_BranchSummary")
+    @Html.Partial("_BranchDetails")
+<div class="clear"></div>
+</div>

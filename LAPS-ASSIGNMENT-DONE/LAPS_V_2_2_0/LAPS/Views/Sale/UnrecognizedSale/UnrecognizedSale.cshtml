@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Unrecognized Sale";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/UnrecognizedSale/UnrecognizedSale.js")
+
+<h2>Unrecognized Sale Handling</h2>
+
+<div id="mainDiv">
+    
+    <div id="unrecognizedSaleSummaryDiv">
+        @Html.Partial("UnrecognizedSale/_unrecognizedSaleSummary")
+    </div>
+    
+    <div id="popupUnrecognizedSaleDetails" class="displayNone">
+           @Html.Partial("UnrecognizedSale/_unrecognizedSaleDetails")
+    </div>
+
+</div>
+
+

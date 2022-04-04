@@ -1,0 +1,112 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/UnrecognizedSale/UnrecognizedSaleDetails.js")
+
+<style>
+    .labelblock {
+        background-color: skyblue;
+        color: black;
+        font-size: 1em;
+    }
+</style>
+
+<div class="">
+    <div id="unrecognizedSaleDetailsDiv" class="divDetails">
+        <input type="hidden" id="txtState" value="0" />
+        <input type="hidden" id="txtTempState" value="0" />
+        <input type="hidden" id="txtTypeOfUnRecognized" value="0" />
+        <input type="hidden" id="txtIsSpecialDiscount" value="0" />
+        <input type="hidden" id="txtIsApprovedSpecialDiscount" value="0" />
+        <input type="hidden" id="txtPrice" value="0" />
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Customer Information</h2>
+            <ul>
+                <li class="k-block labelblock">
+                    <input type="hidden" id="hdnSaleId" value="0" />
+                    <label class="required lbl widthSize10_per rightAlign">Customer ID:</label>
+                    <span style="font-weight: bold">
+                        <label class="required lbl widthSize10_per leftAlign" id="txtCustomerCode"></label>
+                    </span>
+
+                    <label for="txtCustomerName" class="required lbl widthSize10_per rightAlign">Customer Name:</label>
+                    <span style="font-weight: bold">
+                        <label class="required lbl widthSize25_per leftAlign" id="txtCustomerName"></label>
+                    </span>
+
+
+                    <label for="txtNationalId" class="lbl widthSize10_per rightAlign">National Id:</label>
+                    <span style="font-weight: bold">
+                        <label class="required lbl widthSize10_per leftAlign" id="txtNationalId"></label>
+                    </span>
+
+
+                    <label for="txtSInvoiceNo" class="required lbl widthSize10_per rightAlign">Invoice No:</label>
+                    <span style="font-weight: bold">
+                        <label class="required lbl widthSize10_per leftAlign" id="txtSInvoiceNo"></label>
+                    </span>
+
+
+                </li>
+                <li id="liCustomerMobile1">
+                    <label for="MobileNo1" class="required lbl widthSize25_per rightAlign">Mobile No-1:</label>
+                    <input id="txtMobileNo1" class="k-textbox" readonly="readonly" name="MobileNo1" type="text" placeholder="Mobile No-1" required validationmessage="Please enter Mobile No-1" />@*pattern="[0-9]{11}"*@
+                </li>
+                <li id="liCustomerMobNo2">
+                    <label for="MobileNo2" class="required lbl widthSize25_per rightAlign">Mobile No-2:</label>
+                    <input id="txtMobileNo2" class="k-textbox" name="MobileNo2" type="text" placeholder="Mobile No-2" readonly="readonly" />
+                <li>
+                    <label for="cmbPackage" class="required lbl widthSize25_per rightAlign">Package:</label>
+                    <input id="cmbPackage" readonly="readonly" />
+                </li>
+                <li>
+                    <label for="txtBranchCode" class="lbl widthSize25_per rightAlign">Branch Code:</label>
+                    <input id="txtBranchCode" class="k-textbox" placeholder="Branch Code" readonly="readonly" />
+                </li>
+                <li>
+                    <label for="txtComments" class="lbl lblTextArea widthSize25_per rightAlign">Comments:</label>
+                    <textarea id="txtComments" maxlength="1000" style="width: 200px" class="k-textbox"></textarea>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Transaction Information</h2>
+            <ul>
+                <li>
+                    <label for="DownPayment" class="lbl widthSize25_per rightAlign">Expected Down Payment:</label>
+                    <input type="text" id="txtExpectedDownPayment" maxlength="50" placeholder="Down Payment" readonly="readonly" name="DownPayment" class="k-textbox" />
+                </li>
+                <li>
+                    <label for="CollectedAmount" class="lbl widthSize25_per rightAlign">Recieve Amount(DP):</label>
+                    <input id="txtCollectedAmount" placeholder="Collected Amount" class="k-textbox" name="CollectedAmount" readonly="readonly" />
+
+                </li>
+                <li>
+                    <label for="NewAmount" class="lbl widthSize25_per rightAlign">New DP Amount:</label>
+                    <input id="txtNewAmount" placeholder="New DP Amount" class="k-textbox" name="NewAmount" readonly="readonly" />
+                    (Actual Full DownPay)
+
+                </li>
+                @*<li>
+                    <label for="TransactionId" class="lbl widthSize25_per rightAlign" >Transaction ID:</label>
+                    <input id="txtTransactionId" placeholder="Transaction ID" class="k-textbox" name="TransactionId" />
+
+                </li>*@
+                <li>
+                    <label for="TransactionDate" class="lbl widthSize25_per rightAlign">Transaction Date:</label>
+                    <input id="txtTransactionDate" class="k-datepicker" name="TransactionDate" readonly="readonly" />
+
+                </li>
+
+
+                <li class="status"></li>
+            </ul>
+        </div>
+        <br />
+        <div class="centerAlign">
+            <button id="btnSubmit" class="k-button rightAlign">Submit</button>
+            &nbsp;&nbsp;
+            <button id="btnClose" class="k-button rightAlign">Cancel</button>
+            &nbsp;&nbsp;
+           @* <button id="btnClear" class="k-button rightAlign">Clear</button>*@
+        </div>
+    </div>
+</div>

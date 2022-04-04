@@ -1,0 +1,39 @@
+﻿
+<script src="~/Scripts/eAzolution/HumanResource/BranchTwo/BranchTwoDetails.js"></script>
+
+
+
+
+<div class="rightDiv k-block">
+    <h2 class="k-header centerAlign">Branch Details</h2>
+    <div id="branchDetailsDiv" class="divDetails">
+        <ul>
+            <li>
+                <label class="lbl widthSize20_per">Company:</label>
+                <input type="hidden" id="hdnBranchId" value="0" />
+                <input id="cmbCompanyName" name="CompanyName" validationmessage="Please Select Company Name" required="required" />
+            </li>
+            <li>
+                <label for="BranchName" class="lbl widthSize20_per">Branch Name:</label>
+                <input type="text" id="txtBranchName" name="BranchName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Branch Name" required validationmessage="Please enter valid Branch Name" />
+            </li>
+            <li>
+                <label for="BranchDescription" class="lbl widthSize20_per">Branch Description:</label>
+                <textarea type="address" id="txtBranchDescription" maxlength="2000" name="BranchDescription" style="width: 17.4em " class="k-textbox"></textarea>
+            </li>
+
+            <li>
+                <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="branchDetailsManager.SaveBranchInformation()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="branchDetailsHelper.clearBranchForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+
+        </ul>
+    </div>
+
+</div>

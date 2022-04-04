@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Package";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Product/Product.js")
+
+<div id="mainDiv" class="">
+    <h2 class="k-header centerAlign">Package Information</h2>
+    <div class="leftDiv">
+        @Html.Partial("_ProductSummary")
+    </div>
+    <div class="rightDiv">
+        @Html.Partial("_ProductDetails")
+    </div>
+     <div class="clear"></div>
+   @* <div id="">
+        @Html.Partial("~/Views/Stock/Stock.cshtml") 
+    </div>
+    <div id="" >
+        @Html.Partial("~/Views/Stock/StockDetails.cshtml") 
+    </div>
+    
+    <div id="" >
+        @Html.Partial("~/Views/Stock/StockAdjustment.cshtml") 
+    </div>*@
+    <div class="clear"></div>
+</div>

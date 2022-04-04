@@ -1,0 +1,81 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Product/ProductDetails.js")
+
+
+<div id="productDetailsDiv" class="divDetails">
+
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Package Details</h2>
+        <ul>
+            <li>
+                <input type="hidden" id="hdnModelId" />
+                <input type="hidden" id="hdnColor" />
+                <input type="hidden" id="hdnFlag" />
+            </li>
+            <li>
+                <label class="lbl widthSize20_per"></label>
+                <form id="packageType" style="display: inline">
+                    <input type="radio" name="package" id="rdIsPackage" value="1" />Package
+                    <input type="radio" name="package" id="rdIsItem" value="2" />Item
+                </form>
+            </li>
+            <li>
+                <label for="txtModel" class="required lbl widthSize20_per rightAlign">Package/Item Model:</label>
+                <input type="text" id="txtModel" name="ProductModel" maxlength="50" class="k-textbox" placeholder="Package/Item Model" required validationmessage="Please enter valid Product Molel" />
+            </li>
+            <li>
+
+                <label for="txtProductName" class="required lbl widthSize20_per rightAlign">Name:</label>
+                <input type="text" id="txtProductName" name="ProductName" maxlength="50" class="k-textbox" placeholder="Product Name" required validationmessage="Please enter valid Product name"/>
+            </li>
+            <li>
+
+                <label for="txtItemId" class="required lbl widthSize20_per rightAlign">Model Item ID:</label>
+                <input type="number" id="txtItemId" name="ProductName" maxlength="50" class="k-textbox" placeholder="Item ID" required validationmessage="Please enter valid Item ID" />
+            </li>
+            <li>
+                <label for="cmbType" class="lbl widthSize20_per rightAlign">Type:</label>
+                <input id="cmbType" value="" />
+            </li>
+            <li>
+                <label for="txtDescription" class="lbl lblTextArea widthSize20_per rightAlign">Description:</label>
+                <textarea id="txtDescription" maxlength="1000" class="k-textbox"></textarea>
+            </li>
+            <li style="display: none">
+                <label for="txtCapacity" class="lbl widthSize20_per rightAlign">Capacity:</label>
+                <input type="text" id="txtCapacity" pattern="[a-zA-Z0-9 ]+" maxlength="50" name="txtCapacity" class="k-textbox" />
+
+            </li>
+
+            <li>
+                <label for="TotalPrice" class="lbl widthSize20_per rightAlign">Total Price:</label>
+                <input type="text" name="TotalPrice" class="" id="lblTotalPrice" />
+            </li>
+            <li>
+                <label for="txtDownPay" class="required lbl widthSize20_per rightAlign">Down Payment<span id="percentSign"></span>:</label>
+                <input type="text" id="txtDownPayPercent" name="txtDownPay" maxlength="50" class="k-textbox" placeholder="Enter DownPayment" />
+                &nbsp;&nbsp; Is Fixed Amount: <input type="checkbox" id="chkIsDPFixedAmount" name="IsDPFixedAmt" class="k-checkbox" />
+            </li>
+            <li>
+                <label for="DefaultInstallmentNo" class="required lbl widthSize20_per">Default Installment No:</label>
+                <input type="text" id="txtDefaultInstallmentNo" name="DefaultInstallmentNo" class="k-textbox" placeholder="Default Installment No" required validationmessage="Please enter Default Installment No" />
+            </li>
+            <li style="margin: 0 0 2px 0">
+                <label for="chkIsActive" class="lbl widthSize20_per rightAlign">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+
+
+            @Html.Partial("_ProductItems")
+
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="productDetailsManager.SaveProduct()">Save</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="productDetailsHelper.clearProductForm()">Clear</button>
+            </li>
+            <li class="status"></li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+

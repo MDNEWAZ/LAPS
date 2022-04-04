@@ -1,0 +1,61 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Collection/CollectionDetails.js")
+
+<div class="">
+    <div class="divDetails" id="collectionDetailsDivpopup">
+        <fieldset>
+            <legend>Payment Collection Details</legend>
+
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnInstallmentId" />
+                    <input type="hidden" id="hdnProductId" />
+                    <input type="hidden" id="hdnCustomerId" />
+                    
+                    
+                    <input type="hidden" id="hdnInstallmentAmount" />
+                    <input type="hidden" id="hdnAlreadyReceiveAmout" />
+                      <input type="hidden" id="hdnPreviousDueAmout  " />
+                </li>
+               @* <li>
+                    <label for="installmentNo" class="required lbl widthSize20_per rightAlign">Installment No:</label>
+                    <input type="text" id="txtInstallNo" name="installmentNo" readonly="readonly" maxlength="50" class="k-textbox" placeholder="Installment No" required validationmessage="Please Enter Installment No" />
+                </li>
+                <li>
+                    <label for="DueDate" class="required lbl widthSize20_per rightAlign">Due Date:</label>
+                    <input id="txtDueDatee" name="DueDate" maxlength="50" placeholder="Due Date" required validationmessage="Please Enter Due Date" readonly="readonly" />
+                </li>*@
+                <li>
+                    <label for="PaymentDate" class="lbl widthSize20_per rightAlign">Payment Date:</label>
+                    <input id="txtPayDate" name="PaymentDate" placeholder="Payment Date" required validationmessage="Please Enter Payment Date" />
+                </li>
+                <li>
+                    <label for="PaymentType" class="lbl lblTextArea widthSize20_per rightAlign">Payment Type:</label>
+                    <input id="cmbPayType" name="PaymentType" placeholder="Payment Type" required validationmessage="Please Select Payment Type" />
+                </li>
+                <li>
+                    <label for="TransactionNo" class="lbl widthSize20_per rightAlign">Transaction No:</label>
+                    <input id="txtTransacNo" placeholder="Transaction No" name="TransactionNo" class="k-textbox" required validationmessage="Please Enter Transaction No" />
+                </li>
+                <li>
+                    <label for="ReceiveAmount" class="lbl lblTextArea widthSize20_per rightAlign">Receive Amount:</label>
+                    <input type="number" min="0" id="txtRecAmount" name="ReceiveAmount" placeholder="Receive Amount"  required validationmessage="Please Enter Amount" />
+                </li>
+
+                <br />
+
+                <li class="accept centerAlign">
+                    @*<button id="btnSavePayment" class="k-button" type="button" onclick="">Save</button>*@
+                    &nbsp;&nbsp;
+                     <button id="btnReceivePayment" class="k-button" type="button" onclick="">Save</button>
+                  @*  <button id="btnClearAll" class="k-button" onclick="">Clear</button>
+                    &nbsp;&nbsp;*@
+                    <button id="btnCancelPopup" class="k-button" onclick="">Close</button>
+                </li>
+
+                <li class="status"></li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+</div>

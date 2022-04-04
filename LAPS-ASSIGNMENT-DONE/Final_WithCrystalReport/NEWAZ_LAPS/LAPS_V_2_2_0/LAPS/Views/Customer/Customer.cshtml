@@ -1,0 +1,25 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Customer Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/Customer/Customer.js")
+
+
+<div id="mainDiv" class="">
+    <h2 class="k-header centerAlign">Customer Information</h2>
+    <div class="LeftDivSummary">
+        @Html.Partial("_CustomerSummary")
+    </div>
+    <div class="RightDivDetails">
+        @Html.Partial("_CustomerDetails")
+
+        <div class="clear " style="height: 10px; width: 200px"></div>
+     
+
+        @Html.Partial("_SalesInformation")
+        <div class="clear " style="height: 10px; width: 200px"></div>
+    </div>
+    <div class="clear"></div>
+</div>

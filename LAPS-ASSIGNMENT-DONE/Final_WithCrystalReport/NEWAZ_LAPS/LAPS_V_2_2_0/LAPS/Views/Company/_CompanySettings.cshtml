@@ -1,0 +1,192 @@
+﻿@{
+    ViewBag.Title = "CompanySettings";
+ }
+@*@Scripts.Render("~/Scripts/eAzolution/Core/Company.js")*@
+<script src="~/Scripts/eAzolution/Core/Company.js"></script>
+<div class="k-content">
+
+          @Html.ActionLink("Create New", "Create")
+
+        <h2>Company Information</h2>
+
+    <div class="leftDiv">
+        <div id="gridCompany"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="rightDiv">
+        <div id="divDetails">
+            <h3>Company Details</h3>
+            <ul>
+                <li>
+                    <label for="CompanyName" class="required lbl">Company Name</label>
+                    <input type="text" id="txtCompanyName" name="CompanyName" class="k-textbox" placeholder="Company name" required validationMessage="Please enter {0}" />
+                </li>
+                <li>
+                    <label for="cmbMotherCompany" class="lbl">Mother Company:</label>
+                    <input id="cmbMotherCompany" value=""/>
+                </li>
+                <li>
+                    <label for="txtAddress" class="lbl lbltAra">Address</label>
+                    <textarea id="txtAddress" class="k-editor-textarea tarea"></textarea>
+                </li>
+                <li>
+                    <label for="txtPhone" class="required lbl">Phone</label>
+                    <input type="tel" id="txtPhone" name="txtPhone" class="k-textbox txt" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required
+                        validationMessage="Please enter a ten digit phone number"/>
+                </li>
+                <li>
+                    <label for="Fax" class="lbl">Fax</label>
+                    <input type="text" id="txtFax" name="Fax" class="k-textbox txt" />
+                </li>
+                <li>
+                    <label for="txtEmail" class="required lbl">Email</label>
+                    <input type="email" id="txtEmail" name="Email" class="k-textbox txt" placeholder="e.g. myname@example.net"  required data-email-msg="Email format is not valid" />
+                </li>
+                <li>
+                    <label for="txtPrimaryContact" class="lbl">Primary Contact</label>
+                    <input type="text" id="txtPrimaryContact" name="PrimaryContact" class="k-textbox txt" />
+                </li>
+                <li>
+                    <label for="cmbFiscalYearStart" class="lbl">Fiscal Year Start:</label>
+                    <input id="cmbFiscalYearStart"/>
+                </li>
+                <li>
+                    <label for ="txtCompanyBanner" class="lbl">Company Banner:</label>
+                    <input type="file" id="txtFileUploade" name="txtCompanyBanner"/>
+                </li>
+                
+                <li  class="accept">
+                    <button class="k-button" type="submit">Submit</button>
+                </li>
+                <li class="status">
+                </li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+
+
+
+
+
+ <script type="text/javascript">
+            function pavanGet() {
+                $.get('Company/returnJsonData', function (data) {
+                    var a = $.parseJSON(data.d);
+
+                    alert(a);
+                }
+                );
+            }
+            
+
+            function PostValue(val) {
+                var url = "Company/Decision";
+               // $("#T_SecondQuestion").attr('enabled', true);
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    dataType: 'json',
+                    data: { value: val }
+                }).done(function (msg) {
+                    alert("Data Saved: " + msg);
+                });
+            }
+
+
+
+            function pavanPost() {
+                $.post('Company/returnJsonData', function (data) {
+                    
+                    var a = $.parseJSON(data.d);
+
+                    alert(a);
+                }
+                );
+            }
+            
+
+
+            //function getCredentials() {
+            //    var paramList = "";
+            //    $.ajax({
+            //        type: "POST",
+            //        async: false,
+            //        url: "Company/returnJsonData",
+            //        data: "{}",
+            //        contentType: "application/json; charset=utf-8",
+            //        dataType: "json",
+            //        success: function (msg) {
+            //            var data = msg;
+     //            
+     ;
+            //            alert(data);
+            //            paramList = "{'CompanyName':'" + data[0].CompanyName + "','CompanyId':'" + data[0].CompanyId + "'}";
+            //        },
+            //        error: function (jqXHR, textStatus, errorThrown) {
+            //            alert("get session failed " + errorThrown);
+            //        }
+            //    });
+            //    alert("returnValue"+paramList);
+            //    return paramList;
+     //};
+            
+            function getCredentials() {
+                var objCompany = "";
+                var jsonParam = "";
+                var serviceUrl = "Company/returnJsonData";
+                //AjaxManager.SendJson(serviceUrl, jsonParam, onSuccess, onFailed);
+                AjaxManager.GetJsonResult(serviceUrl, jsonParam, onSuccess, onFailed);
+
+                function onSuccess(jsonData) {
+                    objCompany = jsonData;
+                            //debugger;
+                            alert(objCompany);
+                            var paramList = "{'CompanyName':'" + objCompany[0].CompanyName + "','CompanyId':'" + objCompany[0].CompanyId + "'}";
+                    alert(paramList);
+                }
+
+                function onFailed(jqXHR, textStatus, errorThrown) {
+                    window.alert(errorThrown);
+                }
+               
+                //var paramList = "";
+                //$.ajax({
+                //    type: "POST",
+                //    async: false,
+                //    url: "Company/returnJsonData",
+                //    data: "{}",
+                //    contentType: "application/json; charset=utf-8",
+                //    dataType: "json",
+                //    success: function (msg) {
+                //        var data = msg;
+                //        debugger;
+                //        alert(data);
+                //        paramList = "{'CompanyName':'" + data[0].CompanyName + "','CompanyId':'" + data[0].CompanyId + "'}";
+                //    },
+                //    error: function (jqXHR, textStatus, errorThrown) {
+                //        alert("get session failed " + errorThrown);
+                //    }
+                //});
+                //alert("returnValue" + paramList);
+                //return paramList;
+            };
+
+</script>
+
+
+      <input type=button id="btn" value="Get" onclick="pavanGet()" />
+      <input type=button id="btn1" value="Post" onclick="pavanPost()" />
+
+<input type=button id="btn2" value="Post2" onclick="PostValue()" />
+
+<input type=button id="btn3" value="Post3" onclick="getCredentials()" />
+

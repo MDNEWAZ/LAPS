@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Group Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Core/Group/GroupSettings.js")
+
+<div class="mainDiv">
+   <h2 class="k-header centerAlign"> Group Settings</h2>
+    
+    @Html.Partial("_GroupSummary")
+    @Html.Partial("_GroupDetails")
+    <div class="clear"></div>
+</div>
+

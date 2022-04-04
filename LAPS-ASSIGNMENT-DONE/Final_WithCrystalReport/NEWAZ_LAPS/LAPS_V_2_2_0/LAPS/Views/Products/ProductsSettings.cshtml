@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ProductsSettings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <script src="~/Scripts/eAzolution/Sales/Products/ProductsSettings.js"></script>
+<h2>ProductsSettings</h2>
+<button id="btnPrint" class="k-button" type="submit">Print Products Info</button>
+<div class="mainDiv">
+    <h2 class="k-header">Products Settings</h2>
+    @Html.Partial("~/Views/Products/ProductsDetails2.cshtml")
+    @Html.Partial("~/Views/Products/ProductsSummery2.cshtml")
+    <div class="clear"></div>
+</div>
+

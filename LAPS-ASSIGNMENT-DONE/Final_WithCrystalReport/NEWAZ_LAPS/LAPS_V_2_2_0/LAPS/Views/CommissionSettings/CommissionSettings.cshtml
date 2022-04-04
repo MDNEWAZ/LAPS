@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Commission Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/CommissionSettings/CommissionSettings.js")
+<h2 class="k-header centerAlign">Commission Settings</h2>
+
+<div class="mainDiv">
+    @Html.Partial("_CommissionSettingsSummary")
+    @Html.Partial("_CommissionSettingsDetails")
+</div>

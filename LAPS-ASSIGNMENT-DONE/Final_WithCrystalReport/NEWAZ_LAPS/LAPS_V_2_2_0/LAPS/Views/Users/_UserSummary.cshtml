@@ -1,0 +1,18 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Users/UserSummary.js")
+<div class="leftDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">User Summary</legend>
+  
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label for="cmbCompanyNameForSummary" class="lbl widthSize30_per">Company Name:</label>
+                <input id="cmbCompanyNameForSummary" onchange="userSummaryHelper.CompanyIndexChangeEvent()" value=""/>
+            </li>
+        </ul>
+    </div>
+        <div id="gridUser"></div> 
+
+    </fieldset>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,11 @@
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Laps.Stock.DataService.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Laps.Stock.DataService.pdb
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Azolution.Entities.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\mysql.data.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Utilities.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Azolution.Common.DataService.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Azolution.Common.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Newtonsoft.Json.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\bin\x86\Debug\Azolution.Entities.pdb
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\obj\x86\Debug\Laps.Stock.DataService.dll
+E:\laps\LAPS_V_2_2_0\Laps.Stock.DataService\obj\x86\Debug\Laps.Stock.DataService.pdb

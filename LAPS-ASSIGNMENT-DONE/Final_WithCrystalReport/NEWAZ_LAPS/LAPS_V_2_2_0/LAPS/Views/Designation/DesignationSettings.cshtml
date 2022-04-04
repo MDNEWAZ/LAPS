@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Designation Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/HumanResource/Designation/DesignationSettings.js")
+
+
+<div class="mainDiv">
+    <h2 class="k-header">Designation Settings</h2>
+     @Html.Partial("_DesignationSummary")
+    @Html.Partial("_DesignationDetails")
+<div class="clear"></div>
+</div>

@@ -1,0 +1,128 @@
+﻿@{
+    ViewBag.Title = "Stock";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockManager.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/Stock.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockItemsDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockProductItems.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockAdjustment.js")
+
+
+<div class="mainDiv " style="width: 60%; margin-left: 20%">
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Delivery In-charge</h2>
+        <div class="divDetails" id="stockDetailsDiv" style="padding-left: 20px">
+            <ul>
+                
+                <li>
+                      <label for="StockType" class="lbl widthSize30_per">Stock Type:</label>
+                    <form id="StockType" style="display: inline">
+                        <input type="radio" name="radio" value="1" id="companyWise" checked="checked">Company Stock
+                        <input type="radio" name="radio" value="2" id="branchWise">Branch Stock
+                    </form>
+                </li>
+                <li id="liBranch" class="displayNone">
+                    <label for="cmbBranch" class=" lbl widthSize20_per ">Branch:</label>
+                    <input type="text" id="cmbBranch" name="cmbBranch" maxlength="50" placeholder="Branch" />
+                </li>
+
+                <li>
+                    <input type="hidden" id="hdnModelIdStock" />
+                    <input type="hidden" id="hdnFlagStock" />
+
+
+                    <label for="StockBy" class="lbl widthSize30_per">Stock By:</label>
+                    <form id="StockBy" style="display: inline">
+                        <input type="radio" name="radio" value="1" id="Package" checked="checked">Package
+                        <input type="radio" name="radio" value="2" id="Item">Item
+                    </form>
+                </li>
+                <li>
+                    <label for="cmbType" class="lbl widthSize20_per">Type:</label>
+                    <input id="cmbType" name="cmbType" />
+                </li>
+
+                <li>
+
+                    <label for="cmbPackage" class="required lbl widthSize20_per ">Package:</label>
+                    <input type="text" id="cmbPackage" name="cmbPackage" maxlength="50" placeholder="Product Model" />
+                </li>
+
+
+                <li id="liQty">
+                    <label for="txtQty" class=" lbl widthSize20_per ">Quantity:</label>
+                    <input type="text" id="txtQty" name="txtQty" maxlength="50" placeholder="Quantity" />
+                </li>
+
+                <li>
+                    <label for="txtDeliveryChalan" class=" lbl widthSize20_per ">Delivery Chalan No:</label>
+                    <input type="text" id="txtDeliveryChalanNo" class="k-textbox" name="txtDeliveryChalan" placeholder="Delivery Chalan No"  required validationmessage="Please enter Delivery Chalan No" />
+                </li>
+
+                <li>
+                    <label for="txtDeliveryOrder" class=" lbl widthSize20_per ">Delivery Order No:</label>
+                    <input type="text" id="txtDeliveryOrderNo" class="k-textbox" name="txtDeliveryOrder"  placeholder="Delivery Order No"  required validationmessage="Please enter Delivery Order No" />
+                </li>
+
+                <li>
+                    <label for="DeliveryDate" class=" lbl widthSize20_per ">Delivery Date:</label>
+                    <input type="text" id="txtDeliveryDate"  name="DeliveryDate"  placeholder="Delivery Date"  required validationmessage="Please enter Delivery Date" />
+                </li>
+                <li>
+                    <label for="QBInvoiceNo" class=" lbl widthSize20_per ">QB Invoice No:</label>
+                    <input type="text" id="txtQBInvoiceNo" class="k-textbox" name="QBInvoiceNo"  placeholder="QB Invoice No"  required validationmessage="Please enter QB Invoice No" />
+                </li>
+                
+                <li>
+                    <label for="StockCategory" class=" lbl widthSize20_per ">Stock Category:</label>
+                    <input type="text" id="cmbStockCategory" name="StockCategory" maxlength="50" placeholder="Select Stock Category"  required validationmessage="Please Select Stock Category" />
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Product Items Stock</legend>
+                        <div id="gridStockProductItems"></div>
+                    </fieldset>
+
+                </li>
+
+
+                <li class="centerAlign">
+                    <button id="btnStockView" class="k-button" type="submit" >View Stock</button>
+                    &nbsp;&nbsp;
+                    <button id="btnAddNewStock" class="k-button" type="button">Update Stock</button>
+                    &nbsp;&nbsp;
+                    <button id="btnStockAdjustment" class="k-button" type="submit">Stock Adjustment</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearStockDetails" class="k-button" type="submit">Clear</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+
+        </div>
+
+        <div id="stockDetailsPopupWindo" class="displayNone">
+            <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+                <legend>+</legend>
+                Stock Information of -&nbsp;<label id="lblModelName" class="widthSize30_per leftAlign"></label>
+                <br />
+
+                <div id="stockGrid"></div>
+            </fieldset>
+        </div>
+
+        <div id="stockItemsDetailsPopupWindow" class="displayNone">
+            <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+                <legend>+</legend>
+                <div id="stockDetailsGrid"></div>
+            </fieldset>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <div id="divProductStockAdjustment" style="display: none">
+        @Html.Partial("StockAdjustment")
+    </div>
+</div>
+

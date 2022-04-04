@@ -1,0 +1,32 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Product/ProductItems.js")
+
+<div class="k-block">
+    <h2 class="k-header centerAlign">Product Items</h2>
+    <span>
+       
+        <label class="lbl widthSize100_per" style="color:green; background: aliceblue;">Please Input Item Code For Light = LT, Switch = SW , Optimizer= OP  &nbsp;&nbsp; <button type="button" id="btnAddItemCode" class="k-button" ><span class="k-icon k-i-plus"></span></button></label>
+ 
+    </span>
+    <br/>
+    <div id="gridProductItems"></div>
+</div>
+<div class="clear"></div>
+
+
+<div id="itemCodePopup" class="displayNone">
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label for="txtItemCode" class="lbl widthSize20_per rightAlign">Item Code:</label>
+                <input type="text" id="txtItemCode"  name="txtItemCode" class="k-textbox" />
+
+            </li>
+            
+             <li class="accept">
+                <button id="btnSaveItemCode" class="k-button" type="submit">Save</button>
+             
+            </li>
+        </ul>
+        
+    </div>
+</div>

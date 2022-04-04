@@ -1,0 +1,108 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Company/CompanyDetails.js")
+<div class="rightDiv">
+    <div id="companyDetailsDiv" class="divDetails k-block">
+
+             <h2 class="k-header centerAlign">Company Details</h2>
+            <ul>
+                <li>
+                    <label for="txtCompanyCode" class="required lbl widthSize20_per">Company Code</label>
+                    <input type="text" id="txtCompanyCode" name="CompanyName" maxlength="50" class="k-textbox" placeholder="Company Code" required validationmessage="Please enter valid Company Code" />
+                </li>
+                <li>
+                    <input type="hidden" id="hfCompanyId" value="0" />
+                    <label for="CompanyName" class="required lbl widthSize20_per">Company Name</label>
+                    <input type="text" id="txtCompanyName" name="CompanyName" maxlength="50" class="k-textbox" placeholder="Company name" required validationmessage="Please enter valid Company name" />
+                
+                
+                       
+                </li>
+                <li>
+                    <label for="companyType" class="required lbl widthSize20_per">Company Type</label>
+                    <form id="companyType" style="display: inline">
+                        <ul style="display: inline">
+                        <li id="liMotherCompany" style="display: inline">
+                            <input type="radio" name="radio" value="MotherCompany" id="MotherCompany">Mother Company
+                        </li>
+                            </ul>
+                        <input type="radio" name="radio" value="HO" id="HO">HO
+                        <input type="radio" name="radio" value="Zone" id="Zone">Zone
+                        <input type="radio" name="radio" value="Division" id="Division">Division
+                        <input type="radio" name="radio" value="Region" id="Region">Region
+                         
+                    </form> 
+                </li>
+                  <li>
+                    <label for="cmbRootCompany" class="lbl widthSize20_per">Root Company:</label>
+                    <input id="cmbRootCompany" value="" />
+                </li>
+                <li>
+                    <label for="cmbMotherCompany" class="lbl widthSize20_per">Mother Company:</label>
+                    <input id="cmbMotherCompany" value="" />
+                </li>
+                  <li>
+                    <label for="CompanyStock" class="lbl widthSize20_per">Company Stock:</label>
+                         <form id="CompanyStock" style="display: inline">
+                        <input type="radio" name="radio" value="1" id="CompanyWise">Company Wise
+                        <input type="radio" name="radio" value="2" id="BranchWise">Branch Wise
+               
+                         
+                    </form> 
+                </li>
+                <li>
+                    <label for="txtAddress" class="lbl lblTextArea widthSize20_per">Address</label>
+                    <textarea id="txtAddress" maxlength="1000" class="k-textbox"></textarea>
+                </li>
+                @*<li>
+                <label for="txtPhone" class="required lbl widthSize20_per">Phone</label>
+                <input type="tel" id="txtPhone" name="txtPhone" class="k-textbox txt" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required
+                    validationmessage="Please enter a ten digit phone number" />
+            </li>*@
+                <li>
+                    <label for="txtPhone" class="lbl widthSize20_per">Phone</label>
+                    <input type="tel" id="txtPhone" name="txtPhone" class="k-textbox txt" pattern="\d{10}" placeholder="Please enter a ten digit phone number"
+                        validationmessage="Please enter a ten digit phone number" />
+                </li>
+                <li>
+                    <label for="Fax" class="lbl widthSize20_per">Fax</label>
+                    <input type="text" id="txtFax" pattern="[a-zA-Z0-9 ]+" maxlength="50" name="Fax" class="k-textbox txt" />
+                </li>
+                <li>
+                    <label for="txtEmail" class="required lbl widthSize20_per">Email</label>
+                    <input type="email" id="txtEmail" name="Email" maxlength="100" class="k-textbox txt" placeholder="e.g. myname@example.net" required data-email-msg="Email format is not valid" />
+                </li>
+                <li>
+                    <label for="txtPrimaryContact" class="lbl widthSize20_per">Primary Contact</label>
+                    <input type="text" id="txtPrimaryContact" pattern="[a-zA-Z0-9 ]+" maxlength="50" name="PrimaryContact" class="k-textbox txt" />
+                </li>
+                <li>
+                    <label for="ddlFiscalYearStart" class="required lbl widthSize20_per">Fiscal Year Start:</label>
+                    <input id="ddlFiscalYearStart" required validationmessage="Please Select Fiscal Year" />
+                </li>
+                <li>
+                    <label for="fBannerFileUploade" class="lbl widthSize20_per floatLeft">Company Banner:</label>
+                    <input type="hidden" id="hfFullLogoPath" value="" />
+                    <div class="floatLeft widthSize70_per">
+                        <input name="files" id="files" type="file" />
+                    </div>
+                    <div class="clear"></div>
+                </li>
+
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit" onclick="companyDetailsManager.SaveCompany()">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="companyDetailsHelper.clearCompanyForm()">Clear All</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+      
+    </div>
+
+
+
+
+</div>

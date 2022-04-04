@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "BranchTwoSittings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/eAzolution/HumanResource/BranchTwo/BranchTwoSittings.js"></script>
+
+<h2>BranchTwoSittings</h2>
+<div class="mainDiv">
+    <h1 class="k-header centerAlign">Branch Two Settings</h1>
+        @*@Html.Partial("BranchTwoSummary")*@
+    @Html.Partial("~/Views/BranchTwo/BranchTwoDetails.cshtml")
+    @Html.Partial("~/Views/BranchTwo/BranchTwoSummary.cshtml")
+    <div class="clear"></div>
+</div>

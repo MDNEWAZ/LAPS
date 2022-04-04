@@ -1,0 +1,40 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/RatingConfiguration/RatingConfigurationDetails.js")
+
+
+<div id="DueDetailsDiv" class="divDetails">
+    <div id="" class="k-block">
+        <h2 class="k-header centerAlign">Rating Details</h2>
+        <ul>
+            <li>
+                <input type="hidden" id="hdnDueId" />
+            </li>
+            <li>
+                <label for="cbmDueCompanyName" class="required lbl widthSize20_per rightAlign">Company Name:</label>
+                <input type="text" id="cbmDueCompanyName" name="txtDueName" maxlength="50" placeholder="Company Name" />
+            </li>
+            <li>
+                <label for="txtFromDue" class="required lbl widthSize20_per rightAlign">From Due(%):</label>
+                <input type="text" id="txtFromDue" name="txtDues" maxlength="50" class="k-textbox" placeholder="01" required validationmessage="Due Parcentage" />
+            </li>
+             <li>
+                <label for="txtToDue" class="required lbl widthSize20_per rightAlign">UpTo Due(%):</label>
+                <input type="text" id="txtToDue" name="txtDues" maxlength="50" class="k-textbox" placeholder="25" required validationmessage="Due Parcentage" />
+            </li>
+            <li>
+                <label for="cmbColor" class="required lbl widthSize20_per rightAlign">Color:</label>
+                <input type="text" id="cmbColor" name="txtDues" maxlength="50" placeholder="Color" required validationmessage="Color name" />
+            </li>
+            <li>
+                <label for="chkIsActiveDue" class="lbl widthSize20_per rightAlign">Active:</label>
+                <input type="checkbox" id="chkIsActiveDue" name="IsActive" class="k-checkbox" />
+            </li>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="dueDetailsManager.SaveDue()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="dueDetailsHelper.clearDueForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+</div>
+

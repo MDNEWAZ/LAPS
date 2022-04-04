@@ -1,0 +1,34 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Customer/CustomerSummary.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Customer/InstallmentDetails.js")
+
+<div class="k-block">
+    <h2 class="k-header centerAlign">Customer Summary </h2>
+    <div class="divDetails">
+        <ul>
+            <li class="">
+                <label for="CompanyName" class="lbl widthSize29_per rightAlign">Company Name:</label>
+                <input id="cmbCompanyNameS" required validationmessage="Please Select Company Name" name="CompanyName" required validationmessage="Please enter valid Customer Code" />
+            </li>
+            <li class="">
+                <label for="BranchName" class="lbl widthSize29_per rightAlign">Branch Code & Name:</label>
+                <input id="cmbBranchNameS" required validationmessage="Please Select Branch Name" name="BranchName" required validationmessage="Please enter valid Customer Code" />
+            </li>
+            <li class="">
+                <label for="CustomerCode" class=" lbl widthSize29_per rightAlign">Customer:</label>
+                <input type="text" id="txtCustomerCodeS" name="CustomerCode" maxlength="50" class="k-textbox" placeholder="Keyword" required validationmessage="Please enter valid Customer Code" />
+
+                <button id="btnSearchCustomer" class="k-button" onclick=""><span class="k-icon k-i-search">Search</span></button>
+            </li>
+            <li class="clear"></li>
+        </ul>
+    </div>
+    <div id="gridCustomer"></div>
+</div>
+@*  Installment Details For Sales grid*@
+<div id="DivInstallmentGrid" hidden="hidden">
+    <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+        <legend class="centerAlign">+</legend>
+        <div id="gridInstallmentInfoDetails"></div>
+    </fieldset>
+</div>

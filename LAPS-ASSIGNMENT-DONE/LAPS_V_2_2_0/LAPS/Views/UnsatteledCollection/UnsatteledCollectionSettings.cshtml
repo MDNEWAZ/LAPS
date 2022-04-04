@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Unsatteled Collection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/UnsatteledCollection/UnsatteledCollectionSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/UnsatteledCollection/UnsatteledCollectionSummary.js")
+
+<div class="mainDiv">
+    <h2 class="k-header centerAlign">Unsatteled Collection</h2>
+    
+    <div id="unsatteledCollectionGrid"></div>
+    
+    <div class="displayNone" id="sattelPopupWindow">
+        @Html.Partial("_SattelDetails")
+    </div>
+
+</div>

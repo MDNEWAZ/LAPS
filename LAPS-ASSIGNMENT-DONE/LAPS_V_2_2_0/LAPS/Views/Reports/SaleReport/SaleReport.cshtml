@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Audit Trails Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/SaleReport/SaleReport.js")
+
+
+<div class="divDetails" id="divAuditTrailsReport">
+    <fieldset class="k-content">
+        <legend>Sales Report</legend>
+
+        <div class="centerAlign">
+            <ul>
+                <li class="">
+                    <label for="CompanyNameDetails" class="lbl widthSize10_per">Company Name:</label>
+                    <input type="text" id="cmbCompanyNameDetails" name="CompanyNameDetails" validationmessage="Please Select Company" />
+                </li>
+                <li class="">
+                    <label for="BranchNameDetails" class="lbl widthSize10_per">Branch Name:</label>
+                    <input type="text" id="cmbBranchDetails" name="BranchNameDetails" validationmessage="Please Select Branch Name" required="required" />
+                </li>
+
+                <li>
+                    <label for="DepartmentNameDetails" class="lbl widthSize10_per">Department Name:</label>
+                    <input type="text" id="cmbDepartmentNameDetails" name="DepartmentNameDetails" validationmessage="Please Select Department Name" />
+                </li>
+                <li>
+                    <label for="EmployeeNameDetails" class="lbl widthSize10_per">Employee:</label>
+                    <input type="text" id="cmbEmployee" name="EmployeeNameDetails" validationmessage="Please Select an Employee" />
+                </li>
+
+                <li>
+                    <label for="FromDate" class="lbl widthSize10_per">From Date :</label>
+                    <input type="text" id="txtFromDate" name="FromDate" validationmessage="Please Select a Date" required="required" />
+                </li>
+                <li>
+                    <label for="ToDate" class="lbl widthSize10_per">To Date:</label>
+                    <input type="text" id="txtToDate" name="ToDate" validationmessage="Please Select a Date" required="required" />
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="clear"></div>
+
+        <div class="centerAlign">
+            <ul>
+                <li class="accept">&nbsp;&nbsp;
+                    <button id="btnSaleReport" class="k-button" type="submit">Generate Report </button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="AuditTrailsReportHelper.clearAuditTrailsReport()">Clear All</button>
+
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+
+
+    </fieldset>
+
+
+
+</div>
+
+
+

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="html k-content" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Laps | @ViewBag.Title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="~/Images/az-favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @*@Styles.Render("~/Content/css")*@
+       @* @Styles.Render("~/UIFramework/Css/Core.css")*@
+        @*@Styles.Render("~/UIFramework/Css/Common.css")*@
+        @*@Styles.Render("~/UIFramework/Css/Common_Bat.css")*@
+        @*@Styles.Render("~/UIFramework/Css/Common.css")*@
+    @Styles.Render("~/UIFramework/Css/Common_demo.css")
+
+        @Styles.Render("~/UIFramework/kendo/kendoui.web/styles/kendo.common.min.css")
+        @*    @Styles.Render("~/UIFramework/kendoui.web/styles/kendo.metro.min.css")*@
+        @Styles.Render("~/UIFramework/kendo/kendoui.web/styles/kendo.default.min.css")
+ 
+        @Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
+        @Scripts.Render("~/UIFramework/kendo/kendoui.web/js/kendo.web.min.js")
+        
+        @Scripts.Render("~/Scripts/eAzolution/Common/common.js")
+        @Scripts.Render("~/Scripts/json2.js")
+        
+       @Scripts.Render("~/Scripts/jquery.blockUI.js")
+       @Styles.Render("~/UIFramework/MessageBox/css/buttons.css")
+       @Scripts.Render("~/UIFramework/MessageBox/js/noty/jquery.noty.js")
+       @Scripts.Render("~/UIFramework/MessageBox/js/noty/layouts/center.js")
+       @Scripts.Render("~/UIFramework/MessageBox/js/noty/themes/default.js")
+    @*   @Scripts.Render("~/Scripts/eAzolution/Common/header.js")*@
+
+    </head>
+<body class="mainBody">
+    <header>
+        <div id="ControlPenelheader"class="app-header">
+            @*  <div class="hdLeftPanel" id="headerLogo">
+                <h1 class="hdrightPanel" >Employee Productivity Escalation System</h1><br />
+                <span id="vrs">Version 3.0.0</span>
+            </div>*@
+            @*  <canvas id="headerCanvas">*@
+            <div class="hdLeftControlPanel"  id="headerLogo">
+                
+                     @Html.Partial("_Header")
+               
+                     
+              
+            </div>
+          @*    </canvas>*@
+             
+        </div>
+         <script type="text/javascript">
+             $(document).ready(function () {
+          
+                 $('input[type=text]').addClass('k-textbox');
+                 $('input[type=button]').addClass('k-button');
+                 $('.Popupheading').addClass('k-header');
+
+               
+                 
+
+             });
+        </script>
+    </header>
+    <div id="divmainbody">
+    
+        <div class="bodyContent">
+
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer class="k-footer">
+          @Html.Partial("_Footer")
+        @*  <div class="content-wrapper">
+            <div class="float-left">
+                <p>Copyright &copy  Azolution Software &amp; Engineers Ltd  2013, All right reserved | Powered by: <a href="http://www.azolutionse.com/" target="_blank">Azolution</a> </p>
+            </div>
+        </div>*@
+    </footer>
+        
+</body>
+    

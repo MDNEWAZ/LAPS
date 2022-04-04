@@ -1,0 +1,17 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Reports/Commision/CommisionReportSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/Commision/CommisionReportDetails.js")
+@{
+    ViewBag.Title = "Representator Commision Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<div class="k-block">
+    <div class="k-header">Representator Commision Report</div>
+    <div class="centerAlign">
+        <label>From Date:</label>
+        <input type="text" id="txtFromDateTime" placeholder="From date" />
+        <label>From Date:</label>
+        <input type="text" id="txtToDateTime" placeholder="To date" />
+        <button class="k-button" id="btnShowCommReport">Show Report</button>
+    </div>
+</div>

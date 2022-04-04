@@ -1,0 +1,125 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Customer/CustomerDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/CustomerInfo.js")
+
+<div class="">
+    <div id="CustomerDetailsDiv" class="divDetails">
+
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Customer Details</h2>
+            <ul>
+                <div class="leftDiv">
+                    <ul>
+                        <li>
+                            <input type="hidden" id="hdnCustomerId" value="0"/>
+                            <input type="hidden" id="hdnPrantId" value="0"/>
+                            <input type="hidden" id="hdnFlag" value="0"/>
+
+                            <label for="CustomerCode" class="required lbl widthSize40_per rightAlign">Customer Code:</label>
+                            <input type="text" id="txtCodeCustInfo" name="CustomerCode" maxlength="50" class="k-textbox" placeholder="Customer Code" required validationmessage=" " readonly="readonly" disabled="disabled" />
+
+                        </li>
+                        <li>
+                            <label for="txtPidCustInfo" class="required lbl widthSize40_per rightAlign">Product ID:</label>
+                            <input id="txtPidCustInfo" type="text" class="k-textbox" placeholder="Please Enter Product ID No." readonly="readonly" disabled="disabled" />
+                        </li>
+                        <li>
+
+                            <label for="txtNid" class="lbl widthSize40_per rightAlign">National ID:</label>
+                            <input type="text" class="k-textbox" id="txtNidCustInfo" name="txtNid" placeholder="Please Enter National ID No." validationmessage=" " readonly="readonly" disabled="disabled" />
+                        </li>
+
+                        <li>
+
+                            <label for="txtPhone" class="required lbl widthSize40_per rightAlign">Mobile No-1:</label>
+                            <input id="txtMobileNo1" class="k-textbox" name="txtPhone" type="tel" placeholder="01X XXXXXXXX" required validationmessage="Please enter valid mobile number " readonly="readonly" disabled="disabled" />
+                        </li>
+                        <li>
+
+                            <label for="txtPhone2" class="required lbl widthSize40_per rightAlign">Mobile No-2:</label>
+                            <input id="txtMobileNo2" class="k-textbox" name="txtPhone2" type="tel" placeholder="01X XXXXXXXX" required validationmessage="Please enter valid mobile number "   />
+                        </li>
+                        <li>
+
+                            <label for="txtNameCustInfo" class="required lbl widthSize40_per rightAlign">Name:</label>
+                            <input type="text" id="txtNameCustInfo" name="CustomerName" maxlength="50" class="k-textbox" placeholder="Customer Name" required validationmessage="Please enter customer name " />
+                        </li>
+                        <li>
+                            <label for="CustomerFathersName" class="required lbl widthSize40_per rightAlign">Father's Name:</label>
+                            <input type="text" id="txtCustomerFatherName" name="CustomerFathersName" maxlength="50" class="k-textbox" placeholder="Customer Father's Name" />
+                        </li>
+
+                        <li>
+                            <label for="ddlDob" class="required lbl widthSize40_per rightAlign">Date of Birth:</label>
+                            <input id="txtDateOfBirth" validationmessage=" " name="ddlDob" />
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="rightDiv">
+                    <ul>
+                        <li>
+                            <label for="CompanyName" class="lbl lblTextArea widthSize40_per rightAlign">Company Name:</label>
+                            <input id="cmbCompanyName" required validationmessage="Please Select a Company " name="CompanyName" />
+                        </li>
+                        <li>
+
+                            <label for="cmbBranchName" class="lbl lblTextArea widthSize40_per rightAlign">Branch Code & Name:</label>
+                            <input id="cmbBranchName" required validationmessage="Please Select a Branch " name="BranchName" />
+                        </li>
+                        <li id="liBranchSmsMobileNumber">
+                            <label for="txtPhone" class="required lbl widthSize40_per rightAlign">Branch SMS Mobile Number:</label>
+                            <input id="txtBranchSmsMobileNumber" class="k-textbox" name="txtPhone" type="tel" placeholder="01X XXXXXXXX" required validationmessage=" " readonly="readonly" />
+                        </li>
+                        <li>
+
+                            <label for="txtAddress" class="lbl lblTextArea widthSize40_per rightAlign">Addres:</label>
+                            <input id="txtAddress" maxlength="1000" class="k-textbox" />
+                        </li>
+
+                        <li>
+                            <label for="ThanaName" class="lbl lblTextArea widthSize40_per rightAlign">Thana:</label>
+                            <input id="txtThana" class="k-textbox" name="ThanaName" />
+
+                        </li>
+                        <li>
+                            <label for="ddlGender" class="required lbl widthSize40_per rightAlign">Gender:</label>
+                            <input id="cmbGender" name="ddlGender" />
+                        </li>
+                        <li>
+
+                            <label for="ddlDistrict" class="lbl lblTextArea widthSize40_per rightAlign">District:</label>
+                            <input id="cmbDistrict" validationmessage=" " name="ddlDistrict" />
+                        </li>
+                        <li>
+
+
+                            <label for="IsActive" class="lbl widthSize40_per rightAlign">Active:</label>
+                            <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+
+                <li style="margin-left: 45%;">
+
+
+
+                    <button id="btnSave" class="k-button" type="submit" onclick="customerDetailsManager.SaveCustomer()">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="customerDetailsHelper.ClearCustomerForm()">Clear All</button>
+
+                </li>
+
+                <li class="displayNone">
+                    <label for="cmbCustomerType" class="lbl widthSize20_per rightAlign">Customer Type:</label>
+                    <input id="cmbCustomerType" value="" />
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

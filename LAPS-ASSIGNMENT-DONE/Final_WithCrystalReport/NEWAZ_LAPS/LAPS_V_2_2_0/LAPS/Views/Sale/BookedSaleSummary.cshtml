@@ -1,0 +1,42 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/BookedSaleSummary.js")
+<div class="">
+    <div class="k-block">
+      
+        <div class="divDetails">
+              <h2 class="k-header centerAlign">Booked Sale Summary </h2>
+            <ul>
+                <li class="">
+                    <div class="k-block">
+                        <span class="k-header">
+                            <label for="BookedDateFrom" class="lbl widthSize10_per rightAlign">Entry Date From:</label>
+                            <input id="txtBookedDateFrom" name="BookedDateFrom" type="text" class="k-datepicker" />
+                            
+                            <label for="BookedDateTo" class="lbl widthSize10_per rightAlign">Entry Date To:</label>
+                            <input id="txtBookedDateTo" name="BookedDateTo" type="text" class="k-datepicker" />
+
+                            <label for="txtBookedInvoice" class="widthSize10_per">Invoice/Mobile No:</label>
+                            <input id="txtBookedInvoice" type="text" class="k-textbox" placeholder="Enter a Invoice/Mobile No" />
+
+                            <button id="btnSearchBookedSaleInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+
+@*                            <label class="lbl widthSize34_per"></label>
+                            <button id="btnAddNewSale" class="k-button rightAlign">Add New Sale</button>*@
+                        </span>
+                    </div>
+                </li>
+                <li class="accept"></li>
+            </ul>
+        </div>
+
+
+        <div id="gridBookedSale"></div>
+        <br />
+        <div class="centerAlign">
+            <button id="btnCloseSummary" class="k-button rightAlign">Back</button>
+            <button type="button" id="btnSaveAsDraft" class="k-button rightAlign">Save As Draft</button>
+               @*<button id="btnClear" class="k-button rightAlign">Clear</button>*@
+        </div>
+         
+    </div>
+    <div class="clear"></div>
+</div>

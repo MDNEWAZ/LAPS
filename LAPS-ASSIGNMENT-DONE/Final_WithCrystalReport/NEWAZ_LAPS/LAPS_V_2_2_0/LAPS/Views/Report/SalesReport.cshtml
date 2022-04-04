@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Sales Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br/><br/>
+<div class="k-header">Sale & Collection Report</div>
+<div class="divDetails">
+    @Html.Partial("_ReportParam")
+   <hr/>
+    <div class="centerAlign">
+        
+        <label>From Date:</label>
+        <input type="text" id="txtFromDateTime" placeholder="From date"/>
+        <label>From Date:</label>
+        <input type="text" id="txtToDateTime" placeholder="To date" />
+        <button class="k-button" id="btnShowReport">Show Report</button>
+        <button class="k-button" id="btnClearParam">Clear</button>
+    </div>
+</div>
+
+<br /><br /><br /><br /><br />

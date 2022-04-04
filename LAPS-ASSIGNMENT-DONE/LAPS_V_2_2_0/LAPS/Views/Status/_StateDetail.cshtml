@@ -1,0 +1,39 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Core/WorkFlow/StateDetail.js")
+
+<div id="divStateDetails">
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label class="lbl widthSize20_per">Menu:</label>
+                <input type="hidden" id="stateID" value=""/>
+                <input type="hidden" id="actionID" value=""/>
+                <input id="cmbMenu" name="MenuName" validationMessage="Please Select Menu" required="required" />
+            </li>
+            <li>
+                <label for="txtStateName" class="lbl widthSize20_per">State Name:</label>
+                <input type="text" id="txtStateName" maxlength="50" pattern="[a-zA-Z0-9 ]+" name="LoginId" class="k-textbox" validationMessage="Please input valid State Name" required="required" />
+            </li>
+            <li>
+                <label class="lbl widthSize20_per">Is Close:</label>
+                <input id="cmbIsClose" name="IsClose" validationMessage="Please Select" required="required" />
+            </li>
+            <li>
+                <label for="IsDefault" class="lbl widthSize20_per">Is Default:</label>
+                <input type="checkbox" id="chkIsDefault" name="IsDefault" class="chkBox" />
+            </li>
+        </ul>
+    </div>
+    <div class="divDetails">
+    <ul>
+    <li  class="accept">
+        <button id ="btnSave" class="k-button" type="submit" onclick="stateDetailManager.SaveInfo()">Submit</button> &nbsp;&nbsp;
+        <button id="btnClearAll" class="k-button" onclick="stateDetailManager.clearForm()">Clear All</button>
+    </li>
+    <li class="status">
+    </li>
+    </ul>
+    </div>
+</div>
+
+

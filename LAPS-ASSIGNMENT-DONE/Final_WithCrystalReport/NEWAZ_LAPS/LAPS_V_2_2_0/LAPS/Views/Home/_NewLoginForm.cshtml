@@ -1,0 +1,21 @@
+﻿<div class="form-1" id="divLogin">
+    <p class="field">
+        <input type="text" id="txtLoginId" placeholder="Username" name="login">
+        <i class="icon-user icon-large"  ></i>
+    </p>
+    <p class="field">
+        <input type="password" id="txtpassword" placeholder="Password" name="password">
+        <i class="icon-lock icon-large"></i>
+    </p>
+    <p class="submit" >
+        <button name="submit" id="btnLogin"  type="submit" onclick="loginManager.LogInToSystem()"><i class="icon-arrow-right icon-large"><span style="font-size:13px;">Login</span></i></button>
+    </p>
+    @*</form>*@
+
+</div>
+<div id="divBlockMessage" style="display: none;">
+    <h1>
+        <img src="~/Images/busy.gif" />
+        Just a moment...</h1>
+    @*<h1>We are processing your request.  Please be patient.</h1>*@
+</div>

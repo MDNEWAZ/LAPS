@@ -1,0 +1,62 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/CustomerInfo.js")
+
+<div class="">
+    <div id="CustomerDetailsDiv" class="">
+
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Customer Information
+            </h2>
+            <ul>
+                <li>
+                  
+                    <input type="hidden" id="hdnCustomerId" />
+                    <input type="hidden" id="hdnBranchSmsMobNo" />
+                    <input type="hidden" id="hdnBranchCode"/>
+                    <input type="hidden" id="hdnIsCustomerUpgraded"/>
+                    <input type="hidden" id="hdnSaleTypeId"/>
+
+                    <label for="txtCodeCustInfo" class="required lbl widthSize25_per rightAlign">Customer ID</label>
+                    <input type="text" id="txtCodeCustInfo" name="CustomerCode" maxlength="50" class="k-textbox" placeholder="Customer Id" readonly="readonly" />
+                  @*  <button id="btnSearchCustInfo" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>*@
+
+                </li>
+                <li>
+                    <label for="txtPidCustInfo" class="lbl widthSize25_per rightAlign">Product Id:</label>
+                    <input id="txtPidCustInfo" class="k-textbox" placeholder="For Customer Id" maxlength="8" />
+                </li>
+                <li>
+                    <label for="txtNidCustInfo" class="lbl widthSize25_per rightAlign">National Id:</label>
+                    <input id="txtNidCustInfo" class="k-textbox" placeholder="For Customer Id" />
+                </li>
+                <li id="liCustomerMobile1">
+                    <label for="MobileNo1" class="required lbl widthSize25_per rightAlign">Mobile No-1:</label>
+                    <input id="txtMobileNo1" class="k-textbox" name="MobileNo1" type="text" placeholder="For Customer Id"  />@*pattern="[0-9]{11}"*@@*required validationmessage="Please enter Mobile No-1"*@
+                </li>
+                <li id="liCustomerMobNo2">
+                    <label for="MobileNo2" class="required lbl widthSize25_per rightAlign">Mobile No-2:</label>
+                    <input id="txtMobileNo2" class="k-textbox" name="MobileNo2" type="text" placeholder="For SMS & Ref. Id" />@*pattern="[0-9]{11}"*@
+                </li>
+
+                <li>
+                    <label for="txtNameCustInfo" class="required lbl widthSize25_per rightAlign">Customer Name</label>
+                    <input id="txtNameCustInfo" class="k-textbox" placeholder="Customer Name" />
+                </li>
+                  <li>
+                    <label for="txtReferenceId" class="required lbl widthSize25_per rightAlign">Reference ID:</label>
+                    <input id="txtReferenceId" class="k-textbox" name="txtReferenceId" placeholder="Reference ID" disabled="disabled" />
+                </li>
+                <li>
+                    <label for="chkStaff" class="required lbl widthSize25_per rightAlign">Is Staff:</label>
+                    <input type="checkbox" id="chkStaff" name="chkStaff" class="k-checkbox" />
+                </li>
+
+                <li class="displayNone" id="staffcomboli">
+                    <label for="staffId" class="required lbl widthSize25_per rightAlign">Staff ID:</label>
+                    <input id="cmbStaffId" name="staffId" />
+                </li>
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>

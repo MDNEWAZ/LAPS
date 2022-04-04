@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Collection SMS handaling";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/CollectionSmsSettings.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/CollectionSmsDetails.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Sale/SMS/CollectionSmsSummary.js"></script>
+<br />
+<div class="k-block">
+    <div class="k-header">Un Recognized Collection SMS handaling</div>
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label class="lbl widthSize10_per">SM Recieve Date From:</label>
+                <input id="dtRecievedDateFrom" />&nbsp;&nbsp;&nbsp;
+
+                <label class="lbl widthSize10_per">SMS Recieve Date To:</label>
+                <input id="dtRecievedDateTo"/>
+                <button id="smsSearch" type="button" class="k-button" name="Search"> <span class="k-icon k-i-search"></span> search</button>
+            </li>
+        </ul>
+    </div>
+    <br/>
+    <div id="smsSummaryOfCollection"></div>
+</div>
+<div id="smsPopup" style="display: none">
+    @Html.Partial("../Sms/CollectionSmsPopUpForEdit")
+</div>

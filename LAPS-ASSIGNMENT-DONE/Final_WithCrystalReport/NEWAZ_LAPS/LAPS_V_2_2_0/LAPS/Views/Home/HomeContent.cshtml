@@ -1,0 +1,192 @@
+﻿<link href="~/UIFramework/Css/Solaric/Login.css" rel="stylesheet" />
+<link href="~/UIFramework/Css/Solaric/font-awesome.css" rel="stylesheet" />
+<div id="HomeContent" class="HomeContentCss">
+    
+    <div id="content" @*class="zofficeHome"*@>
+        
+        @*<div class="leftDivZpanelHome">
+            <div class="leftDivZpanelHomebottom">
+                <ul id="olzpanelHome">
+                    <li>-	SAVE GREEN </li>
+                    <li>-	SAVE ENERGY </li>
+                    <li>-	SAVE THE PLANET</li>
+                </ul>
+            </div>
+        </div>*@
+
+        @*<div class="middleDivZpanelHome">
+            <b>EOffice is a front office system to manage employees and their daily activities. To save time and to improve the Human Resource Management,  Business Automation Ltd has brought EOffice Plus which is a very innovative solution to manage Employee Record, Attendance, Movement, Leave, Conveyance, Payroll, etc. very efficiently and the resource utilization can be improved more than 50% which will save management time more than half.</b><br /><br />
+            Login into the system where a role based security policy applied. <br /><br />
+            Use common dashboard where the daily necessary information summarized for quick view. <br /><br />
+            Use Powerful Administrative Control Panel to manage Company Settings, Security Policy, Group Permission, User Management, System Settings, Holiday Settings, etc. 
+        </div>*@
+
+        @*<div class="rightDivZpanelHome">
+            <div class="rightDivZpanelHomeTop">KEY FEATURES</div>
+            <ul>  
+                <li>-</li>                                      
+                <li>Attendance Mangement</li>
+                <li>Dashboard Management</li>
+                <li>Employee Record Management</li>
+                <li>Leave Registry &amp; Encashment/Forwarding</li>                
+                <li>Movement Registry</li> 
+                <li>Conveyance Registry</li>
+                <li>Salary &amp; Bonus</li>
+                <li>Project &amp; Task</li>
+                <li>Administrative Settings</li>
+                <li>Realistic Workflow</li>
+            </ul>
+        </div>*@
+        
+        
+        
+        
+        
+        @Html.Partial("_NewLoginForm")
+        
+        @*<form class="form-1">*@
+        
+        <ul style="list-style-type: none">
+            <li > <img src="../../Images/Slider/image8.jpg" width="975" height="317" style="margin-left: 2px; border-radius: 25px;" alt="Slide 2"></li>
+        
+        </ul>
+                    
+@*<div id="slider">
+  <a href="#" class="control_next">>></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+
+       <li > <img src="../../Images/Slider/image2.jpg" width="905" height="280" alt="Slide 2"></li>
+	  <li > <img src="../../Images/Slider/image10.jpg" width="905" height="280" alt="Slide 1" ></li>
+      <li > <img src="../../Images/Slider/image3.png" width="905" height="280" alt="Slide 3"></li>
+      <li > <img src="../../Images/Slider/image4.jpg" width="905" height="280" alt="Slide 3"></li>
+	  <li > <img src="../../Images/Slider/image5.gif" width="905" height="280" alt="Slide 4"></li>
+	  <li > <img src="../../Images/Slider/image7.png" width="905" height="280" alt="Slide 5"></li>
+	  <li > <img src="../../Images/Slider/image8.jpg" width="905" height="280" alt="Slide 6"></li>
+	  <li > <img src="../../Images/Slider/image9.jpg" width="905" height="280" alt="Slide 7"></li>
+	  
+	  <li > <img src="../../Images/Slider/image9.jpg" width="905" height="280" alt="Slide 9" style="background:none"></li>
+  </ul>  
+</div>*@
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        <div class="clear"></div>
+    </div>
+    
+    
+
+
+    <div class="clear"></div>
+    <br/>
+</div>
+
+<div id="divMovementPopup" class="core-popup-form" style="display:none;">
+            <h1 id="h2">Movement Log</h1>
+            <div class="popDetails">
+            <div id="divPendingMessage" class="loginInner"></div>
+            <div class="loginInner">
+                <label  class="editor-label">
+                    Attendance Date:</label>
+                <input type="text" id="txtAtdAdjDate"class="txtField" disabled="disabled" />
+            </div>
+            <div class="loginInner">
+                <label class="lbl lblOutSideMovement">Movement Type:</label>
+                <select id="cmbMovementType" class="comboField lblTIN" style="width: 278px;">
+                    <option value="3">On Client Visit</option>
+                    <option value="5">Short Leave</option>   
+                    <option value="6" selected="selected">I am Late</option>
+                    <option value="7">Leave</option>                                                        
+                </select>
+            </div>
+            <div class="loginInner" id="divClientInfo" style="display:none;">
+                <label class="lbl lblOutSideMovement" >Client Name:</label>
+                <select id="cmbClient" class="comboField lblTIN" style="width: 278px;">
+                    <option value="0">Select a client</option>                    
+                </select>
+            </div>
+            <div class="loginInner" id="divLeaveInfo" style="display:none;">
+                <label class="lbl lblOutSideMovement" >Leave Type:</label>
+                <select id="cmbLeaveType" class="comboField lblTIN" style="width: 278px;">
+                    <option value="0">Select a Leave Type</option>                    
+                </select>
+            </div>
+            <div class="loginInner">
+                <label class="lbl lblOutSideMovement lblTextArea">Remarks:</label>
+                <textarea id="txtAreaRemarks" rows="3" cols="31" class="zlblTIN"></textarea>
+            </div>
+
+            <br />
+            <div class="actionButtons">
+                <input type="button" id="btnLogMovement" class="btn btnCls" value="Save" />
+            </div>
+            </div>
+        </div>
+ <div id="backgroundPopup"></div> 
+
+<div class="clear"></div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        //$('#checkbox').change(function () {
+           
+        //});
+        
+        setInterval(function () {
+            moveRight();
+        }, 3000);
+
+        var slideCount = $('#slider ul li').length;
+        var slideWidth = $('#slider ul li').width();
+        var slideHeight = $('#slider ul li').height();
+        var sliderUlWidth = slideCount * slideWidth;
+
+        $('#slider').css({ width: slideWidth, height: slideHeight });
+
+        $('#slider ul').css({ width: sliderUlWidth, marginLeft: -slideWidth });
+
+        $('#slider ul li:last-child').prependTo('#slider ul');
+
+        function moveLeft() {
+            $('#slider ul').animate({
+                left: +slideWidth
+            }, 200, function () {
+                $('#slider ul li:last-child').prependTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+
+        function moveRight() {
+            $('#slider ul').animate({
+                left: -slideWidth
+            }, 200, function () {
+                $('#slider ul li:first-child').appendTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+
+        $('a.control_prev').click(function () {
+            moveLeft();
+        });
+
+        $('a.control_next').click(function () {
+            moveRight();
+        });
+
+    });
+
+
+</script>

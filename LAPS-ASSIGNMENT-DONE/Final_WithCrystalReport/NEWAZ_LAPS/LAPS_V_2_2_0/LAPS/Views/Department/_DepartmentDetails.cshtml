@@ -1,0 +1,38 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/HumanResource/Department/DepartmentDetails.js")
+
+
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">Department Details</legend>
+        <div id="departmentDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <label class="lbl widthSize20_per">Company:</label>
+                    <input type="hidden" id="hdnDepartmentId" value="0" />
+                    <input id="cmbCompanyName" name="CompanyName" validationmessage="Please Select Company Name" required="required" onchange="departmentDetailsHelper.changeCompanyName();" />
+                </li>
+                <li>
+                    <label for="DepartmentName" class="lbl widthSize20_per">Department Name:</label>
+                    <input type="text" id="txtDepartmentName" name="DepartmentName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Department Name" required validationmessage="Please enter valid Department Name" />
+                </li>
+
+                @* <li>
+                <label class="lbl widthSize20_per">Department Head:</label>
+                <input id="cmbEmployee" name="EmployeeName"/>
+            </li>*@
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit" onclick="departmentDetailsManager.SaveDepartmentInformation()">Submit</button>
+                    &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="departmentDetailsHelper.clearDepartmentForm()">Clear All</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+    </fieldset>
+</div>

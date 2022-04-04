@@ -1,0 +1,43 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Sales/Replacement/InformationForReplacement.js")
+<div class="">
+   
+    <div id="CustomerDetailsDiv" class="">
+
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Information
+            </h2>
+            <ul>
+              
+                <li>
+                    <input type="hidden" id="hdnCompanyCode" />
+                    <input type="hidden" id="hdnCustomerId" />
+                    <input type="hidden" id="hdnCompanyId" />
+                    <input type="hidden" id="hdnBranchId" />
+                
+                   
+
+                       <input type="hidden" id="hdnSaleInvoiceNo" />
+
+                    <label for="txtCustomerCode" class="required lbl widthSize25_per rightAlign">Customer ID</label>
+                    <input type="text" id="txtCustomerCodeRe" name="txtCustomerCode"  class="k-textbox" placeholder="Customer Code" />
+                    
+                    <button id="btnSearchReplacement" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+                   <label class="required lbl widthSize25_per rightAlign" style="font-family: sans-serif ;font-style: italic; background-color: skyblue;">Please Enter Customer ID For Search</label>
+                </li>
+               
+                <li>
+                    <label for="txtCustomerName" class="required lbl widthSize25_per rightAlign">Customer Name</label>
+                    <input id="txtCustomerNameRe" class="k-textbox" name="txtCustomerName" placeholder="Customer Name" />
+                </li>
+                <li>
+                       <label for="cmbModelProInfo" class="required lbl widthSize25_per rightAlign">Package:</label>
+                    <input id="cmbModelProInfo" />
+                </li>
+            
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>

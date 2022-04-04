@@ -1,0 +1,64 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/ProductInfo.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Product/ProductDetails.js")
+
+@{
+    ViewBag.Title = "Product Info";
+}
+
+<div class="">
+    <div id="productDetailsDiv" class="">
+        
+        <div class="k-block">
+           @* <h2 class="k-header centerAlign">Original Product Information
+            </h2>*@
+            <ul>
+                <li id="liSaleInvoice" >
+                    <input id="hdnModelIdProInfo" type="hidden" value="0" />
+
+                    <label for="txtInvoiceProInfo" class="required lbl widthSize20_per rightAlign">Sale Invoice:</label>
+                    <input type="text" id="txtInvoiceProInfo" name="ProductCode" maxlength="50" class="k-textbox" placeholder="Sale Invoice no" />
+                   @* <button id="btnSearchInvoiceProInfo" class="k-button" type="submit" onclick="productInfoManager.FillCustomerProductForm()"><span class="k-icon k-i-search"></span></button>*@
+                </li>
+                <li class="displayNone">
+                    <label for="cmbModelProInfo" class="required lbl widthSize20_per rightAlign">Model:</label>
+                    <input id="cmbModelProInfo" />
+                    @* <button id="btnSearchProInfo" class="k-button displayNone" type="submit" onclick="productInfoManager.ProductInfoFill()"><span class="k-icon k-i-search displayNone"></span></button>*@
+                   @* <button id="btnAddProInfo" class="k-button" type="submit" onclick="productInfoManager.OpenItemSelectProductWindow()"><span class="k-icon k-add"></span></button>*@
+                </li>
+                <li class="displayNone">
+                    <label for="txtNameProInfo" class="required lbl widthSize20_per rightAlign">Product Name:</label>
+                    <input id="txtNameProInfo" class="k-textbox" disabled="disabled" />
+                </li>
+                @*  <li>
+                    <label for="txtCodeProInfo" class="required lbl widthSize25_per rightAlign">Product No:</label>
+                    <input type="text" id="txtCodeProInfo" name="ProductCode" maxlength="50" class="k-textbox" placeholder="Product No" />
+                <button id="btnSearchProductNoProInfo" class="k-button" type="submit" onclick="productInfoManager.FillCustomerProductForm()"><span class="k-icon k-i-search"></span></button>
+                
+                </li>*@
+               
+                @*  <li>
+                    <label for="txtManuDateProInfo" class="required lbl widthSize25_per rightAlign">Manufacture Date:</label>
+                    <input id="txtManuDateProInfo" class="k-textbox" disabled="disabled" />
+                </li>*@
+                <li class="displayNone">
+                    <label for="txtLicenseProInfo" class="lbl widthSize20_per rightAlign">License No:</label>
+                    <input id="txtLicenseProInfo" class="k-textbox" disabled="disabled" />
+                </li>
+                <li class="displayNone">
+                    <label for="txtLicenseTypeProInfo" class="lbl widthSize20_per rightAlign">License Type:</label>
+                    <input id="txtLicenseTypeProInfo" class="k-textbox" disabled="disabled" />
+
+                </li>
+                <li>
+                  
+                    
+                </li>
+
+                
+                 
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>

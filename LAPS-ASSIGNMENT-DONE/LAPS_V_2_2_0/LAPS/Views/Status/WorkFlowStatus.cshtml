@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "WorkFlow Status";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Core/WorkFlow/WorkFlowSettings.js")
+
+<div class="mainDiv">
+
+    <h2 class="k-header">Workflow Status</h2>
+
+    @Html.Partial("_WorkFlowSummery")
+    @Html.Partial("_WorkFlowDetail")
+    <div class="clear"></div>
+</div>
+

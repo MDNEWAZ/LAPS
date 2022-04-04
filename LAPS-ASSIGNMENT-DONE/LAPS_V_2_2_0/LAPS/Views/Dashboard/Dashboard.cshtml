@@ -1,0 +1,172 @@
+﻿@using Azolution.Entities.Core
+@{
+    ViewBag.Title = "SOLARIC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/Chart/jquery.flot.js")
+@Scripts.Render("~/Scripts/Chart/jquery.flot.pie.js")
+<link href="~/Scripts/Chart/Plugin/styles/jqx.base.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/Chart/Plugin/jqxcore.js" type="text/javascript"></script>
+<script src="~/Scripts/Chart/Plugin/jqxdata.js" type="text/javascript"></script>
+<script src="~/Scripts/Chart/Plugin/jqxchart.js" type="text/javascript"></script>
+
+@Scripts.Render("~/Scripts/eAzolution/Core/Dashboard/Dashboard.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Dashborad/PendingCollection.js")
+@Scripts.Render("~/Scripts/amcharts/amcharts.js")
+@Scripts.Render("~/Scripts/eAzolution/Core/Dashboard/DashboardSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Collection/CollectionCustometRating.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Common/CompanyHierarchyPath.js")
+
+
+<link href="~/UIFramework/Css/notification.css" rel="stylesheet" />
+
+
+<script src="~/Scripts/amcharts/serial.js"></script>
+@*<h2 class="k-header centerAlign">SOLAR INTERNATIONAL (SOLARIC) LTD</h2>*@
+<div id="" class="mainDiv">
+
+    <div id="headerBar" class="k-header" style="height: 35px;">
+        @*<h2 class="">My Dashboard</h2>*@
+
+        <h1 style="display: inline; margin-top: 5px">My Dashboard</h1>
+        @Html.Partial("Notification")
+    </div>
+    <div class="clear"></div>
+
+
+    <div id="RightDivDashboard" class="RightDivDashboard">
+        <div id="divOfficeTimeWithClock" style="display: none">
+            @Html.Partial("_OfficeTimeWithClock")
+        </div>
+        @*  <div id="divReleaseLicenseGenerate" >
+            
+            @Html.Partial("_ReleaseLicenseGenerate")
+        </div>*@
+
+        <div id="MonthWiseCharts" class="displayNone">
+            @Html.Partial("_MonthWiseCharts")
+        </div>
+
+    </div>
+
+    <div id="LeftDivDashboard" class="LeftDivDashboard">
+
+
+
+
+
+        <div id="divDateRange" class="displayNone">
+            <label class="lbl lblTextArea widthSize10_per">From Date:</label>
+            <input id="cmbFromDate" value="" placeholder="From Date" />
+
+            <label class="lbl lblTextArea widthSize10_per rightAlign">To Date:</label>
+            <input id="cmbToDate" value="" placeholder="To Date" />
+        </div>
+        @*<button id="btnCodeSearch" type="button" class="k-button"  >Code Search</button>*@
+        <br />
+        <div id="divCompanyAndBranchFilter" class="displayNone">
+           
+            <ul id="ulIdentityPanelOrganogram">
+                <li class=" k-fontSize[25]"><b>Filtering with Organogram </b>
+                    <div class="divDetails">
+                        <ul>
+                            <li>
+                                <label for="search-term" class="lbl lblTextArea widthSize20_per rightAlign">Quick Search:</label>
+                                <input id="search-term" class="k-textbox" required validationmessage=" " name="search-term" />
+                            </li>
+                        </ul>
+
+
+                        @Html.Partial("_Organogram")
+                    </div>
+                </li>
+            </ul>
+
+            <br />
+        </div>
+
+        @*<div class="divDetails">
+           
+               
+          
+            <ul>
+                <li>
+                    <label for="CompanyName" class="lbl lblTextArea widthSize20_per rightAlign">Company Name:</label>
+                    <input id="cmbCompanyName" required validationmessage=" " name="CompanyName" />
+                    
+                    <label for="cmbBranchName" class="lbl lblTextArea widthSize20_per rightAlign">Branch Name:</label>
+                    <input id="cmbBranchName" required validationmessage=" " name="BranchName" />
+                        
+                    <button id="btnCodeSearch" type="button" class="k-button">Code Search</button>
+                </li>
+            </ul>
+        </div>*@
+        <div id="staticMenuForDataEntryOperator" class="displayNone">
+            @*@Html.Partial("../Dashboard/_StaticMenuForDataEntryOperator")*@
+            @Html.Partial("_StaticMenuForDataEntryOperator")
+        </div>
+
+        <div id="divStockGraph" class="displayNone">
+           <label for="companyName" class="lbl widthSize20_per rightAlign">Select Company:</label>
+            <input id="cmbCompany" name="companyName"/>
+
+            <div id="divStockGraphSales" class="displayNone">
+                <h2 class="k-header centerAlign " style="font-size: 2.2em">Current Stock Balance (Sales)</h2>
+                <div id="stockGraphSales" class="monthWiseGraph"></div>
+            </div>
+
+            <div id="divStockGraphReplacement" class="displayNone">
+                <h2 class="k-header centerAlign " style="font-size: 2.2em">Current Stock Balance (Replacement)</h2>
+                <div id="stockGraphReplacement" class="monthWiseGraph"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="divTabularFormateOfRating" class="displayNone">
+            <h2 class="k-header centerAlign " style="font-size: 2.2em">Tabular Formate Of Rating</h2>
+        </div>
+
+
+
+        <div id="divPastDueCollection" class="displayNone">
+
+            @Html.Partial("_DueCollection")
+        </div>
+
+        @*        @Html.Partial("_PieChart")
+        @Html.Partial("_TopTenOrangeCustomer")*@
+
+
+        @* <div class="clear"></div>*@
+        <div id="divMonthlyBusinessTrend" class="displayNone">
+            <h2 class="k-header centerAlign " style="font-size: 2.2em">Monthly Business Trend</h2>
+            @Html.Partial("_PendingCollection")
+        </div>
+
+        <div id="divCustomerRating" class="displayNone">
+            @Html.Partial("_topTenRedCustomer")
+        </div>
+
+
+        <div id="divStockStatus" class="displayNone">
+            <h2 class="k-header centerAlign " style="font-size: 2.2em">Stock Status</h2>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="SingleUserMessageWindow" style="display: none"></div>
+    <div class="clear"></div>
+    @* <div id="CodeSearchPopUp">
+        @Html.Partial("_CodeSearch")
+    </div>*@
+
+</div>
+

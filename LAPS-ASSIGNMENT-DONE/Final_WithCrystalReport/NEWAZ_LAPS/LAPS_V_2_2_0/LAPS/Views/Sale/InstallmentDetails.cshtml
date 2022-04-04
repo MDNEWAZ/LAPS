@@ -1,0 +1,32 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/InstallmentDetails.js")
+<script src="~/Scripts/eAzolution/Sales/Replacement/ReplacementDetails.js"></script>
+
+
+<div id="">
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Instalment Details</h2>
+        <div class="rightAlign">
+            
+            <label for="DownpaymentPaid" id="lblDownpaymentPaid" class="widthSize15_per">Down payment Paid:</label>
+            <input id="txtDownpaymentPaid" class=" k-textbox" style="width: 10%" name="DownpaymentPaid" disabled="disabled" />
+            
+
+            <label for="Downpayment" id="lblDownpayment" class="widthSize15_per">Down payment Due:</label>
+            <input id="txtDownpayment" class=" k-textbox" style="width: 10%" name="Downpayment" disabled="disabled" />
+
+
+            <label for="Status" class="widthSize8_per">Status:</label>
+            <input id="cmbStatus" class=" leftAlign" name="Status" />
+            
+            <button id="btnReceive" class="btnSale" hidden="hidden" onclick="">Receive</button>
+        </div>
+      
+        <div id="gridInstalment"></div>
+        
+    </div>
+
+</div>
+
+<div class="displayNone" id="collectionPopupWindow">
+    @Html.Partial("~/Views/Collection/_CollectionDetailsPopup.cshtml")
+</div>

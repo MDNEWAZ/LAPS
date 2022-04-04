@@ -1,0 +1,54 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockProductItems.js")
+
+
+<div id="productStockDetailsDiv" class="displayNone">
+    <div id="" class="divDetails">
+        <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+            <legend class="k-fontSize[15]">+</legend>
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnModelIdStock" />
+                    <input type="hidden" id="hdnFlagStock" />
+
+                    <label for="cmbModelStock" class="required lbl widthSize7_per rightAlign">Model:</label>
+                    <input type="text" id="cmbModelStock" name="ProductModel" maxlength="50" placeholder="Product Model" />
+
+                    <label for="txtNameStock" class="required lbl widthSize7_per rightAlign">Name:</label>
+                    <input type="text" id="txtNameStock" name="txtNameStock" maxlength="50" class="k-textbox" placeholder="Product Name" />
+
+                   @* <label for="txtQuantityStock" class="lbl widthSize7_per rightAlign">Quantity:</label>
+                    <input type="text" id="txtQuantityStock" pattern="[a-zA-Z0-9 ]+" maxlength="50" name="txtCapacity" class="k-textbox" />
+*@
+
+
+                </li>
+
+
+                @*   @Html.Partial("StockProductItems")*@
+                <li>
+                    <fieldset>
+                        <legend>Product Items Stock</legend>
+                        <div id="gridStockProductItems"></div>
+                    </fieldset>
+
+                </li>
+
+
+                @*  <li>
+                    <label for="chkIsActiveStock" class="lbl widthSize20_per rightAlign">Is Active:</label>
+                    <input type="checkbox" id="chkIsActiveStock" name="IsActive" class="k-checkbox" />
+                </li>*@
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit" onclick="stockDetailsManager.SaveStock()">Save</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="stockHelper.ClearStockForm();">Clear</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </fieldset>
+    </div>
+</div>
+
+
+

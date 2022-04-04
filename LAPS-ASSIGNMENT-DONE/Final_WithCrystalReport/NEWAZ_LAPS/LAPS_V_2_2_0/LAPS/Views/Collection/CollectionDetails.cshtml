@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Payment Collection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2 class="k-header centerAlign">Payment Collection</h2>*@
+<br />
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Collection/ManualCollection.js")
+
+<script src="~/Scripts/eAzolution/Sales/Replacement/ReplacementDetails.js"></script>
+
+<div class="divCenter widthSize40_per">
+    <div class="divDetails " id="collectionDetailsDiv">
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Payment Collection Details</h2>
+
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnInstallmentId" />
+                  @*  <input type="hidden" id="hdnModelId" />*@
+                  
+                    <input type="hidden" id="hdnCollectionId" />
+                </li>
+
+                <li>
+                    <label for="invoiceNo" class="required lbl widthSize20_per rightAlign">Invoice No:</label>
+                    <input type="text" id="txtInvoiceNo" name="invoiceNo" maxlength="50" class="k-textbox" placeholder="Invoice No" required validationmessage="Please Enter Invoice No" />
+
+                    <button type="button" id="btnSearchInstallment" class="k-button"><span class="k-icon k-i-search"></span></button>
+                </li>
+                <li>
+                    <label for="installmentNo" class="required lbl widthSize20_per rightAlign">Installment No:</label>
+                    <input type="text" id="txtInstallmentNo" name="installmentNo" maxlength="50" class="k-textbox" placeholder="Installment No" required validationmessage="Please Enter Installment No" disabled="disabled" />
+                </li>
+                <li>
+                    <label for="DueDate" class="required lbl widthSize20_per rightAlign">Due Date:</label>
+                    <input id="txtDueDate" name="DueDate" placeholder="Due Date" required validationmessage="Please Enter Due Date" disabled="disabled" />
+                </li>
+                <li>
+                    <label for="ReceiveAmount" class="lbl lblTextArea widthSize20_per rightAlign">Receive Amount:</label>
+                    <input id="txtReceiveAmount" name="ReceiveAmount" placeholder="Receive Amount" required validationmessage="Please Enter Amount"  />
+                </li>
+                <li>
+                    <label for="PaymentDate" class="lbl widthSize20_per rightAlign">Payment Date:</label>
+                    <input id="txtPaymentDate" name="PaymentDate" placeholder="Payment Date" required validationmessage="Please Enter Payment Date" />
+                </li>
+                <li>
+                    <label for="PaymentType" class="lbl lblTextArea widthSize20_per rightAlign">Payment Type:</label>
+                    <input id="cmbPaymentType" name="PaymentType" placeholder="Payment Type" required validationmessage="Please Select Payment Type" />
+                </li>
+                <li>
+                    <label for="TransactionNo" class="lbl widthSize20_per rightAlign">Transaction No:</label>
+                    <input id="txtTransactionNo" placeholder="Transaction No" name="TransactionNo" class="k-textbox" required validationmessage="Please Enter Transaction No" />
+                </li>
+
+
+                <br />
+
+                <li>
+                    <label class="lbl lblTextArea widthSize20_per rightAlign"></label>
+                    <button id="btnSaveManualCollection" class="k-button" type="button" onclick="">Save</button>@* <span class="k-icon k-i-pencil"></span>*@
+                    &nbsp;&nbsp;
+                     
+                    <button id="btnClearAll" class="k-button" onclick="ManualCollectionHelper.ClearFields();">Clear</button>
+                    &nbsp;&nbsp;
+                    @*<button id="btnCancel" class="k-button" onclick="">Cancel</button>*@
+                </li>
+
+                <li class="status"></li>
+
+               
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="displayNone" id="collectionPopupWindow">
+    @Html.Partial("~/Views/Collection/_CollectionDetailsPopup.cshtml")
+
+</div>

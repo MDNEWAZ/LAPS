@@ -1,0 +1,149 @@
+﻿<script src="~/Scripts/eAzolution/Sales/Mobile/MobileDetails.js"></script>
+	<div class="divDetails" id="divDeailsvalidation">
+
+
+
+		<div class="k-block">
+
+
+			<h2 class="k-header centerAlign">Mobile Details</h2>
+			<input type="hidden" id="hdnMobileId" />
+			<ul>
+				<li>
+					<label class="lbl widthSize20_per rightAlign">ModelName</label>
+					<input class="k-textbox" id="txtModelName" name="ModelName" title="Please Select the Name" required="required" />
+
+				</li>
+				<li>
+					<label class="lbl widthSize20_per rightAlign">Brand</label>
+					<input id="cmbBrand" name="Brand" title="Please Select a Brand" required="required" />
+				</li>
+				<li>
+					<label class="lbl widthSize20_per rightAlign">Color</label>
+					<input id="cmbColor" name="Color" title="Please Select a color" required="required" />
+				</li>
+				<li>
+					<label class="lbl widthSize20_per rightAlign">Price</label>
+					<input class="k-textbox" id="txtPrice" name="Price" title="Please Input Price" required="required" />
+				</li>
+				<li>
+					<label class="lbl widthSize20_per rightAlign">Is5G</label>
+					<input type="radio" name="Is5G" id="rd5G" value="1" title="Please Select one " required="required" /> Yes
+					<input type="radio" name="Is5G" id="rdnot5G" value="0" title="Please Select one " required="required" /> No
+				</li>
+
+				<li>
+					<label class="lbl widthSize20_per rightAlign">IsSmart</label>
+					<input type="checkbox" id="chkIsSmart" name="IsActive" class="k-checkbox" />
+
+				</li>
+
+
+				<li class="accept">
+					<button id="btnSave" class="k-button" type="submit">Save</button>
+					<button id="btnClearAll" class="k-button">Clear</button>
+				</li>
+			</ul>
+
+			@*
+				<button> NewItem </button>
+
+				<div id="popup">
+					<ul>
+						<li>Tomal </li>
+						<li>Newaz </li>
+						<li>Tonmoy</li>
+					</ul>
+				</div>*@
+
+
+		</div>
+
+	</div>
+
+
+<div id="mblFeatureDiv">
+    <input type="hidden" id="hdnFeatureId" />
+    <button class="k-header centerAlign"> Features </button>
+    <div id="popup2" style="display :none">
+        <div class="divDetails">
+            <div class="k-block">
+             
+                <ul>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Smart</label>
+                        <input type="checkbox" id="chkSmart" name="IsActive" class="k-checkbox" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">iOS</label>
+                        <input type="checkbox" id="chkiOS" name="IsActive" class="k-checkbox" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Android</label>
+                        <input type="checkbox" id="chkAndroid" name="IsActive" class="k-checkbox" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Support5G</label>
+                        <input type="checkbox" id="chkSupport5G" name="IsActive" class="k-checkbox" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">VRSupport</label>
+                        <input type="checkbox" id="chkVRSupport" name="IsActive" class="k-checkbox" />
+                    </li>
+
+                    <li class="accept">
+                        <button id="btnSave3" class="k-button" type="submit">Save</button>
+
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    @*<div id="popup" style="display: none" ;>
+            <div class="k-block">
+
+
+                <h2 class="k-header centerAlign">Mobile Details</h2>
+                <input type="hidden" id="hdnMobileId" />
+                <ul>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">ModelName</label>
+                        <input class="k-textbox" id="txtModelName" name="ModelName" title="Please Select the Name" required="required" />
+
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Brand</label>
+                        <input id="cmbBrand" name="Brand" title="Please Select a Brand" required="required" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Color</label>
+                        <input id="cmbColor" name="Color" title="Please Select a color" required="required" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Price</label>
+                        <input class="k-textbox" id="txtPrice" name="Price" title="Please Input Price" required="required" />
+                    </li>
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">Is5G</label>
+                        <input type="radio" name="Is5G" id="rd5G" value="1" title="Please Select one " required="required" /> Yes
+                        <input type="radio" name="Is5G" id="rdnot5G" value="0" title="Please Select one " required="required" /> No
+                    </li>
+
+                    <li>
+                        <label class="lbl widthSize20_per rightAlign">IsSmart</label>
+                        <input type="checkbox" id="chkIsSmart" name="IsActive" class="k-checkbox" />
+
+                    </li>
+
+
+                    <li class="accept">
+                        <button id="btnSave" class="k-button" type="submit">Save</button>
+                        <button id="btnClearAll" class="k-button">Clear</button>
+                    </li>
+                </ul>
+            </div>
+        </div>*@

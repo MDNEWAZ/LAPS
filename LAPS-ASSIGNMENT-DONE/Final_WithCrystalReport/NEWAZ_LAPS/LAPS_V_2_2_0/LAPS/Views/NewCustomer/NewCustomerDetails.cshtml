@@ -1,0 +1,32 @@
+﻿<script src="~/Scripts/eAzolution/HumanResource/NewCustomer/NewCustomerDetails.js"></script>
+<div class="rightDiv k-block">
+    <h2 class="k-header centerAlign">Customer Details</h2>
+    <div id="EmployeeDetailsDiv" class="divDetails">
+        <ul>
+            <li>
+                <label for="Name" class="lbl widthSize20_per">Name:</label>
+                <input type="hidden" id="hdnCustomerID" value="0" />
+
+                <input type="text" id="txtName" name="Name" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Name" required validationmessage="Please enter valid Name" />
+            </li>
+            <li>
+                <label for="Phone" class="lbl widthSize20_per">Mobile:</label>
+                <input type="text" id="txtPhone" name="Mobile" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Phone" required validationmessage="Please enter valid Phone Number" />
+            </li>
+
+            <fieldset>
+                <legend>Product Information</legend>
+                <div id="gridProductDetails"></div>
+            </fieldset>
+            <br />
+                     
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Azolution.BulkUploadDataService.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Azolution.BulkUploadDataService.pdb
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Azolution.Common.DataService.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Azolution.Common.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Oracle.DataAccess.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Utilities.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\bin\x64\Debug\Newtonsoft.Json.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\obj\x64\Debug\Azolution.BulkUploadDataService.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.BulkUploadDataService\obj\x64\Debug\Azolution.BulkUploadDataService.pdb

@@ -1,0 +1,36 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/CommissionSettings/CommissionSettingsDetails.js")
+
+<div class="divDetails" id="CommissionDetailsDiv">
+  
+    <div class="rightDiv k-block">
+        <h2 class="k-header centerAlign">Commission Settings Details</h2>
+        <ul>
+            <li>
+                <input type="hidden" id="hdnCommissionId" value="0" />
+                <label for="SaleRepType" class="lbl widthSize35_per">Sale Representative Type:</label>
+                <input  id="cmbSaleRepType"  name="SaleRepType" required validationmessage="Please Select Sale Representative Type"  />
+            </li>
+            <li>
+                <label for="SaleType" class="lbl widthSize35_per">Sale Type:</label>
+                <input type="text" id="cmbSaleType"  name="SaleType" required="required"/> 
+            </li>
+            <li>
+                <label for="CommissionAmount" class="lbl widthSize35_per">Commission Amount</label>
+                <input type="number" id="txtComissionAmount" maxlength="200000" min="0" name="CommissionAmount"   />@*required validationmessage="Please Enter Commission Amount"*@
+            </li>
+            <li>
+                <label for="IsActive" class="lbl widthSize35_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+            </li>
+            <br/>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="">Save</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="CommissionSettingsDetailsHelper.ClearCommissionSettingsForm();">Clear</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+    
+    
+</div>

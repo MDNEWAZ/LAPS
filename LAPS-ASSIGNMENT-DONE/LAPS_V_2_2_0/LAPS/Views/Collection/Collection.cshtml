@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Payment Collection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/Collection/Collection.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/InstallmentDetails.js")
+
+
+<h2 class="k-header centerAlign">Payment Collection</h2>
+<div id="collectionMainDetailsDiv" class="displayNone">
+    <div class="divDetails">
+        <div class="LeftDivSummary">
+            <div class="divDetails">
+                @Html.Partial("~/Views/Sale/_ProductInfoForCollection.cshtml")
+                <br />
+                @Html.Partial("~/Views/Sale/_CustomerInfo.cshtml")
+            </div>
+        </div>
+
+        <div class="RightDivDetails">
+            <div id="divInstallmentInfoGrid" >
+                @Html.Partial("~/Views/Sale/InstallmentDetails.cshtml")
+                <br />
+
+              @*  <div id="customerRating">
+                    @Html.Partial("~/Views/Dashboard/_ToptenRedCustomer.cshtml")
+                </div>*@
+
+               @Html.Partial("~/Views/Collection/_CollectionCustometRating.cshtml")
+                 <br />
+                <div class="centerAlign">
+                    <button id="btnClearCollection" class="k-button"><span class="k-icon k-i-close"></span>Clear All</button>
+                    <button id="btnCloseCollection" class="k-button"><span class="k-icon k-i-refresh"></span>Back</button>
+                    <button id="btnCollectionHistory" class="k-button"><span class="k-icon k-i-search"></span>History</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="paymentCollectionDiv" class="leftDiv">
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<div id="divCollectionSummaryGrid">
+    @* <div class="rightAlign">
+        <button id="btnAddNewCollection" class="k-button"><span class="k-icon k-add"></span>Add New Collection</button>
+    </div>*@
+    @Html.Partial("_CollectionSummary")
+</div>
+
+<div class="displayNone">
+       @Html.Partial("CollectionHistory")
+</div>
+
+
+
+

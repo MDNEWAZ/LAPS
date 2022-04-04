@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Company Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Core/Company/Company.js")
+
+
+<div class="mainDiv">
+    <h2 class="k-header">Company Information</h2>
+    @Html.Partial("CompanySummary")
+    @Html.Partial("CompanyDetails")
+<div class="clear"></div>
+</div>
+

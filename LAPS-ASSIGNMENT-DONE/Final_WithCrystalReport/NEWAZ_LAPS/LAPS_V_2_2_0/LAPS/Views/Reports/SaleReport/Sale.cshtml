@@ -1,0 +1,37 @@
+﻿
+
+@{
+    ViewBag.Title = "Audit Trails Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/SaleReport/SaleReport.js")
+
+
+<div class="divDetails" id="divAuditTrailsReport">
+    <fieldset class="k-content">
+        <legend>Sales Report</legend>
+        
+        <div class="clear"></div>
+
+        <div class="centerAlign">
+            <ul>
+                <li class="accept">&nbsp;&nbsp;
+                    <button id="btnSaleReport" class="k-button" type="submit">Generate Sale Report </button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" onclick="AuditTrailsReportHelper.clearAuditTrailsReport()">Clear All</button>
+
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+
+
+    </fieldset>
+
+
+
+</div>
+
+
+

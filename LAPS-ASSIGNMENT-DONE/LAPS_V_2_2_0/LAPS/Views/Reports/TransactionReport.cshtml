@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Transaction Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamSettings.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/Collection/TransactionReport.js")
+
+
+<br /><br />
+<div class="k-block">
+    <div class="k-header">Transaction Report</div>
+    <div class="centerAlign">
+        <div>
+
+            <div class="widthSize30_per leftDiv">
+                <label>Zone:</label>
+                <input type="text" id="cmbZone"/>
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Region:</label>
+                <input type="text" id="cmbRegion"/>
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Branch:</label>
+                <input type="text" id="cmbBranch"/>
+            </div>
+        </div>
+        <div style="margin-top: 15px">
+            <div class="widthSize30_per leftDiv">
+                <label>From Date:</label>
+                <input type="text" id="txtFromDateTime" placeholder="From date"/>
+
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>To Date:</label>
+                <input type="text" id="txtToDateTime" placeholder="To date"/>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="centerAlign">
+        <br />
+        <button class="k-button" id="btnTransactionShowReport">Show Report</button>
+    </div>
+</div>
+<div class="clear" style="height: 280px"></div>
+

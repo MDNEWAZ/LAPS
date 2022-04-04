@@ -1,0 +1,4 @@
+E:\Laps\LAPS_V_2_2_0\Azolution.Entities\bin\x64\Debug\Azolution.Entities.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.Entities\bin\x64\Debug\Azolution.Entities.pdb
+E:\Laps\LAPS_V_2_2_0\Azolution.Entities\obj\x64\Debug\Azolution.Entities.dll
+E:\Laps\LAPS_V_2_2_0\Azolution.Entities\obj\x64\Debug\Azolution.Entities.pdb

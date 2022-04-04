@@ -1,0 +1,92 @@
+﻿@*<script src="~/Scripts/eAzolution/HumanResource/DoctorEducationInfo/DoctorEducationInfoDetails.js"></script>*@
+<script src="~/Scripts/eAzolution/Sales/Sale/Doctors/DoctorSummary.js"></script>
+<script src="~/Scripts/eAzolution/Sales/Sale/Doctors/DoctorDetails.js"></script>
+@*<script src="~/Scripts/eAzolution/Sales/Sale/Doctors/DoctorSetting.js"></script>*@
+<div class="rightDiv">
+    
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]"> Doctor Details</legend>
+
+        <div id="DoctorDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <input id="hdnDoctorId" type="hidden" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Doctor Name:</label>
+                    <input type="text" class="k-textbox" id="txtDoctorName" name="DoctorName" title="Please Select Your Name" required="required" />
+
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Reg No:</label>
+                    <input id="txtRegNo" type="text" class="k-textbox" title="Please Select Your Reg No" required="required" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Exam:</label>
+                    <input id="txtExam" type="text" class="k-textbox" title="Please Select Your Exam" required="required" />
+                </li>
+
+                <li>
+                    <label class="lbl widthSize20_per">Year:</label>
+                    <input id="txtYear" type="datetime" title="Please Select Your datetime" required="required" />
+                </li>
+
+                <li>
+                    @*1=Male, 2=Female, 3=Other*@
+                    <label for="rdoGender" class="lbl widthSize20_per">Gender:</label>
+                    <input type="radio" name="rdoGender" id="rdoMale" value="1" /> Male
+                    <input type="radio" name="rdoGender" id="rdoFemale" value="2" />Female
+                    <input type="radio" name="rdoGender" id="rdoOther" value="3" checked="checked" />Other
+                </li>
+
+                <li>
+                    <label for="txtDepartmentName" class="lbl widthSize20_per">Department Name:</label>
+                    <input id="txtDepartmentName" required title="Please enter valid Department Name" />
+
+                </li>
+                <li>
+                    <label for="SectionName" class="lbl widthSize20_per">Section:</label>
+                    <input type="text" id="SectionDrop" class="k-dropdown" required title="Please enter valid section" />
+                    @*<input type="text" id="SectionDrop" name="IsActive" class="" />*@
+                </li>
+
+
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+                <li>
+                    <div id="DoctorEducationInfoDetailsDiv" class="divDetails">
+
+                    </div>
+                </li>
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status"></li>
+
+
+
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+    </fieldset>
+
+</div>
+
+
+
+
+

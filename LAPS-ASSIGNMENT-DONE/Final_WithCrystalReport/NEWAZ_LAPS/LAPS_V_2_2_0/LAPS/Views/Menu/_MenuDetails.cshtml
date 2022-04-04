@@ -1,0 +1,47 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Menu/MenuDetails.js")
+
+
+<div class="rightDiv">
+    <div id="menuDetailsDiv" class="divDetails">
+      
+        <fieldset class="k-content">
+            <legend class="k-fontSize[15]">Menu Details</legend>
+      
+        <ul>
+            <li>
+                <input type="hidden" id="hdMenuId" value="0" />
+                <input type="hidden" id="hdSorOrder" value="0" />
+                <label for="MenuName" class="required lbl widthSize20_per">Menu Name</label>
+                <input type="text" id="txtMenuName" name="MenuName" class="k-textbox" maxlength="50" placeholder="Menu name" required validationmessage="Please enter {0}" />
+            </li>
+            <li>
+                <label for="cmbModuleName" class="lbl widthSize20_per">Module Name:</label>
+                <input id="cmbModuleName" value="" onchange="menuDetailsHelper.changeModuleName();" />
+            </li>
+            <li>
+                <label for="txtMenuPath" class="lbl widthSize20_per">Menu Path</label>
+                <input type="text" id="txtMenuPath" maxlength="200" name="MenuPath" class="k-textbox" placeholder="Menu Path" />
+            </li>
+            <li>
+                <label for="cmbParentMennu" class="lbl widthSize20_per">Parent Menu:</label>
+                <input id="cmbParentMennu" value="" />
+            </li>
+            <li>
+                <label for="IsQuickLink" class="lbl widthSize20_per">Quick Link:</label>
+                <input type="checkbox" id="chkIsQuickLink" name="IsQuickLink" class="chkBox" />
+            </li>
+            
+
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="menuDetailsManager.SaveMenuInformation()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="menuDetailsHelper.clearMenuForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+              </fieldset>
+    </div>
+
+</div>
+
+

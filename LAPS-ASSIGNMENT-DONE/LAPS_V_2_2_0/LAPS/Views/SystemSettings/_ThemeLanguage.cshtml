@@ -1,0 +1,20 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/SystemSettings/ThemeLanguage.js")
+<div id="divTheme">
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label for="CompanyName" class="lbl widthSize9_per leftAlign">Company:</label>
+                <input type="hidden" id="hdnSystemSettingsId" value="0"/>
+                <input id="cmb_CompanyName" name="CompanyName" placeholder="Comapny name" value="" required validationMessage="Please enter Company Name" onchange="loginRuleHelper.changeCompanyName();"/>
+            </li>
+            <li>
+                <label for="Theme" class="lbl widthSize9_per leftAlign">Theme:</label>
+                <input id="cmbTheme" name="Theme" placeholder="Theme" value="" required validationMessage="Please enter {0}"/>
+            </li>
+            <li>
+                <label for="Language" class="lbl widthSize9_per leftAlign">Language:</label>
+                <input id="cmbLanguage" name="Language" placeholder="Language" value="" required validationMessage="Please enter {0}"/>
+            </li>
+        </ul>
+    </div>
+</div>

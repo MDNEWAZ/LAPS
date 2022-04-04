@@ -1,0 +1,117 @@
+﻿<script src="~/Scripts/eAzolution/Sales/Person/PersonDetails.js"></script>
+
+<div class="rightDiv widthSize28_per">
+    <fieldset class="k-block">
+        <legend class="k-header"> Personal Details</legend>
+
+        <div id="PersonalDetailsDiv" class="divDetails">
+            <div>
+
+                <div id="PersonalDetailsDiv" class="divDetails">
+
+                    <ul>
+
+                        <li>
+                            
+                            <label class="lbl widthSize30_per">First Name:</label>
+                            <input id="txtFirstName" name="FirstName" title="Please enter your first name" placeholder="First Name" required="required" />
+
+                            <input type="hidden" id="hdnPersonalInformationDetails" value="0">
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Last Name:</label>
+                            <input id="txtLastName" name="LastName" title="Please enter your last name" placeholder="Last Name" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Father's Name:</label>
+                            <input id="txtFatherName" name="FatherName" title="Please enter your father's name" placeholder="Father's Name" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Mother's Name:</label>
+                            <input id="txtMotherName" name="MotherName" title="Please enter your mother's name" placeholder="Mother's Name" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            <label for="DateOfBirth" class="lbl widthSize30_per">Date Of Birth:</label>
+                            <input type="datetime" id="txtDateOfBirth" name="DateOfBirth" title="Please Select your birth date" placeholder="Date Of Birth" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            @*1=Male, 2=Female, 3=Other*@
+                            <label for="rdoGender" class="lbl widthSize30_per">Gender:</label>
+                            <input type="radio" name="rdoGender" id="rdoMale" value="1" /> Male
+                            <input type="radio" name="rdoGender" id="rdoFemale" value="2" />Female
+                            <input type="radio" name="rdoGender" id="rdoOthers" value="3" checked="Checked" />Others
+
+                        </li>
+
+                        <li>
+                            <label for="MaritalStatus" class="lbl widthSize30_per">Marital Status:</label>
+                            <input type="text" id="MaritalStatusDrop" class="k-dropdown" required title="Please select your marital status" />
+
+                        </li>
+
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">National Id No:</label>
+                            <input id="txtNationalIdNo" name="NationalIdNo" title="Please enter your national id no" placeholder="National Id No" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Religion:</label>
+                            <input id="dropReligion" name="Religion" title="Please select your religion" placeholder="Religion" />
+
+                        </li>
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Mobile:</label>
+                            <input id="txtMobile" name="Mobile" title="Please enter your mobile no." placeholder="Mobile" required="required" />
+
+                        </li>
+
+                        <li>
+
+                            <label class="lbl widthSize30_per">Address: </label>
+                            <input id="txtAddress" name="Address" title="Please enter your address" placeholder="Address" required="required">
+
+
+                        </li>
+
+
+                        <li class="accept">
+
+                            <button id="btnSave" class="k-button" type="Submit">Save</button>
+                            &nbsp;&nbsp;
+                            <button id="btnClearAll" class="k-button">Clear All</button>
+                            &nbsp;&nbsp;
+                            <button id="btnDelete" class="k-button">Delete</button>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </fieldset>
+</div>
+
+
+

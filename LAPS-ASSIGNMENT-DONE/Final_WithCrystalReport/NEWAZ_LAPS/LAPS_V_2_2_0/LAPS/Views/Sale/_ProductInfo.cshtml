@@ -1,0 +1,66 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/ProductInfo.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Product/ProductDetails.js")
+
+@{
+    ViewBag.Title = "Product Info";
+}
+
+
+<div class="">
+    <div id="productDetailsDiv" class="">
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Original Package Information
+            </h2>
+            <ul>
+                <li id="liSaleInvoice" class="displayNone">
+                    <input id="hdnModelIdProInfo" type="hidden" value="0"/>
+                    <input id="hdnModelItemIdProInfo" type="hidden" value="0" />
+
+                    <label for="txtInvoiceProInfo" class="required lbl widthSize10_per rightAlign">Sale Invoice:</label>
+                    <input type="text" id="txtInvoiceProInfo" name="ProductCode" maxlength="50" class="k-textbox" placeholder="Sale Invoice no" />
+                    <button id="btnSearchInvoiceProInfo" class="k-button" type="submit" onclick="productInfoManager.FillCustomerProductForm()"><span class="k-icon k-i-search"></span></button>
+                </li>
+                <li>
+                    <label for="packageType" class="required lbl widthSize15_per rightAlign">Product Type:</label>
+                    <input id="cmbPackageType" name="packageType"/>
+
+                    <label for="txtNameProInfo" class="required lbl widthSize15_per rightAlign">Package Name:</label>
+                    <input id="txtNameProInfo" class="k-textbox" disabled="disabled"/>
+
+                    @* <button id="btnAddProInfo" class="k-button" type="submit" onclick="productInfoManager.OpenItemSelectProductWindow()"><span class="k-icon k-add"></span></button>*@
+                </li>
+
+                <li>
+                    <label for="cmbType" class="required lbl widthSize15_per rightAlign">Type:</label>
+                    <input id="cmbType" name="cmbType" />
+                </li>
+                <li>
+                    <label for="cmbModelProInfo" class="required lbl widthSize15_per rightAlign">Package Name:</label>
+                    <input id="cmbModelProInfo" name="cmbModelProInfo"/>
+
+
+                    <label for="txtPackagePrice" class="required lbl widthSize15_per rightAlign">Package Price:</label>
+                    <label id="txtPackagePrice" class="centerAlign lblDisplay"></label>
+
+
+                </li>
+                <li class="displayNone">
+                    <label for="txtLicenseProInfo" class="lbl widthSize10_per rightAlign">License No:</label>
+                    <input id="txtLicenseProInfo" class="k-textbox" disabled="disabled" />
+
+                    <label for="txtLicenseTypeProInfo" class="lbl widthSize25_per rightAlign">License Type:</label>
+                    <input id="txtLicenseTypeProInfo" class="k-textbox" disabled="disabled" />
+
+                </li>
+                <li></li>
+
+                <li>
+                    @Html.Partial("ProductItemInfo")
+                </li>
+
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>

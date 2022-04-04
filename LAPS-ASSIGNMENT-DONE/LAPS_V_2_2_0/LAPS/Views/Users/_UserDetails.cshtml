@@ -1,0 +1,36 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Users/UserDetails.js")
+
+<div class="rightDiv k-content">
+    <fieldset class="k-content">
+    <legend class="k-fontSize[15]">User Details</legend>
+  
+    <div id="tabstrip">
+        <ul>
+            <li class="k-state-active">
+                User Info
+            </li>
+            <li>
+                Group Membership
+            </li>
+        </ul>
+        <div>
+            @Html.Partial("_UserInfo")
+        </div>
+        <div>
+            @Html.Partial("_GroupMembership")
+        </div>
+
+    </div>
+    
+    <div class="divDetails">
+        <ul>
+            <li  class="accept">
+                <button id ="btnSave" class="k-button" type="submit" onclick="userDetailsManager.SaveUserInfo()">Submit</button> &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="userDetailsHelper.clearUserForm()">Clear All</button>
+            </li>
+            <li class="status">
+            </li>
+        </ul>
+    </div>
+        </fieldset>
+</div>

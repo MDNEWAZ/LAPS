@@ -1,0 +1,62 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/DefaultSettings/DefaultSettingsDetails.js")
+
+
+<div id="InterestDetailsDiv" class="divDetails">
+    <div id="" class="k-block">
+        <h2 class="k-header centerAlign">Default Settings Details</h2>
+        <ul>
+            <li>
+                <input type="hidden" id="hdnInterestId" />
+            </li>
+            <li>
+                <label for="cmbInterestCompanyName" class="required lbl widthSize20_per">Company Name:</label>
+                <input type="text" id="cmbInterestCompanyName" name="txtInterestName" maxlength="50" placeholder="Company Name" required />
+            </li>
+            <li>
+                <label for="txtDownPay" class="required lbl widthSize20_per">Down Payment(%):</label>
+                <input type="text" id="txtDownPay" name="txtInterests" maxlength="50" class="k-textbox" placeholder="DownPay Percentage" />
+            </li>
+            <li class="">
+                <label for="txtInterests" class="required lbl widthSize20_per">Interest(%):</label>
+                <input type="text" id="txtInterests" name="txtInterests" maxlength="50" class="k-textbox" placeholder="Interest Percentage" />
+            </li>
+            <li >
+                <label for="DefaultInstallmentNo" class="required lbl widthSize20_per">Default Installment No:</label>
+                <input type="text" id="txtDefaultInstallmentNo" name="DefaultInstallmentNo" class="k-textbox" placeholder="Default Installment No" required validationmessage="Please enter Default Installment No" />
+            </li>
+            <li >
+                <label for="DefaultCashDiscount" class="required lbl widthSize20_per">Default Cash Discount:</label>
+                <input type="number" id="txtDefaultCashDiscount" name="DefaultCashDiscount" min="0" placeholder="Default Cash Discount" required validationmessage="Please enter Default Cash Discount" />
+                
+                @* <input type="checkbox" id="chkIsPercentageCashDiscount" name="chkIsPercentageCashDiscount" class="k-checkbox" />
+                <label for="chkIsPercentageCashDiscount" class="lbl widthSize12_per rightAlign">Is Percentage</label>*@
+               
+            </li>
+            
+             <li >
+                <label for="DefaultCashDiscountInPercentage" class="required lbl widthSize20_per">Cash Discount (%):</label>
+                <input type="number" id="txtDefaultCashDiscountInPercentage" name="DefaultCashDiscountInPercentage" min="0" placeholder="Default Cash Discount" required validationmessage="Please enter Cash Discount(%)" />
+               
+            </li>
+         @*   <li >
+                <label for="DefaultAgentDiscount" class="required lbl widthSize20_per">Default Agent Discount:</label>
+                <input type="number" id="txtDefaultAgentDiscount" name="DefaultAgentDiscount" min="0" placeholder="Default Agent Discount" required validationmessage="Please enter Default Agent Discount" />             
+             <li >
+                <label for="DefaultAgentDiscountInPercentage" class="required lbl widthSize20_per">Agent Discount (%):</label>
+                <input type="number" id="txtDefaultAgentDiscountInPercentage" name="DefaultAgentDiscountInPercentage" min="0" placeholder="Default Agent Discount(%)" required validationmessage="Please enter Agent Discount(%)" />
+               
+            </li>*@
+            <li>
+                <label for="chkIsActiveInterest" class="lbl widthSize20_per">Active:</label>
+                <input type="checkbox" id="chkIsActiveInterest" name="IsActive" class="k-checkbox" />
+            </li>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="DefaultSettingsDetailsManager.SaveDefaultSettings()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="DefaultSettingsDetailsHelper.clearDefaultSettingsForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+</div>
+

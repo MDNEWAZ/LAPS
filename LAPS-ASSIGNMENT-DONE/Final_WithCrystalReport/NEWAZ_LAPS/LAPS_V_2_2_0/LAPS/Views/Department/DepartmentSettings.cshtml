@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Department Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/HumanResource/Department/DepartmentSettings.js")
+
+
+<div class="mainDiv">
+    <h2 class="k-header">Department Settings</h2>
+     @Html.Partial("_DepartmentSummary")
+    @Html.Partial("_DepartmentDetails")
+<div class="clear"></div>
+</div>

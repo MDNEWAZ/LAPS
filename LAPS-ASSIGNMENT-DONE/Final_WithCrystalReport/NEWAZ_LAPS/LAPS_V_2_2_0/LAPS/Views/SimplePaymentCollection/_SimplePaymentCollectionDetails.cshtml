@@ -1,0 +1,68 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/SimplePaymentCollection/SimplePaymentCollectionDetails.js")
+
+
+    <div id="SimplePaymentCollectionDiv" class="divDetails">
+      @*  <fieldset class="k-content">
+            <legend class="k-fontSize[15]">Payment Collection For Data Entry Operator</legend>*@
+      
+        
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnSimplePaymentCollection" value="0" />
+                    <input type="hidden" id="hdnSInvoice" value="0" />
+                    <input type="hidden" id="hdnBranchSmsMobileNumber" value="0" />
+                    <input type="hidden" id="hdnPhone" value="0" />
+                    <input type="hidden" id="hdnCompanyId" value="0" />
+                    <input type="hidden" id="hdnBranchId" value="0" />
+                    
+                    
+                </li>
+                <li>
+                
+                    <label for="txtCodeCustInfo" class="required lbl widthSize30_per rightAlign">Customer ID</label>
+                    <input type="text" id="txtCodeCustInfo" name="CustomerCode" maxlength="50" class="k-textbox" placeholder="Customer Code" required validationmessage="Please enter Customer Code" />
+                    <button id="btnSearch" class="k-button" type="submit" onclick=""><span class="k-icon k-i-search"></span></button>
+                </li>
+                <li>
+                
+                    <label for="CustomerName" class="required lbl widthSize25_per rightAlign">Customer Name</label>
+                    <input type="text" id="txtCustomerName" name="CustomerName" maxlength="50" class="k-textbox" placeholder="Customer Name" disabled="disabled" required validationmessage="Please enter Customer Name"/>
+                </li>
+                <li>
+                
+                    <label for="InstallmentAmount" class="required lbl widthSize25_per rightAlign">Installment Amount</label>
+                    <input type="text" id="txtInstallmentAmount" name="InstallmentAmount" maxlength="50" class="k-textbox" placeholder="Installment Amount" disabled="disabled" required validationmessage="Please enter Installment Amount"/>
+                </li>
+            
+            
+            
+                <li>
+                
+                    <label for="InstallmentAmount" class="required lbl widthSize25_per rightAlign">Amount</label>
+                    <input type="text" id="txtAmount" name="Amount" maxlength="50"  placeholder="Amount" required validationmessage="Please enter Receive Amount"/>
+                </li>
+            
+                <li>
+                
+                    <label for="CashMemoDate" class="required lbl widthSize25_per rightAlign">Cash Memo Date</label>
+                    <input type="text" id="txtCashMemoDate" name="CashMemoDate"  placeholder="Cash Memo Date" required validationmessage="Please enter Cash Memo Date"/>
+                </li>
+                <li>
+                
+                    <label for="CashMemoNo" class="required lbl widthSize25_per rightAlign">Cash Memo No</label>
+                    <input type="text" id="txtCashMemoNo" name="CashMemoNo" maxlength="50" class="k-textbox" placeholder="Cash Memo No" required validationmessage="Please enter Cash Memo No"/>
+                </li>
+                <li class="accept">
+                    <button id="btnSaveAsDraft" class="k-button" type="submit">Save As Draft</button>
+                        &nbsp;&nbsp;
+                        <button id="btnPreview" class="k-button" type="submit">Preview</button>
+                
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button" type="submit">Clear All</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+              @*</fieldset>*@
+    </div>
+
+

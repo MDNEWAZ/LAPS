@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Access Control Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Core/AccessControl/AccessControlSettings.js")
+
+<div class="mainDiv">
+   
+     @Html.Partial("_AccessControlSummary")
+    @Html.Partial("_AccessControlDetails")
+<div class="clear"></div>
+</div>

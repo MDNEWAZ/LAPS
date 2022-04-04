@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFF9C45C-B8A6-4DEF-AC53-26EB2AD46007}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laps.Sale.SaleDataService</RootNamespace>
+    <AssemblyName>Laps.Sale.SaleDataService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilities">
+      <HintPath>..\LAPS\Importantdll\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataService\DiscountDataService.cs" />
+    <Compile Include="DataService\PaymentScheduleDataService.cs" />
+    <Compile Include="DataService\ReScheduleDataService.cs" />
+    <Compile Include="DataService\SaleDataService.cs" />
+    <Compile Include="DataService\SaleInactiveDataService.cs" />
+    <Compile Include="DataService\WaitingForDiscountDataService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Azolution.Entities\Azolution.Entities.csproj">
+      <Project>{ad1a0fff-af60-4056-aba5-f5f7e712e34e}</Project>
+      <Name>Azolution.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laps.AdminSettings.Service\Laps.AdminSettings.Service.csproj">
+      <Project>{12B76452-8030-4041-A75C-38AB9D371A59}</Project>
+      <Name>Laps.AdminSettings.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laps.Collection.CollectionDataService\Laps.Collection.DataService.csproj">
+      <Project>{910cc858-dd97-413c-8ac2-b2e4b9431b98}</Project>
+      <Name>Laps.Collection.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laps.SaleRepresentative.DataService\Laps.SaleRepresentative.DataService.csproj">
+      <Project>{B59BF0A3-253C-40E4-BAD6-B00564366BC3}</Project>
+      <Name>Laps.SaleRepresentative.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laps.SaleRepresentative.Service\Laps.SaleRepresentative.Service.csproj">
+      <Project>{584395C7-5D68-4DFA-8531-C07925D77B96}</Project>
+      <Name>Laps.SaleRepresentative.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laps.Stock.DataService\Laps.Stock.DataService.csproj">
+      <Project>{C80E2BFD-B1E4-47AD-AA1E-DCFA88470BC2}</Project>
+      <Name>Laps.Stock.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LapsUtility\LapsUtility.csproj">
+      <Project>{4DDB007F-0F4E-4CD8-9C72-AD70CE524C81}</Project>
+      <Name>LapsUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmsService\SmsService.csproj">
+      <Project>{C806631B-4C44-4EFD-8391-32C47EE61FDF}</Project>
+      <Name>SmsService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solaric.GenerateCode\Solaric.GenerateCode.csproj">
+      <Project>{7AC860D4-6F9D-4158-97BE-0AC4FAF9FA13}</Project>
+      <Name>Solaric.GenerateCode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,77 @@
+﻿<script src="~/Scripts/eAzolution/HumanResource/StudentEducationInfo/StudentEducationInfoDetails.js"></script>
+
+<script src="~/Scripts/eAzolution/Sales/Student/StudentDetails.js"></script>
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]"> Students Details</legend>
+
+        <div id="StudentDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <input id="hdnStudentId" Type="hidden" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Student Name:</label>
+                    <input type="text" class="k-textbox" id="txtStudentName" name="StudentName" title="Please Select Your Name" required="required" />
+
+                </li>
+                <label class="lbl widthSize20_per">Reg No:</label>
+                <input id="txtRegNo" type="text" class="k-textbox" title="Please Select Your Reg No" required="required" />
+
+
+                <li>
+                    @*1=Male, 2=Female, 3=Other*@
+                    <label for="rdoGender" class="lbl widthSize20_per">Gender:</label>
+                    <input type="radio" name="rdoGender" id="rdoMale" value="1" /> Male
+                    <input type="radio" name="rdoGender" id="rdoFemale" value="2" />Female
+                    <input type="radio" name="rdoGender" id="rdoOther" value="3" checked="checked" />Other
+                </li>
+
+                <li>
+                    <label for="txtDepartmentName" class="lbl widthSize20_per">Department Name:</label>
+                    <input id="txtDepartmentName" required title="Please enter valid Department Name" />
+
+                </li>
+                <li>
+                    <label for="SectionName" class="lbl widthSize20_per">Section:</label>
+                    <input type="text" id="SectionDrop" class="k-dropdown" required title="Please enter valid section" />
+
+                </li>
+
+
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+                <li>
+                    <div id="StudentEducationInfoDetailsDiv" class="divDetails">
+
+                    </div>
+                </li>
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status"></li>
+
+
+
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+    </fieldset>
+
+</div>
+
+

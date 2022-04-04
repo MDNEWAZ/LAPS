@@ -1,0 +1,100 @@
+﻿@*@Scripts.Render("~/Scripts/jquery.blockUI.js")
+@Styles.Render("~/UIFramework/MessageBox/css/buttons.css")
+@Scripts.Render("~/UIFramework/MessageBox/js/noty/jquery.noty.js")
+@Scripts.Render("~/UIFramework/MessageBox/js/noty/layouts/center.js")
+@Scripts.Render("~/UIFramework/MessageBox/js/noty/themes/default.js")*@
+<script src="~/Scripts/eAzolution/Core/Login/Login.js"></script>
+<div id="divLoginForm">
+    <div id="toppanel">
+        <div id="panel" >
+            <div id="panel_contents"></div>
+            <div class="login" id="dbloginPanel">
+                <h1 id="Popupheading">User Login</h1>
+
+                <ul>
+                    <li>
+                         <label class="k-label">Login ID:</label>
+                    <input type="text" id="txtLoginId" class="k-textbox txtField" value="" placeholder="Login Id" />
+                    </li>
+                    <li>
+                         <label class="k-label">Password: </label>
+                    <input type="password" id="txtpassword" class="k-textbox txtField" value="" placeholder="******"/>
+                    </li>
+                    <br/>
+                    <li>
+                        <div class="actionButtons">
+                            <input type="button" id="btnLogin" class="k-button" value="Login" onclick="loginManager.LogInToSystem()"/>
+                
+                            <input type="button" id="btnCancelLogin" class="k-button " value="Cancel" onclick="loginManager.btnCancelLogin()"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" title="Forgot Password" id="forgetPass" class="forgotPasswordTextColor">Forgot Password</a>
+                    </li>
+
+                </ul>
+               
+                
+            </div>
+
+            <div class="login" id="dvChangePasswordPanel" style="display: none;">
+                <h1 class="popupheading">Change Password</h1>
+                <ul>
+                    <li>
+                         <label class="lbl lblchngpass">New Password:</label>
+                        <input type="password" id="txtnewPass" class="k-textbox txtField txtchngpass" value="" />
+
+                    </li>
+                    <li>
+                         <label class="lbl lblchngpass">Confirm Password:</label>
+                    <input type="password" id="txtconfirmPass" class="k-textbox txtField txtchngpass" value="" />
+                    </li>
+                    <li>
+                         <div class="actionButtons">
+                    <input type="button" id="btnChangePassword" class="k-button" value="Change Password" onclick="LoginManager.ChangePassword()" />
+                    <input type="button" id="btnCancelLogin1" class="k-button" value="Cancel" onclick="loginManager.btnCancelLogin1()" />
+                </div>
+                    </li>
+                </ul>
+
+               
+            </div>
+
+            <div class="login" id="ForgetPassWorddiv" style="display: none;">
+                <h1 class="popupheading">Forgot Password</h1>
+
+                <ul >
+                    <li>
+                        <label class="lblchngpass">Email Address:</label>
+                        <input type="text" id="txtEmail" class="k-textbox txtField" value="" placeholder="user@example.com"/>
+             
+                    </li>
+                    <li>
+                        <div class="actionButtons" style="margin-top: 8px;text-align: center;width: 91%;">
+                            <input type="button" id="btnSendEmail" class="k-button" value="Send Email" />
+                            <input type="button" id="btnCancelLogin2" class="k-button" value="Cancel" onclick="loginManager.btnCancelLogin2()" />
+                        </div>
+                    </li>
+                </ul>
+               
+              
+
+            </div>
+        </div>
+        <div class="panel_button" style="display: visible;">
+            <img src="../Images/expand.png" alt="expand" />
+            <a href="#">Login</a> </div>
+        <div class="panel_button hide_button" id="hide_button" style="display: none;">
+            <img src="../Images/collapse.png" alt="collapse" />
+            <a href="#">Hide</a> </div>
+
+    </div>
+</div>
+
+
+<div id="divBlockMessage" style="display: none;">
+    <h1>
+        <img src="~/Images/busy.gif" />
+        Just a moment...</h1>
+    @*<h1>We are processing your request.  Please be patient.</h1>*@
+</div>

@@ -1,0 +1,43 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/HumanResource/Designation/DesignationDetails.js")
+
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">
+           Designation Details
+        </legend>
+ 
+    <div id="designationDetailsDiv" class="divDetails">
+       
+        <ul>
+            <li>
+                <label class="lbl widthSize22_per">Company:</label>
+                <input type="hidden" id="hdnDesignationId" value="0"/>
+                <input id="cmbCompanyName" name="CompanyName" validationMessage="Please Select Company Name" required="required"/>
+            </li>
+            
+            <li>
+                <label class="lbl widthSize22_per">Department:</label>
+                <input id="cmbDepartmentName" name="DepartmentName" validationmessage="Please Select Department" required="required" />
+            </li>
+
+            <li>
+                <label for="DesignationName" class="required lbl widthSize22_per">Designation Name:</label>
+                <input type="text" id="txtDesignationName" name="DesignationName" class="k-textbox" placeholder="Designation Name"  required validationMessage="Please enter Department Name" />
+            </li>
+            <li>
+                <label   class="lbl widthSize22_per">Status:</label>
+                <input id="cmbStatus" name="cmbStatus"/>
+            </li>
+            
+            
+
+            <li class="accept" style="padding-left: 138px">
+                <button id="btnSave" class="k-button" type="submit" onclick="designationDetailsManager.SaveDesignationInformation()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="designationDetailsHelper.clearDesignationForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+           </fieldset>
+</div>

@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Phone No Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/PhoneNoSettings/PhoneNoSettings.js")
+
+
+<div class="mainDiv">
+    <h1 class="k-header centerAlign">Phone No Settings</h1>
+    <div class="">
+           @Html.Partial("PhoneNoSummary")
+    </div>
+    <div class="">
+         @Html.Partial("PhoneNoDetails")
+    </div>
+  
+   
+<div class="clear"></div>
+</div>

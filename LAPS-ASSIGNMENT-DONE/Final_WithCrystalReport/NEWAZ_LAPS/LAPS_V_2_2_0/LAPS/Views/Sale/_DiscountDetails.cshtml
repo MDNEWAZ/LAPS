@@ -1,0 +1,33 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/DiscountInfo.js")
+
+
+<div id="DiscountDetailsDiv">
+    <div class="divDetails">
+        <div class="k-block">
+            <h2 class="k-header centerAlign">Discount Information
+            </h2>
+            <ul>
+                <li>
+                    <input type="hidden" id="hdnDiscountId" value="0" />
+                    <input type="hidden" id="hdnIsApproveSpecialDiscount" value="0" />
+                    <label for="cmbDiscountOption" class="lbl widthSize25_per rightAlign">Discount Option:</label>
+                    <input id="cmbDiscountOption" name="cmbDiscountOption" placeholder="Discount Name" />
+                </li>
+                <li>
+                    <label for="cmbDiscountType" class="lbl widthSize25_per rightAlign">Discount Type:</label>
+                    <input id="cmbDiscountType" name="cmbDiscountType" placeholder="Discount Type" />
+                </li>
+                <li>
+                    <label for="DiscountAmount" class="lbl widthSize25_per rightAlign">Amount/Percentage:</label>
+                    <input id="txtDiscountAmount" name="DiscountAmount" class="k-textbox" placeholder="Discount Amount/Percentage" disabled="disabled" />
+
+
+                    <button id="btnDiscountAmountPercentage" class="k-button">%</button>
+                </li>
+
+                <li class="status"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

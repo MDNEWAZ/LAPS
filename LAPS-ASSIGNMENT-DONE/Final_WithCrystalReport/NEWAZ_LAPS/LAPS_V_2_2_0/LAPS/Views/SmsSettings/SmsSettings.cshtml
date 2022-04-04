@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "SMS Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/SmsSettings/SmsSettings.js")
+
+
+
+<div class="mainDiv">
+    <h1 class="k-header centerAlign">SMS Settings</h1>
+    <div class="">
+           @Html.Partial("SmsSettingsSummary")
+    </div>
+    <div class="">
+         @Html.Partial("SmsSettingsDetails")
+    </div>
+  
+   
+<div class="clear"></div>
+</div>

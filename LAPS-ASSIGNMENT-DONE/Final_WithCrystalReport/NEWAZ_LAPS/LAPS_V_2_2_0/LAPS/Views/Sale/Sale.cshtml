@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Sale";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Sales/Sale/Sale.js")
+@Scripts.Render("~/Scripts/eAzolution/Common/CompanyHierarchyPath.js")
+
+<div id="mainDiv" class="">
+    
+    <div class="k-block sitepath" id="divSitePath">
+        <label class="lbl widthSize100_per" id="lblSiteMapPath"></label>
+    </div>
+   
+
+    <div id="saleDetailsMainDiv" class="">
+        <h2 class="k-header centerAlign">Sales Information</h2>  
+
+        <div class="LeftDivSummary">
+            <div class="divDetails">
+                @Html.Partial("_CustomerInfo")
+            </div>
+            
+            @Html.Partial("_DownPaymentCollectionInfo")
+            <br />
+            
+
+            
+            @Html.Partial("_DiscountDetails")
+            
+            @Html.Partial("_SalesRepresentatorInfo")
+        </div>
+
+
+        <div class="RightDivDetails">
+            <div class="divDetails">
+                @Html.Partial("_ProductInfo")
+            </div>
+
+            <div class="divDetails">
+                @Html.Partial("_SaleDetails")
+            </div> 
+            <br />
+            <div id="divInstallmentGridForSale" class="displayNone">
+                @Html.Partial("InstallmentDetails")
+            </div>
+          
+        </div>
+        
+        <div class="clear"></div>
+
+        <br />
+        <hr/>
+        <div class="centerAlign">
+            @*    <button id="btnCloseMainSaleDiv" class="k-button">Close</button> &nbsp;&nbsp;*@
+            <button id="btnPreviewSales" class="btnRadius">Preview Booked Sale</button>
+            <button id="btnPreviewSaveAsDraft" class="btnRadius">Preview Save As Draft Sale</button>
+        </div> 
+         
+    </div>
+
+
+    <div id="bookedSaleSummaryDiv" class="displayNone">
+        @Html.Partial("BookedSaleSummary")
+    </div>
+   
+    
+    <div id="saveAsDraftedSaleSummaryDiv" class="displayNone">
+        @Html.Partial("_SaleSummary")
+    </div>
+
+    <div id="divAddCommentsPopup" class="displayNone">
+        @Html.Partial("Comments")
+    </div>
+    
+</div>
+

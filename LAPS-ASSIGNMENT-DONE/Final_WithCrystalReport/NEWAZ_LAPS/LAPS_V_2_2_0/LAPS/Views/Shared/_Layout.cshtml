@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html class="k-widget k-content no-border" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>LAPS | @ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="~/Images/az-favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @*@Styles.Render("~/Content/css")*@
+    @Styles.Render("~/UIFramework/Css/Core.css")
+    @*@Styles.Render("~/UIFramework/Css/Common.css")*@
+
+    @Styles.Render("~/UIFramework/Css/Common_demo.css")
+    @Styles.Render("~/UIFramework/Css/CommonSize.css")
+
+    @Styles.Render("~/UIFramework/Css/Solaric/Solaric.css")
+    @Styles.Render("~/UIFramework/kendo/kendoui.web/styles/kendo.common.min.css")
+    @* @Styles.Render("~/UIFramework/kendoui.web/styles/kendo.default.min.css")*@
+
+    @{
+        var themeName = Session["themeName"];
+        if (themeName == "")
+        {
+            themeName = "default";
+        }
+        else
+        {
+            themeName = Session["themeName"];
+        }
+    }
+    @Styles.Render("~/UIFramework/kendo/kendoui.web/styles/kendo." + @themeName + ".min.css")
+
+    @Styles.Render("~/UIFramework/Css/KendoThemes.css")
+    @Styles.Render("~/UIFramework/Css/Empress/Rapid.css")
+
+    @Scripts.Render("~/Scripts/jquery-1.8.2.min.js")
+    @Scripts.Render("~/Scripts/jquery.maskedinput.min.js")
+    @Scripts.Render("~/UIFramework/kendo/kendoui.web/js/kendo.web.min.js")
+
+    @Scripts.Render("~/Scripts/eAzolution/Common/common.js")
+    @Scripts.Render("~/Scripts/eAzolution/Common/EmpressCommon.js")
+    @Scripts.Render("~/Scripts/json2.js")
+    @Scripts.Render("~/Scripts/eAzolution/Common/postify.js")
+
+    @Scripts.Render("~/Scripts/eAzolution/Core/Login/Menu.js")
+
+    @Scripts.Render("~/Scripts/jquery.blockUI.js")
+    @Styles.Render("~/UIFramework/MessageBox/css/buttons.css")
+    @Scripts.Render("~/UIFramework/MessageBox/js/noty/jquery.noty.js")
+    @Scripts.Render("~/UIFramework/MessageBox/js/noty/layouts/center.js")
+    @Scripts.Render("~/UIFramework/MessageBox/js/noty/themes/default.js")
+    
+    @Scripts.Render("~/Scripts/Chart/InputMask/jquery.inputmask.js")
+       
+        <script type="text/javascript">
+            $(document).ready(function () {
+                mnHelper.GetMenuInformation();
+                mnHelper.youLogedInAs();
+            });
+        </script>
+</head>
+<body class="k-content">
+    <header>
+        <div id="header">
+            <div class="hdLeftPanel" id="headerLogo">
+                @Html.Partial("_Header")
+                <div id="divWelcome" class="welcomeLabel">
+                    <label id="lblWelcome">Welcome</label>
+                    <label id="lblLogedinAs" style="width: auto;color: #fff;font-weight: bold">| Logged in as</label>
+                    <a href="#" title="Logoff" id="btnLogOff" onclick="mnManager.Logoff()">| Log out</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="body">
+        <div id="themePanel" class="themeCss">
+
+            @Html.Partial("_ThemesPanel")
+
+        </div>
+        <div class="">
+            @Html.Partial("MenuPartial")
+
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+    </div>
+    <footer class="k-footer">
+        @Html.Partial("_Footer")
+    </footer>
+</body>
+</html>

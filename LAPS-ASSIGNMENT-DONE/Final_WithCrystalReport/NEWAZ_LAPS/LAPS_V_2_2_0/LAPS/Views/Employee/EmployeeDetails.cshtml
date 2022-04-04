@@ -1,0 +1,42 @@
+﻿<script src="~/Scripts/eAzolution/HumanResource/Employee/EmployeeDetails.js"></script>
+<div class="rightDiv k-block">
+    <h2 class="k-header centerAlign">Employee Details</h2>
+    <div id="EmployeeDetailsDiv" class="divDetails">
+        <ul>
+            <li>
+                <label for="EmployeeName" class="lbl widthSize20_per">Employee Name:</label>
+                <input type="hidden" id="hdnEmployeeId" value="0" />
+
+                <input type="text" id="txtEmployeeName" name="EmployeeName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Employee Name" required validationmessage="Please enter valid Employee Name"/>
+            </li>
+            <li>
+                <label for="Mobile" class="lbl widthSize20_per">Mobile:</label>
+                <input type="text" id="txtMobile" name="Mobile" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Mobile" required validationmessage="Please enter valid Mobile"/>
+            </li>
+            <li>
+                <label for="Email" class="lbl widthSize20_per">Email:</label>
+                <input type="text" id="txtEmail" name="Email" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Email" required validationmessage="Please enter valid Email"/>
+            </li>
+
+            <li>
+                <label for="CompanyName" class="lbl widthSize20_per">Company Name:</label>
+                <input type="text" id="txtCompanyName" name="CompanyName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="CompanyName" required validationmessage="Please enter valid Company Name" />
+            </li>
+            <li>
+                <label for="Designation" class="lbl widthSize20_per">Designation:</label>
+                <input type="text" id="txtDesignation" name="Designation" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Designation" required validationmessage="Please enter valid Designation"/>
+            </li>
+            <li>
+                <label for="Salary" class="lbl widthSize20_per">Salary:</label>
+                <input type="text" id="txtSalary" name="Salary" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Salary" required validationmessage="Please enter valid Salary"/>
+            </li>
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="EmployeeDetailsManager.SaveEmployeeInformation()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="EmployeeDetailsHelper.clearEmployeeForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+    </div>
+
+</div>

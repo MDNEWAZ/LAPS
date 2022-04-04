@@ -1,0 +1,31 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Group/GroupDetails.js")
+<div class="rightDiv rightDivForGroup widthSize72_per">
+    <div id="tabstrip">
+        <ul id ="tabStripDiv">
+            <li class="k-state-active">
+                Group Info
+            </li>
+            <li>
+                Group Permission
+            </li>
+        </ul>
+         <div>
+            @Html.Partial("_GroupInfo")
+        </div>
+        <div>
+            @Html.Partial("_GroupPermision")
+        </div>
+
+    </div>
+    
+    <div class="divDetails">
+    <ul>
+    <li  class="accept">
+        <button id ="btnSave" class="k-button" type="submit" onclick="groupDetailsManager.SaveGroup()">Submit</button> &nbsp;&nbsp;
+        <button id="btnClearAll" class="k-button" onclick="groupDetailsHelper.clearGroupForm()">Clear All</button>
+    </li>
+    <li class="status">
+    </li>
+    </ul>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Sales Rollback";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/SalesRollback/SalesRollback.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/SalesRollback/SalesRollbackSummary.js")
+
+
+<div class="mainDiv">
+    @Html.Partial("_SalesRollbackDetails")
+    <div class="clear"></div>
+</div>
+
+<div id="salesRollbackPopupDiv" class="displayNone">
+      @Html.Partial("SalesRollbackPopup")
+</div>

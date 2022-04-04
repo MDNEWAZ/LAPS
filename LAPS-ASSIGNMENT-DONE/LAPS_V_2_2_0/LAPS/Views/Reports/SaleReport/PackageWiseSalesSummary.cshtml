@@ -1,0 +1,21 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Reports/SaleReport/PackageWiseSalesReportSettings.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/SaleReport/PackageWiseSaleReportDetails.js")
+@{
+    ViewBag.Title = "Package Wise Wise Sales Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /><br />
+<div class="k-block">
+    <div class="k-header">Package Wise Sales Summary</div>
+    <div class="centerAlign">
+        <label>Package:</label>
+        <input type="text" id="cmbPackage" />
+        <label>From Date:</label>
+        <input type="text" id="txtFromDateTime" placeholder="From date" />
+        <label>From Date:</label>
+        <input type="text" id="txtToDateTime" placeholder="To date" />
+        <button class="k-button" id="btnShowReport">Show Report</button>
+        <button class="k-button" id="btnClearParam">Clear</button>
+    </div>
+</div>

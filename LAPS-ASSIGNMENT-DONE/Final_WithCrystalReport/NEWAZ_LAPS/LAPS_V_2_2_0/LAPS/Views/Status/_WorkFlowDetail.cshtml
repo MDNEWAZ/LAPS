@@ -1,0 +1,26 @@
+﻿
+
+@*@Scripts.Render("~/Scripts/eAzolution/Core/Users/UserDetails.js")*@
+
+<div class="rightDiv k-content">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">Workflow Status Details</legend>
+    <div id="tabstrip">
+        <ul>
+            <li class="k-state-active">
+                State Details
+            </li>
+            <li>
+                Action Details
+            </li>
+        </ul>
+        <div>
+            @Html.Partial("_StateDetail")
+        </div>
+        <div>
+            @Html.Partial("_ActionDetail")
+        </div>
+
+    </div>
+    </fieldset>
+</div>

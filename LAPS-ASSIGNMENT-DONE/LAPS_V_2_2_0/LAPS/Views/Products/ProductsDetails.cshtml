@@ -1,0 +1,71 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Sales/Products/ProductsDetails.js");
+//<script src="~/Scripts/eAzolution/HumanResource/StudentEducationInfo/StudentEducationInfoDetails.js"></script>
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]"> Products Details</legend>
+
+        <div id="ProductsDetailsDiv" class="divDetails">
+
+            <ul>
+                <li>
+                    <input id="hdnProductsId" Type="hidden" />
+                </li>
+                <li>
+                    <label class="lbl widthSize20_per">Product Name:</label>
+                    <input type="text" class="k-textbox" id="txtProductName" name="ProductName" title="Please Select Your Name" required="required" />
+
+                </li>
+                <label class="lbl widthSize20_per">Product Model:</label>
+                <input id="txtProductModel" type="text" class="k-textbox" title="Please Select Your Reg No" required="required" />
+
+                <li>
+                    <label class="lbl widthSize20_per">Product Code:</label>
+                    <input type="text" class="k-textbox" id="txtProductCode" name="ProductCode" title="Please Select Your Name" required="required" />
+
+                </li>
+
+                <li>
+                    <label class="lbl widthSize20_per">Product Price:</label>
+                    <input type="text" class="k-textbox" id="txtProductPrice" name="ProductPrice" title="Please Select Your Name" required="required" />
+
+                </li>
+
+
+                <li>
+                    <label for="txtProductTypeName" class="lbl widthSize20_per">ProductType Name:</label>
+                    <input id="txtProductTypeName" required title="Please enter valid ProductType Name" />
+
+                </li>
+
+
+
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+
+
+                <li class="accept">
+                    <button id="btnSave" class="k-button" type="submit">Submit</button>
+                    &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status"></li>
+
+
+
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+    </fieldset>
+
+</div>

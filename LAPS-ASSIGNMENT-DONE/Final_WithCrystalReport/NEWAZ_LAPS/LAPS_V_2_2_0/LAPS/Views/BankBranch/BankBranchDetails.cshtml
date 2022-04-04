@@ -1,0 +1,45 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/HumanResource/BankBranch/BankBranchDetails.js")
+
+<div class="rightDiv">
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">Bank Branch Details </legend>
+
+        <div id="bankbranchDetailsDiv" class="divDetails">
+
+            <ul>
+
+                <li>
+                    <label for="BankName" class="lbl widthSize20_per">Bank:</label>
+                    <input id="cmbBankName" name="BankName" required validationmessage="Please Select Bank Name" />
+
+                    <button type="button" class="k-button" id="btnAddNewBank">Add New Bank</button>
+                </li>
+                <li>
+                    <label for="BranchCode" class="lbl widthSize20_per">Branch Code:</label>
+                    <input id="txtBranchCode" class="k-textbox" name="BranchCode"  placeholder="Branch Code"  required validationmessage="Please Enter Branch Code" />
+                </li>
+                <li>
+                    <input type="hidden" id="hdnBranchId" value="0" />
+                    <label for="BranchName" class="lbl widthSize20_per">Branch Name:</label>
+                    <input type="text" id="txtBranchName" name="BranchName" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Branch Name" required validationmessage="Please enter valid Branch Name" />
+                </li>
+                 <li>
+                    <label for="BranchAddress" class="lbl widthSize20_per">Address:</label>
+                     <textarea id="txtBranchAddress" name="BranchAddress" maxlength="100" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Branch Address"></textarea>
+                </li>
+                <li>
+                    <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                    <input type="checkbox" id="chkIsActive" name="IsActive" class="k-checkbox" />
+                </li>
+
+
+                <li class="accept">
+                    <button id="btnSaveBankBranch" class="k-button" type="button" onclick="">Save</button>
+                    &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="">Clear All</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+        </div>
+    </fieldset>
+</div>

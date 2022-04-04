@@ -1,0 +1,55 @@
+﻿
+@Scripts.Render("~/Scripts/eAzolution/Core/WorkFlow/ActionDetail.js")
+
+<div id="ActionDetaildivInfo">
+    <div class="divDetails">
+        @*        <ul>
+            <li>
+                <label class="lbl">Groups:</label>
+                <div id="checkboxGroup">
+                </div>
+            </li>
+        </ul>*@
+        
+        
+    <div id="gridAction"></div>
+    <div class="clear"></div>
+        
+    <div class="divDetails">
+        <ul>
+            <li>
+                <label class="lbl widthSize20_per">State Name:</label>
+@*                <input type="hidden" id="stateID" value="nothing"/>
+                <input type="hidden" id="actionID" value="nothing"/>*@
+                <input type="text" id="txtStateName_Action" name="txtStateName_Action"  class="k-textbox" validationMessage="Please input valid State Name" required="required" disabled="disabled" />
+            </li>
+            <li>
+                <label for="txtActionName" class="lbl widthSize20_per">Action Name:</label>
+                <input type="text" id="txtActionName" name="txtActionName" maxlength="50" pattern="[a-zA-Z0-9 ]+" class="k-textbox" validationMessage="Please input valid Action Name" required="required" />
+            </li>
+            <li>
+                <label class="lbl widthSize20_per">Next State:</label>
+                <input id="cmbNextState" name="IsClose" validationMessage="Please Select" required="required" />
+            </li>
+            <li>
+                <label for="IsEmail" class="lbl widthSize20_per">Is Email:</label>
+                <input type="checkbox" id="chkIsEmail" name="IsEmail" class="chkBox" />
+            </li>
+            <li>
+                <label for="IsSms" class="lbl widthSize20_per">Is SMS:</label>
+                <input type="checkbox" id="chkIsSms" name="IsSms" class="chkBox" />
+            </li>
+        </ul>
+    </div>
+    <div class="divDetails">
+    <ul>
+    <li  class="accept">
+        <button id ="btnSaveAction" class="k-button" type="submit" onclick="actionDetailManager.SaveActionInfo()">Submit</button> &nbsp;&nbsp;
+        <button id="btnClearAllAction" class="k-button" onclick="actionDetailManager.clearActionForm()">Clear All</button>
+    </li>
+    <li class="status">
+    </li>
+    </ul>
+    </div>
+    </div>
+</div>

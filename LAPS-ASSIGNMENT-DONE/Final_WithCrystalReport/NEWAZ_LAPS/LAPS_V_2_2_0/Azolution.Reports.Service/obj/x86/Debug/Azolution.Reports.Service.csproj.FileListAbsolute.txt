@@ -1,0 +1,13 @@
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Reports.Service.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Reports.Service.pdb
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Entities.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Reports.DataService.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Utilities.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Common.DataService.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Common.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Newtonsoft.Json.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Entities.pdb
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\bin\x86\Debug\Azolution.Reports.DataService.pdb
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\obj\x86\Debug\Azolution.Reports.Service.csprojResolveAssemblyReference.cache
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\obj\x86\Debug\Azolution.Reports.Service.dll
+E:\laps\LAPS_V_2_2_0\Azolution.Reports.Service\obj\x86\Debug\Azolution.Reports.Service.pdb

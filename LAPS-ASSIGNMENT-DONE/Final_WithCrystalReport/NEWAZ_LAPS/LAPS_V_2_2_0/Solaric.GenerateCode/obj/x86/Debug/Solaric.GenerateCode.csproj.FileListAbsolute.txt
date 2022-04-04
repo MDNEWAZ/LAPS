@@ -1,0 +1,7 @@
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\bin\x86\Debug\Solaric.GenerateCode.dll
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\bin\x86\Debug\Solaric.GenerateCode.pdb
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\bin\x86\Debug\Azolution.Entities.dll
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\bin\x86\Debug\CodeGenaration.dll
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\bin\x86\Debug\Azolution.Entities.pdb
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\obj\x86\Debug\Solaric.GenerateCode.dll
+E:\laps\LAPS_V_2_2_0\Solaric.GenerateCode\obj\x86\Debug\Solaric.GenerateCode.pdb

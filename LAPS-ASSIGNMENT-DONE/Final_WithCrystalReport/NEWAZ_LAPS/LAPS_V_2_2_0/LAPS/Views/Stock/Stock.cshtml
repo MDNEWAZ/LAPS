@@ -1,0 +1,50 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/Stock.js")
+@Scripts.Render("~/Scripts/eAzolution/Sales/Stock/StockItemsDetails.js")
+
+
+<div class="mainDiv">
+    <div class="k-block">
+        <h2 class="k-header centerAlign">Product Items Stock</h2>
+        <div class="divDetails">
+            <ul>
+                @* <li>
+                    <label for="txtTotalStock" class="lbl widthSize11_per">Total Stock:</label>
+                    <input id="txtTotalStock" class="lbl widthSize10_per" disabled="disabled" />
+                    <label for="txtTotalSale" class="lbl widthSize10_per">Total Sale:</label>
+                    <input id="txtTotalSale" class="lbl widthSize10_per" disabled="disabled" />
+                    <label for="txtCurrentStock" class="lbl widthSize14_per">Current Stock:</label>
+                    <input id="txtCurrentStock" class="lbl widthSize10_per" disabled="disabled" />
+
+                </li>*@
+                <li class="centerAlign">
+                    <button id="btnStockView" class="k-button" type="submit" onclick="stockHelper.clickEventForViewStock()">View Stock</button>
+                    &nbsp;&nbsp;
+                    <button id="btnSave" class="k-button" type="submit" onclick="stockHelper.clickEventForAddNewStock()">Add Product Stock</button>
+                    &nbsp;&nbsp;
+                    <button id="btnStockAdjustment" class="k-button" type="submit" onclick="stockHelper.clickEventForStockAdjustment()">Stock Adjustment</button>
+                </li>
+                <li class="status"></li>
+            </ul>
+
+        </div>
+
+        <div id="stockDetailsPopupWindo" class="displayNone">
+            <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+                <legend>+</legend>
+                Stock Information of -&nbsp;<label id="lblModelName" class="widthSize30_per leftAlign"></label>
+                <br />
+
+                <div id="stockGrid"></div>
+            </fieldset>
+        </div>
+
+        <div id="stockItemsDetailsPopupWindow" class="displayNone">
+            <fieldset style="border: 1px solid skyblue; border-radius: 3px">
+                <legend>+</legend>
+                <div id="stockDetailsGrid"></div>
+            </fieldset>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+</div>

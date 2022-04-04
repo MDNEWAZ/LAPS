@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "System Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/eAzolution/Core/SystemSettings/SystemSettings.js")
+
+<div class="mainDiv">
+    
+    <fieldset class="k-content">
+        <legend class="k-fontSize[15]">
+            System Settings
+        </legend>
+    
+    <div id="divMainDivForSystemSettings" class="maindiv">
+        <div id="tabstrip">
+            <ul>
+                <li class="k-state-active">
+                    Theme & Language
+                </li>
+                <li>
+                    Login Rule & Policy
+                </li>
+            </ul>
+            <div>
+                @Html.Partial("_ThemeLanguage")
+            </div>
+            <div>
+                @Html.Partial("_LoginRulePolicy")
+            </div>
+
+        </div>
+    
+        <div class="divDetails">
+            <ul>
+                <li  class="accept">
+                    <button id ="btnSave" class="k-button" type="submit">Submit</button> &nbsp;&nbsp;
+                    <button id="btnClearAll" class="k-button">Clear All</button>
+                </li>
+                <li class="status">
+                </li>
+            </ul>
+        </div>
+        <br/><br/>
+    </div>
+        </fieldset>
+    <div class="clear"></div>
+</div>
+

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Waiting For Release License";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/eAzolution/Sales/WaitingForReleaseLicense/ReleaseLicenseGenerate.js")
+
+<div class="mainDiv">
+
+    <div class="divDetails">
+        <div id="releaseLicenseGenerate" class="k-block">
+            <h2 class="k-header centerAlign">Waiting for Release License</h2>
+            <div id="divreleaseLicenseGenerate">
+                <div id="releaseLicenseGenerateGrid"></div>
+            </div>
+        </div>
+        <div id="divInstallmentPopup">
+            <div id="installmentGrid"></div>
+
+
+            <div class="centerAlign k-block">
+                <h4>Release License Varified By</h4>
+                <input type="radio" id="rdInPhone" name="varificationtype" value="1" />Phone
+            <input type="radio" id="rdInSms" name="varificationtype" value="2" class="" />SMS
+            <input type="radio" id="rdInPerson" name="varificationtype" value="3" class="" />Person
+            <input type="radio" id="rdInOther" name="varificationtype" value="4" class="" />Other
+        
+            <br />
+                <br />
+                <div id="divReleaseButton" style="display: none">
+                    <button type="button" id="btnGenerateReleaseLicense" class="k-button">Generate Release License</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

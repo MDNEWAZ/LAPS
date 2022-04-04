@@ -1,0 +1,83 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Users/UserInfo.js")
+<div id="divUserInfo">
+    <div class="divDetails">
+        <ul>
+           @* <li> 
+                <label class="lbl widthSize20_per">Company:</label>
+                <input type="hidden" id="hdnUserId" value="0" />
+                <input id="cmbCompanyName" name="CompanyName" validationmessage="Please Select Company Name" required="required" onchange="userInfoHelper.changeCompanyName();" />
+            </li>*@
+            @*  <li class="">
+                    <label for="CompanyNameDetails" class="lbl widthSize20_per">Company Name:</label>
+                 <input type="text" id="cmbCompanyNameDetails" name="CompanyNameDetails" validationmessage="Please Select Company" />
+                 <input type="hidden" id="hdnUserId" value="0" />
+                </li>
+            <li>
+                <label for="BranchNameDetails" class="lbl widthSize20_per">Branch Name:</label>
+                <input type="text" id="cmbBranchDetails" name="BranchNameDetails" validationmessage="Please Select Branch Name" required="required" />
+            </li>*@
+            <li>
+                         <input type="hidden" id="hdnCompanyId" value="0" />
+                <label class="lbl widthSize10_per">Company:</label>
+                <label id="lblCompanyName" class="lbl widthSize30_per"></label>
+
+                         <input type="hidden" id="hdnBranchId" value="0" />
+                <label class="lbl widthSize10_per">Branch:</label>
+                <label id="lblBranchName" class="lbl widthSize20_per"></label>
+                
+
+                <ul id="ulIdentityPanelOrganogram">
+                    <li><b>Organogram tree</b>
+                        <div class="divDetails">
+                            <ul>
+                            <li>
+                                <label for="search-term" class="lbl lblTextArea widthSize20_per rightAlign">Quick Search:</label>
+                                <input id="search-term" class="k-textbox" name="search-term" />
+                            </li>
+                        </ul>
+                            @Html.Partial("_Organogram")
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        @*    <li>
+              
+                <label for="DepartmentNameDetails" class="lbl widthSize20_per">Department Name:</label>
+                <input type="text" id="cmbDepartmentNameDetails" name="DepartmentNameDetails" validationmessage="Please Select Department Name" />
+            </li>*@
+            <li>
+                    <input type="hidden" id="hdnUserId" value="0" />
+                <label for="LoginId" class="lbl widthSize20_per">Login ID:</label>
+                <input type="text" id="txtLoginId" name="LoginId" maxlength="50" pattern="[a-zA-Z0-9 ]+" class="k-textbox" placeholder="Login ID" validationmessage="Please enter valid Login ID" required="required" />
+            </li>
+            <li>
+                <label for="NewPassword" class="lbl widthSize20_per">New Password:</label>
+                <input type="password" id="txtNewPassword" name="NewPassword" class="k-textbox" />
+            </li>
+            <li>
+                <label for="ConfirmPassword" class="lbl widthSize20_per">Confirm Password:</label>
+                <input type="password" id="txtConfirmPassword" name="ConfirmPassword" class="k-textbox" />
+            </li>
+            <li>
+                <label for="UserName" class="lbl widthSize20_per">User Name:</label>
+                <input type="text" id="txtUserName" name="UserName" maxlength="50" class="k-textbox" placeholder="User Name" required validationmessage="Please enter valid User Name" />
+            </li>
+            @*<li>
+                <label for="txtEmail" class="required lbl widthSize20_per">Email</label>
+                <input type="email" id="txtEmail" name="Email" class="k-textbox txt" placeholder="e.g. myname@example.net" required data-email-msg="Email format is not valid" />
+            </li>*@
+            @*   <li>
+                <label class="lbl widthSize20_per">Employee:</label>
+                <input id="cmbEmployee" name="EmployeeName" validationmessage="Please Select an Employee Name" required="required" />
+            </li>*@
+            <li>
+                <label for="IsNotify" class="lbl widthSize20_per">Is Notify:</label>
+                <input type="checkbox" id="chkIsNotify" name="IsNotify" class="chkBox" />
+            </li>
+            <li>
+                <label for="IsActive" class="lbl widthSize20_per">Is Active:</label>
+                <input type="checkbox" id="chkIsActive" name="IsActive" class="chkBox" />
+            </li>
+        </ul>
+    </div>
+</div>

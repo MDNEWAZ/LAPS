@@ -1,0 +1,449 @@
+/*global*/
+
+.floatWrap:after,#example:after{content:"";display:block;clear:both}
+.floatWrap,#example{display:inline-block}
+.floatWrap,#example{display:block}
+.clear{clear:both}
+
+html
+{
+    overflow-y:scroll;
+    font:90% 'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+  
+    background: url("../../Images/flowers-left.png") no-repeat fixed 0 400px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.htmlLayout {
+    background-color: tan;
+}
+body {
+    margin: 0;
+    padding: 0;
+     font:75% 'Lucida Sans Unicode','Lucida Grande',arial,helvetica,sans-serif;
+    background-color: transparent;
+}
+
+.page
+{
+    width:940px;
+    margin:30px auto;
+    padding:30px;
+    background:#fff;
+    box-shadow: 1px 1px 7px 1px #999;
+}
+
+.offline-button {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 0 16px;
+    height: 32px;
+    line-height: 30px;
+    background: #313131;
+    border-radius: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page .offline-button
+{
+    margin-top:0;
+}
+
+.offline-button:hover {
+    background: #e36028;
+}
+
+#example
+{
+    margin: 20px 0;
+    padding: 20px 0;
+    border: solid #999;
+    border-width: 1px 0;
+}
+
+/*console*/
+
+.console
+{
+    background-color: #fff;
+    border:solid #ccc;
+    border-width:1px 0;
+    color: #333;
+    font: 11px Consolas, Monaco, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    height: 200px;
+    margin: 1.4em 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.console .count,
+.km-root .km-android .console .count
+{
+    background-color: #91AFEF;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 2px 6px 2px 5px;
+}
+
+.console div
+{
+    background-position: 6px -95px;
+    border-bottom: 1px solid #DDD;
+    padding: 5px 5px 4px 24px;
+}
+
+.console .error
+{
+    background-position: 6px -135px;
+}
+
+/*configurator*/
+
+.configuration
+{
+    float: right;
+    margin: 0 0 0 15px;
+    padding: 10px;
+    border: 1px solid inherit;
+    background-image: none;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.45), inset 0 0 30px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.45), inset 0 0 30px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.45), inset 0 0 30px rgba(0,0,0,0.07);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    min-width: 170px;
+    max-width: 300px;
+}
+
+.absConf .configuration
+{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: auto;
+    margin: 0;
+    z-index: 2;
+}
+
+.configuration-horizontal
+{
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    position: static;
+    height: auto;
+    min-height: 0;
+    width: auto;
+    margin-bottom: 20px;
+    float:none;
+}
+
+.configuration-horizontal-bottom
+{
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    margin: 20px -21px -21px;
+    position: static;
+    height: auto;
+    min-height: 0;
+    width: auto;
+    float:none;
+}
+
+.configuration .configHead,
+.configuration .infoHead
+{
+    display: block;
+    font-size: 14px;
+    margin-top: 0;
+    text-indent: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+    background-position: 0 -178px;
+}
+
+.configuration .infoHead
+{
+    background-position: -107px -722px;
+}
+
+.configuration .configTitle
+{
+    font-size: 12px;
+    display: block;
+    line-height: 22px;
+    background-position: 0 21px;
+    margin-bottom: 10px;
+}
+
+.configuration .options
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.configuration button
+{
+    margin: 0;
+    vertical-align: middle;
+}
+
+.configuration .k-textbox
+{
+    margin-left: 7px;
+    width: 30px;
+}
+
+.configuration .options li { display: block; margin: 0; padding: 0.2em 0;}
+
+.configuration .options li:after
+{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.configuration label,
+.configuration input
+{
+    vertical-align: middle;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.configuration label
+{
+    float: left;
+}
+
+.configuration input
+{
+    width: 40px;
+}
+
+.configuration input,
+.configuration select
+{
+    float: right;
+}
+
+.configuration .k-button,
+.configuration .k-widget
+{
+    margin-bottom: 3px;
+}
+
+/* Code Viewer */
+.source a.selected
+{
+    text-decoration: underline;
+}
+
+.source .code .controller {
+    display: none;
+}
+
+/* Pretty Print */
+.prettyprint
+{
+    font-size: 12px;
+    overflow: auto;
+}
+
+pre .nocode { background-color: transparent; color: #000; }
+pre .str,                    /* string */
+pre .atv { color: #e25000; } /* attribute value */
+pre .kwd { color: #0033ff; } /* keyword */
+pre .com { color: #666666; } /* comment */
+pre .typ { color: #000; } /* type */
+pre .lit { color: #006666; } /* literal */
+pre .pun { color: #333; }    /* punctuation */
+pre .pln { color: #42545a; }    /* plaintext */
+pre .tag { color: #0066cc; } /* html/xml tag */
+pre .atn { color: #6666ff; } /* attribute name */
+pre .dec { color: #cc0000; } /* decimal */
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #333; }
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+li.L1,li.L3,li.L5,li.L7,li.L9 { background: #eee; }
+
+/*keyboard navigation legend */
+.key-button {
+    display: inline-block;
+    width: 32px;
+    height: 23px;
+    text-decoration: none;
+    color: #555;
+    margin: 0;
+    padding: 25px 8px 0 8px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e2e2e2));
+    background-image: -moz-linear-gradient(bottom, #e2e2e2, #f5f5f5);
+    background-image: -o-linear-gradient(bottom, #e2e2e2, #f5f5f5);
+    background-image: -ms-linear-gradient(bottom, #e2e2e2, #f5f5f5);
+    box-shadow: inset 0 1px 0 #fff, 0 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.widest {
+    width: 102px;
+}
+.wider {
+    width: 75px;
+}
+.wide {
+    width: 60px;
+}
+.leftAlign {
+    text-align: left;
+}
+.rightAlign {
+    text-align: right;
+}
+.centerAlign {
+    text-align: center;
+}
+.letter {
+    padding-top: 14px;
+    padding-bottom: 11px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+ul.keyboard-legend {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 20px 0;
+    width: 700px;
+}
+
+ul.keyboard-legend li {
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+}
+
+.button-preview {
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 48px;
+    text-align: right;
+    padding: 0px 10px 0 0;
+}
+.button-descr {
+    display: inline-block;
+    height: 40px;
+    width: 140px;
+    padding-align: middle;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    border-left: 1px solid #ccc;
+    line-height: 1.3em;
+}
+.mainBody {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    font-size:11px;
+}
+
+.active-services, .active-domains, .due-invoices, .open-tickets {
+    
+    background-attachment: scroll;
+    background-clip: padding-box !important;
+    background-color: #f07406;
+    background-image: url("../img/active-services.jpg");
+    background-origin: padding-box;
+    background-position: 95% 90%;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border: 4px solid #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05) inset;
+    display: block;
+    float: left;
+    height: 160px;
+    margin-right: 33px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    width: 22%;
+}
+.stats-title {
+    border-bottom: 2px solid rgba(253, 154, 66, 0.4);
+    color: #fff;
+    float: left;
+    font-family: "Oxygen",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px !important;
+    margin-top: 25px !important;
+    padding-bottom: 10px;
+}
+.open-tickets {
+    background: url("../../Images/open-tickets.jpg") no-repeat scroll 98% 90% #3397db;
+    margin-right: 0 !important;
+}
+.due-invoices {
+    background: url("../../Images/due-invoices.jpg") no-repeat scroll 95% 90% #27ad5f;
+}
+
+.btnSale {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btnSale:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.lblDisplay {
+   background: #95b6cc;
+  background-image: -webkit-linear-gradient(top, #95b6cc, #000000);
+  background-image: -moz-linear-gradient(top, #95b6cc, #000000);
+  background-image: -ms-linear-gradient(top, #95b6cc, #000000);
+  background-image: -o-linear-gradient(top, #95b6cc, #000000);
+  background-image: linear-gradient(to bottom, #95b6cc, #000000);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 3px 0px 3px 1px;
+  text-decoration: none;
+  text-align: center;
+    }

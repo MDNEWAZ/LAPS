@@ -1,0 +1,27 @@
+﻿@Scripts.Render("~/Scripts/eAzolution/Core/Module/ModuleDetails.js")
+
+
+<div class="rightDiv k-content">
+    <div id="moduleDetailsDiv" class="divDetails">
+        <fieldset class="k-content" >
+            <legend class="k-foreColor"> Module Details</legend>
+       
+        <ul>
+            <li>
+                <input type="hidden" id="hdModuleId" value="0" />
+                <label for="ModuleName" class="required lbl widthSize20_per">Module Name</label>
+                <input type="text" id="txtModuleName" name="ModuleName" class="k-textbox" maxlength="50" placeholder="Module name" required validationmessage="Please enter a Module name" />
+            </li>
+
+            <li class="accept">
+                <button id="btnSave" class="k-button" type="submit" onclick="moduleDetailsManager.SaveModuleInformation()">Submit</button>
+                &nbsp;&nbsp;
+                <button id="btnClearAll" class="k-button" onclick="moduleDetailsHelper.clearModuleForm()">Clear All</button>
+            </li>
+            <li class="status"></li>
+        </ul>
+     </fieldset>
+    </div>
+     
+</div>
+

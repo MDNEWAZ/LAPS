@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Customer Status Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamDetails.js")
+@Scripts.Render("~/Scripts/eAzolution/Reports/Param/ReportParamSettings.js")
+
+@Scripts.Render("~/Scripts/eAzolution/Reports/Collection/CustomerStatusReport.js")
+
+<br /><br />
+<div class="k-block">
+    <div class="k-header">Customer Status Report</div>
+    <div class="centerAlign">
+        <div>
+
+            <div class="widthSize30_per leftDiv">
+                <label>Zone:</label>
+                <input type="text" id="cmbZone"/>
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Region:</label>
+                <input type="text" id="cmbRegion"/>
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Branch:</label>
+                <input type="text" id="cmbBranch"/>
+            </div>
+        </div>
+        <div style="margin-top: 15px">
+            <div class="widthSize30_per leftDiv">
+                <label>Package/Model:</label>
+                <input id="cmbPackage" />
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Status:</label>
+                <input type="text" id="cmbStatus"/>
+            </div>
+            <div class="widthSize30_per leftDiv">
+                <label>Customer ID:</label>
+                <input type="text" id="cmbCustomer" />
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <div class="centerAlign">
+        <div class="widthSize30_per leftDiv">
+            <label>From Date:</label>
+            <input type="text" id="txtFromDateTime" placeholder="From date"/>
+        </div>
+        <div class="widthSize30_per leftDiv">
+            <label>To Date:</label>
+            <input type="text" id="txtToDateTime" placeholder="To date"/>
+        </div>
+    </div>
+    <div class="clear"></div>
+        <div class="centerAlign">
+            <br/>
+            <button class="k-button" id="btnCusStatusShowReport">Show Report</button>
+        </div>
+        <div class="clear" style="height: 200px"></div>
+
+</div>
+
